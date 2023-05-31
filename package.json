@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "markdown-it-plantuml": "^1.4.1",
+    "render-plantuml": "^0.2.0"
+  }
+}

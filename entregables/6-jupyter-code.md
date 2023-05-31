@@ -1,0 +1,1 @@
+Se presentan varios cuadernos jupyter con la automatización de la búsqueda del mejor modelo. Una vez que se ha definido el algoritmo para la vista minable, procedemos a extraer los datos de nuestra fuente de datos y a preparar técnicas que nos permitan acercarnos a un buen modelo.

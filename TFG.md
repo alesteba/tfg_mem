@@ -1,0 +1,21 @@
+-- LINK_NOTE --
+
+[[RESUMEN]]
+
+[[INTRODUCCIÓN]]
+
+[[PLANIFICACIÓN]]
+
+[[ANÁLISIS]]
+
+[[INFRAESTRUCTURA]]
+
+[[DISEÑO]]
+
+[[PIPELINE]]
+
+[[MODELO IA]]
+
+[[SEGUIMIENTO]]
+
+[[0-conclusiones]]

@@ -1,0 +1,12 @@
+{
+  "spellcheckLanguages": [
+    "en-US",
+    "es-ES"
+  ],
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "georeferenciada",
+    "georreferenciados",
+    "infraestructura"
+  ]
+}

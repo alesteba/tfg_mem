@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "f27e4f99b0ad52e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "44fc8fd17230c745",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "metodología.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e5f9c9a4443bb18f",
+    "type": "split",
+    "children": [
+      {
+        "id": "794dc2d9a9ece91b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86b13b76461c064d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b5177a4dd2100e85",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a9b9efdbcf351e49",
+    "type": "split",
+    "children": [
+      {
+        "id": "41285d0324d8c00f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5a037e73ee68977",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "metodología.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "44fc8fd17230c745",
+  "lastOpenFiles": [
+    "metodología.md",
+    "planificación.md",
+    "justificación.md",
+    "introduccion.md",
+    "modelo-BD.md",
+    "gantt.md",
+    "alcance.md",
+    "riegos.md",
+    "rediseño-planificación.md"
+  ]
+}
