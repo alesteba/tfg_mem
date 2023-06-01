@@ -15,7 +15,7 @@ NAME = "alesteba"
 
 path = os.getcwd()
 
-publish_path = os.path.join(path, 'publish')
+publish_path = os.path.join(path, '_k.pcs.zen','publish')
 
 print(publish_path)
 

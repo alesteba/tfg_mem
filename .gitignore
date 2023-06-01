@@ -1,5 +1,5 @@
-_k.pcs.zen/md_k.pcs/**
-_k.pcs.zen/publish/**
+#_k.pcs.zen/md_k.pcs/**
+#_k.pcs.zen/publish/**
 
 # Virtualenv
 .Python
