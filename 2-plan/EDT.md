@@ -1,7 +1,7 @@
 Mostramos el desglose de las tareas más importantes para la correcta realización del proyecto.
 
 ```mermaid
-graph LR;
+graph TD;
 	TFG-->PLANIFICACIÓN;
 	TFG-->ANÁLISIS;
 	TFG-->INFRAESTRUCTURA;

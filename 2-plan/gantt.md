@@ -34,7 +34,6 @@ gantt
     VIEW: 11-02, 5d
 	REGRESSION: 12-02, 10d
     BEST_MODEL: 15-02, 10d
-    Phase 2 complete: milestone, 45-01, 0d
     
     section TEST
     TEST 1: 20-01, 30d

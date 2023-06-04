@@ -65,36 +65,8 @@ proyecto. Con estas iteraciones el entendimiento del producto por parte del equi
 <figure><img src="figures/iteraciones.PNG" /><figcaption>caption</figcaption>
 </figure>
 </p></div><div id=EDT><h3>1.3.3 EDT</h3><p>Mostramos el desglose de las tareas más importantes para la correcta realización del proyecto.</p>
-<div class="mermaid">
-graph LR;
-    TFG-->PLANIFICACIÓN;
-    TFG-->ANÁLISIS;
-    TFG-->INFRAESTRUCTURA;
-    TFG-->DISEÑO;
-    TFG-->PIPELINE;
-    TFG-->MODELO_IA;
-    TFG-->SEGUIMIENTO;
-    TFG-->MEMORIA;
-    TFG-->CONCLUSIONES;
-    ANÁLISIS-->DOMINIO;
-    ANÁLISIS-->FUENTES;
-    ANÁLISIS-->REQUISITOS;
-    INFRAESTRUCTURA-->CONTROL_VERSIONES;
-    INFRAESTRUCTURA-->ENTORNO;
-    DISEÑO-->ANÁLISIS_Y_REDISEÑO;
-    DISEÑO-->COMPONENTES;
-    DISEÑO-->MODELO_DATOS_RELACIONAL;
-    DISEÑO-->SERVICIOS;
-    REQUISITOS-->FUNCIONALES:
-    REQUISITOS-->NO_FUNCIONALES;
-    PIPELINE-->FUENTES_DE_DATOS;
-    PIPELINE-->DEFINICIÓN_ETAPAS;
-    PIPELINE-->VISTA_MINABLE;
-    MODELO_IA-->DATOS;
-    MODELO_IA-->MODELO_PRODUCCIÓN;
-    MODELO_IA-->PREDICCIONES;
-</div>
-
+<p>'<figure><img src="mermaid\output_0.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <table>
 <thead>
 <tr>
@@ -272,56 +244,56 @@ graph LR;
 <table>
 <thead>
 <tr>
-<th align="left">IDENT</th>
-<th align="right">ENTREGABLE</th>
-<th align="center">DESCRIPCIÓN</th>
+<th style="text-align: left;">IDENT</th>
+<th style="text-align: right;">ENTREGABLE</th>
+<th style="text-align: center;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/tree/main/entregables/pipeline">E01</a></td>
-<td align="right">Módulo de Inicio</td>
-<td align="center">Análisis de viabilidad que permitirá determinar si es posible desarrollar el proyecto.</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/tree/main/entregables/pipeline">E01</a></td>
+<td style="text-align: right;">Módulo de Inicio</td>
+<td style="text-align: center;">Análisis de viabilidad que permitirá determinar si es posible desarrollar el proyecto.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://alesteba.github.io/tfg/#PLANIFICACI%C3%93N">E02</a></td>
-<td align="right">Planificación del proyecto</td>
-<td align="center">Determinaremos los requisitos del proyecto, crearemos un enunciado para el alcance, realizaremos una descripción detallada de tareas junto a una EDT, estimaremos el tiempo y coste de los paquetes de trabajo, desarrollaremos un cronograma, estableceremos los estándares, procesos y métricas de calidad, determinaremos un plan de identificación de riesgos y crearemos el plan de gestión de cambios.</td>
+<td style="text-align: left;"><a href="https://alesteba.github.io/tfg/#PLANIFICACI%C3%93N">E02</a></td>
+<td style="text-align: right;">Planificación del proyecto</td>
+<td style="text-align: center;">Determinaremos los requisitos del proyecto, crearemos un enunciado para el alcance, realizaremos una descripción detallada de tareas junto a una EDT, estimaremos el tiempo y coste de los paquetes de trabajo, desarrollaremos un cronograma, estableceremos los estándares, procesos y métricas de calidad, determinaremos un plan de identificación de riesgos y crearemos el plan de gestión de cambios.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/tree/main/entregables/infraestructure">E03</a></td>
-<td align="right">Infraestructura como código</td>
-<td align="center">Desarrollo de un 'script' con las instrucciones bash para dejar la máquina que despliega la aplicación en un estado estable.</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/tree/main/entregables/infraestructure">E03</a></td>
+<td style="text-align: right;">Infraestructura como código</td>
+<td style="text-align: center;">Desarrollo de un 'script' con las instrucciones bash para dejar la máquina que despliega la aplicación en un estado estable.</td>
 </tr>
 <tr>
-<td align="left"><a href="">E04</a></td>
-<td align="right">Documento de Diseño</td>
-<td align="center">Documento en el que se explican las decisiones tomadas para la creación de las entidades del modelo y sus relaciones.</td>
+<td style="text-align: left;"><a href="">E04</a></td>
+<td style="text-align: right;">Documento de Diseño</td>
+<td style="text-align: center;">Documento en el que se explican las decisiones tomadas para la creación de las entidades del modelo y sus relaciones.</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/tree/main/entregables/models.py">E05</a></td>
-<td align="right">Esquema modelo de Datos</td>
-<td align="center">Esquema UML que representa las entidades del modelo y sus relaciones. Modelo simplificado de datos exraido del ORM Django</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/tree/main/entregables/models.py">E05</a></td>
+<td style="text-align: right;">Esquema modelo de Datos</td>
+<td style="text-align: center;">Esquema UML que representa las entidades del modelo y sus relaciones. Modelo simplificado de datos exraido del ORM Django</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/tree/main/entregables/models.py">E06</a></td>
-<td align="right">Arquitectura Pipeline</td>
-<td align="center">Arquitectura y diagramas del proceso de transformación de datos, junto con sus scripts. Memoria + Código</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/tree/main/entregables/models.py">E06</a></td>
+<td style="text-align: right;">Arquitectura Pipeline</td>
+<td style="text-align: center;">Arquitectura y diagramas del proceso de transformación de datos, junto con sus scripts. Memoria + Código</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/blob/main/entregables/view.ipynb">E07</a></td>
-<td align="right">Vista Minable</td>
-<td align="center">Método algorítmico que genera la estructura tabular de datos necesaria para el modelo de producción</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/blob/main/entregables/view.ipynb">E07</a></td>
+<td style="text-align: right;">Vista Minable</td>
+<td style="text-align: center;">Método algorítmico que genera la estructura tabular de datos necesaria para el modelo de producción</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/blob/main/entregables/view.ipynb">E08</a></td>
-<td align="right">Datos Vista</td>
-<td align="center">Estructura tabulada con las 'features' necesarias y los datos requeridos. (Estudio con 25 parcelas)</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/blob/main/entregables/view.ipynb">E08</a></td>
+<td style="text-align: right;">Datos Vista</td>
+<td style="text-align: center;">Estructura tabulada con las 'features' necesarias y los datos requeridos. (Estudio con 25 parcelas)</td>
 </tr>
 <tr>
-<td align="left"><a href="https://github.com/alesteba/tfg/blob/main/entregables/model_IA">E09</a></td>
-<td align="right">Modelo de producción</td>
-<td align="center">Cuaderno jupyter en el que buscamos el mejor modelo posible</td>
+<td style="text-align: left;"><a href="https://github.com/alesteba/tfg/blob/main/entregables/model_IA">E09</a></td>
+<td style="text-align: right;">Modelo de producción</td>
+<td style="text-align: center;">Cuaderno jupyter en el que buscamos el mejor modelo posible</td>
 </tr>
 </tbody>
 </table></div><div id=tiempos><h3>1.3.5 tiempos</h3><p>Para poder realizar un posterior seguimiento y control del proyecto asignamos a cada tarea un tiempo adecuado a la complejidad que estimamos para ésta. En caso de que posteriormente nos alejemos de lo que aquí planificamos, anotaremos dichas desviaciones en la sección de 'seguimiento y control'</p>
@@ -499,148 +471,103 @@ graph LR;
 </tr>
 </tbody>
 </table></div><div id=gantt><h3>1.3.6 gantt</h3><p>El siguiente diagrama propone un desglose de tareas para la planificación del proyecto. El tiempo estipulado es de dos meses y una semana.</p>
-<div class="mermaid">
-gantt
-    title Planificación
-    dateFormat  DD-MM
-    axisFormat  %d
-
-    section ANALISIS
-    ALCANCE: 01-01, 2d
-    METODOLOGIA: 02-01, 3d
-    EDT: 03-01, 5d
-    GANNT: 04-01, 5d
-    RRHH: 05-01, 3d
-    COMUNICACIONES: 06-01, 5d
-    RIESGOS: 07-01, 5d
-
-    section INFRAESTRUCTURA
-    DJANGO+JUPYTER: 08-01, 3d
-    SCRIPT_.SH: 09-01, 4d
-
-    section MODELO_DATOS
-    RELACIONES BD: 10-01, 20d
-    REDISEÑO: crit, 11-01, 20d
-
-    section PIPELINE
-    BLOQUES:  30-01, 10d
-    FEATURES: 05-02, 5d
-    VISTA: 05-02, 5d
-
-    section MODELO_PRODUCCIÓN
-    LOAD: 10-02, 5d
-    VIEW: 11-02, 5d
-    REGRESSION: 12-02, 10d
-    BEST_MODEL: 15-02, 10d
-    Phase 2 complete: milestone, 45-01, 0d
-
-    section TEST
-    TEST 1: 20-01, 30d
-    TEST 2: 30-01, 30d
-    Phase 3 complete: milestone, 01-03, 0d
-
-    section MEMORIA
-    MEM_WRITE: 01-01, 60d
-    SEG_Y_CONT: 01-01, 60d
-
-    Project complete: milestone, 10-03, 0d
-</div>
-
+<p>'<figure><img src="mermaid\output_1.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Este diagrama es una estipulación de cómo se desarrolla el proyecto. En la sección final de seguimiento y control analizamos las desviaciones encontradas y cómo han sido solucionados estos contratiempos.</p>
 <p>Destacamos que las tareas de escritura de la memoria y pruebas unitarias se realizan durante casi todo el proyecto. Las pruebas nos permiten asegurarnos de que el proyecto funciona adecuadamente: así no pasamos a una nueva tarea si no hemos dejado la aplicación estable al terminar la anterior.</p></div><div id=rrhh><h3>1.3.7 rrhh</h3><p>El personal implicado en el Trabajo de Fin de Grado será:  </p>
 <table>
 <thead>
 <tr>
-<th align="left">INTERESADO</th>
-<th align="center">LABOR</th>
+<th style="text-align: left;">INTERESADO</th>
+<th style="text-align: center;">LABOR</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Alberto Esteban Larreina</td>
-<td align="center">Ejecutor y responsable del proyecto. Desarrollará el proyecto en su totalidad</td>
+<td style="text-align: left;">Alberto Esteban Larreina</td>
+<td style="text-align: center;">Ejecutor y responsable del proyecto. Desarrollará el proyecto en su totalidad</td>
 </tr>
 <tr>
-<td align="left">Antonio Rúbio</td>
-<td align="center">Tutor en la empresa. Se dedicará a corregir los aspectos técnicos del proyecto referentes al desarrollo  del mismo y su planificación.</td>
+<td style="text-align: left;">Antonio Rúbio</td>
+<td style="text-align: center;">Tutor en la empresa. Se dedicará a corregir los aspectos técnicos del proyecto referentes al desarrollo  del mismo y su planificación.</td>
 </tr>
 <tr>
-<td align="left">Jónathan Heras</td>
-<td align="center">Tutor académico. Se dedicará a corregir aspectos referentes a la documentación y la forma en la que se desarrollará el proyecto y me guiará a cerca del desarrollo de este.</td>
+<td style="text-align: left;">Jónathan Heras</td>
+<td style="text-align: center;">Tutor académico. Se dedicará a corregir aspectos referentes a la documentación y la forma en la que se desarrollará el proyecto y me guiará a cerca del desarrollo de este.</td>
 </tr>
 <tr>
-<td align="left">Marcos Martinez</td>
-<td align="center">Compañero en la empresa. Probará el software desarrollado con un mayor volumen de datos.</td>
+<td style="text-align: left;">Marcos Martinez</td>
+<td style="text-align: center;">Compañero en la empresa. Probará el software desarrollado con un mayor volumen de datos.</td>
 </tr>
 </tbody>
 </table></div><div id=comunicaciones><h3>1.3.8 comunicaciones</h3><p>Para mantener informados tanto al tutor académico como a la tutora de la empresa, utilizaremos los siguientes canales:  </p>
 <table>
 <thead>
 <tr>
-<th align="left">CANAL</th>
-<th align="left">DESCRIPCIÓN</th>
+<th style="text-align: left;">CANAL</th>
+<th style="text-align: left;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Reuniones</td>
-<td align="left">presenciales, tanto con el tutor académico como con el tutor de la empresa.</td>
+<td style="text-align: left;">Reuniones</td>
+<td style="text-align: left;">presenciales, tanto con el tutor académico como con el tutor de la empresa.</td>
 </tr>
 <tr>
-<td align="left">Email</td>
-<td align="left">forma de comunicación electrónica para concretar determinadas pautas o establecimiento de citas.</td>
+<td style="text-align: left;">Email</td>
+<td style="text-align: left;">forma de comunicación electrónica para concretar determinadas pautas o establecimiento de citas.</td>
 </tr>
 <tr>
-<td align="left">Discord</td>
-<td align="left">aplicación de comunicación interna para mensajes directos con los miembros del equipo.</td>
+<td style="text-align: left;">Discord</td>
+<td style="text-align: left;">aplicación de comunicación interna para mensajes directos con los miembros del equipo.</td>
 </tr>
 </tbody>
 </table></div><div id=riegos><h3>1.3.9 riegos</h3><p>El objetivo de esta tabla es aumentar la probabilidad de eventos positivos y disminuir la de los negativos.</p>
 <table>
 <thead>
 <tr>
-<th align="left">FUENTE</th>
-<th align="center">RIESGO</th>
-<th align="center">SI SUCEDE</th>
-<th align="center">MINIMIZAR</th>
+<th style="text-align: left;">FUENTE</th>
+<th style="text-align: center;">RIESGO</th>
+<th style="text-align: center;">SI SUCEDE</th>
+<th style="text-align: center;">MINIMIZAR</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Ausencia de interesados</td>
-<td align="center">Médio</td>
-<td align="center">Utilizar menos reuniones y ser independiente</td>
-<td align="center">Planificar reuniones con antelación</td>
+<td style="text-align: left;">Ausencia de interesados</td>
+<td style="text-align: center;">Médio</td>
+<td style="text-align: center;">Utilizar menos reuniones y ser independiente</td>
+<td style="text-align: center;">Planificar reuniones con antelación</td>
 </tr>
 <tr>
-<td align="left">Tecnología equivocada</td>
-<td align="center">Medio</td>
-<td align="center">Estudiar nuevas posiblidades</td>
-<td align="center">Uso de patrones abstractos elegantes que se puedan implementar en diferentes frameworks</td>
+<td style="text-align: left;">Tecnología equivocada</td>
+<td style="text-align: center;">Medio</td>
+<td style="text-align: center;">Estudiar nuevas posiblidades</td>
+<td style="text-align: center;">Uso de patrones abstractos elegantes que se puedan implementar en diferentes frameworks</td>
 </tr>
 <tr>
-<td align="left">Pérdida código fuente</td>
-<td align="center">Alto</td>
-<td align="center">Empezar casi de cero</td>
-<td align="center">Backups y control de versiones</td>
+<td style="text-align: left;">Pérdida código fuente</td>
+<td style="text-align: center;">Alto</td>
+<td style="text-align: center;">Empezar casi de cero</td>
+<td style="text-align: center;">Backups y control de versiones</td>
 </tr>
 <tr>
-<td align="left">Pérdida documentación</td>
-<td align="center">Alto</td>
-<td align="center">Empezar casi de cero</td>
-<td align="center">Utilizar herramientas de copias incrementales</td>
+<td style="text-align: left;">Pérdida documentación</td>
+<td style="text-align: center;">Alto</td>
+<td style="text-align: center;">Empezar casi de cero</td>
+<td style="text-align: center;">Utilizar herramientas de copias incrementales</td>
 </tr>
 <tr>
-<td align="left">Fallo del servidor con la applicación</td>
-<td align="center">Alto</td>
-<td align="center">Utilizar y configurar uno nuevo</td>
-<td align="center">Backups</td>
+<td style="text-align: left;">Fallo del servidor con la applicación</td>
+<td style="text-align: center;">Alto</td>
+<td style="text-align: center;">Utilizar y configurar uno nuevo</td>
+<td style="text-align: center;">Backups</td>
 </tr>
 <tr>
-<td align="left">Falta de horas para terminar el proyecto</td>
-<td align="center">Medio</td>
-<td align="center">Dedicarse primero a los requisitos más importantes.</td>
-<td align="center">Realizar una buena planificación y ajustar el alcance</td>
+<td style="text-align: left;">Falta de horas para terminar el proyecto</td>
+<td style="text-align: center;">Medio</td>
+<td style="text-align: center;">Dedicarse primero a los requisitos más importantes.</td>
+<td style="text-align: center;">Realizar una buena planificación y ajustar el alcance</td>
 </tr>
 </tbody>
 </table>
@@ -663,22 +590,22 @@ gantt
 <table>
 <thead>
 <tr>
-<th align="left">FUENTE DATOS</th>
-<th align="left">DESCRIPCIÓN</th>
+<th style="text-align: left;">FUENTE DATOS</th>
+<th style="text-align: left;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">QGIS</td>
-<td align="left">información geomométrica de parcelas y sus pixéles</td>
+<td style="text-align: left;">QGIS</td>
+<td style="text-align: left;">información geomométrica de parcelas y sus pixéles</td>
 </tr>
 <tr>
-<td align="left">Índices Vegetativos</td>
-<td align="left">información provenientes de imágenes satelitales descargadas en diferentes fechas</td>
+<td style="text-align: left;">Índices Vegetativos</td>
+<td style="text-align: left;">información provenientes de imágenes satelitales descargadas en diferentes fechas</td>
 </tr>
 <tr>
-<td align="left">Cultivos / Variedad</td>
-<td align="left">información tabulada en excels sobre tipo de cultivos y sus variedades</td>
+<td style="text-align: left;">Cultivos / Variedad</td>
+<td style="text-align: left;">información tabulada en excels sobre tipo de cultivos y sus variedades</td>
 </tr>
 </tbody>
 </table>
@@ -686,15 +613,8 @@ gantt
 <p>Para hacernos una idea, contemplando solo 25 parcelas, podemos almacenar 3000 píxeles. Por cada pixel vamos a registrar varios índices vegetativos (ndvi, ndre) y para generar el histórico de datos esta información se multiplica por el número de fechas contempladas. Es decir, que aunque trabajamos sobre un volumen reducido para probar la automatización, sigue siendo mucha la información que tiene que almacenarse en la base de datos.</p>
 <p>Es el histórico de índices en diferentes fechas lo que permite al sistema realizar modelos predictivos. A mayor volumen de datos, más precisión podremos obtener en los modelos posteriormente. El punto importante de este trabajo es la mejora del proceso y la automatización del flujo de datos; ello nos llevará a que finalmente podamos obtener un modelo de regresión para predecir los kg de cultivo, tal y como el agricultor necesita. La muestra que utilizamos, al ser representativa con 25 parcelas, predecirá con un cierto sobreajuste a los datos. Por tanto nuestro esfuerzo se centra en que el proceso que implantamos sea reproducible para cualquier volumen de datos, y en que sin desarrollo adicional podamos utilizar el mismo proceso para predecir en el volumen que queramos.</p></div><div id=automatizacion><h3>1.4.3 automatizacion</h3><p>El proceso que vamos a implantar requiere de un diseño que posibilite estructurar y manejar grandes volúmenes de datos. Actualmente, existen varias tecnologías que abordan el concepto de <em>Pipeline</em> desde un punto de vista global. No vamos a utilizar ninguna de estas tecnologías; nuestro proceso se va a desarrollar a medida, modelando un Pipeline como patrón de diseño, encargado de la transformación de los datos en bloques reutilizables para su persistencia en el modelo.</p>
 <p>El primer paso para realizar una carga de datos, es el diseño de un <a href="">modelo relacional</a> que soporte esta información de la forma más estructurada y organizada posible. Hará falta la comprensión de conceptos del dominio agronómico para dar sentido a esta información y obtener así un esquema sólido sobre el que poder preguntar sin limitaciones.</p>
-<div class="mermaid">
-
-graph LR;
-    infraestructura-->diseño_relacional;
-    diseño_relacional-->pipeline_datos;
-    pipeline_datos-->vista_minable;
-    vista_minable-->modelo_producción;
-</div>
-
+<p>'<figure><img src="mermaid\output_2.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Con un modelo relacional para los datos, los bloques atómicos de carga se podrán ejecutar periódicamente utilizando las fuentes de datos necesarias. El proceso de automatización termina, una vez que están almacenados los datos, con la extracción de una vista minable que permite obtener el mejor modelo de regresión para los kg de cultivo que se van a cosechar en una fecha determinada.</p></div><div id=tecnologías><h3>1.4.4 tecnologías</h3><p>El código de la aplicación que heredamos está escrito en Python. El lenguaje es una decisión adecuada debido a la necesidad de integrar técnicas de procesamiento de datos e inteligencia artificial. El framework de Django para Python permite construir un proyecto robusto y desplegarlo en un servidor con una interfaz web.</p>
 <p><em>Django</em> nos ofrece las herramientas necesarias para trabajar desde un alto nivel de abstracción y poder diseñar una aplicación sólida y estable. Algunas de estas herramientas son:</p>
 <ul>
@@ -711,64 +631,64 @@ graph LR;
 <table>
 <thead>
 <tr>
-<th align="left">LIBRERÍA</th>
-<th align="left">DESCRIPCIÓN</th>
+<th style="text-align: left;">LIBRERÍA</th>
+<th style="text-align: left;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">scikit-learn</td>
-<td align="left">creación de modelos de inteligencia artificial</td>
+<td style="text-align: left;">scikit-learn</td>
+<td style="text-align: left;">creación de modelos de inteligencia artificial</td>
 </tr>
 <tr>
-<td align="left">numpy</td>
-<td align="left">tratamiento de datos multidimensionales</td>
+<td style="text-align: left;">numpy</td>
+<td style="text-align: left;">tratamiento de datos multidimensionales</td>
 </tr>
 <tr>
-<td align="left">pandas</td>
-<td align="left">uso de datos tabulados con herramientas para su procesamiento</td>
+<td style="text-align: left;">pandas</td>
+<td style="text-align: left;">uso de datos tabulados con herramientas para su procesamiento</td>
 </tr>
 <tr>
-<td align="left">jupyter</td>
-<td align="left">integración de cuadernos procesables con el resto del proyecto</td>
+<td style="text-align: left;">jupyter</td>
+<td style="text-align: left;">integración de cuadernos procesables con el resto del proyecto</td>
 </tr>
 </tbody>
 </table></div><div id=requisitos><h3>1.4.5 requisitos</h3><p>La siguiente tabla muestra los requisitos funcionales críticos para completar con éxito el proyecto, terminando el trabajo con un producto estable que el equipo pueda utilizar.</p>
 <table>
 <thead>
 <tr>
-<th align="left">REQUISITO</th>
-<th align="left">DESCRIPCIÓN</th>
+<th style="text-align: left;">REQUISITO</th>
+<th style="text-align: left;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">RF1</td>
-<td align="left">automatizar el despliegue de la aplicación identificando las librerías y dependencias necesarias</td>
+<td style="text-align: left;">RF1</td>
+<td style="text-align: left;">automatizar el despliegue de la aplicación identificando las librerías y dependencias necesarias</td>
 </tr>
 <tr>
-<td align="left">RF2</td>
-<td align="left">rediseñar el modelo de datos para poder escalar la aplicación y su gestión de datos.</td>
+<td style="text-align: left;">RF2</td>
+<td style="text-align: left;">rediseñar el modelo de datos para poder escalar la aplicación y su gestión de datos.</td>
 </tr>
 <tr>
-<td align="left">RF3</td>
-<td align="left">documentar el proceso de desarrollo generando los documentos de diseño pertinentes.</td>
+<td style="text-align: left;">RF3</td>
+<td style="text-align: left;">documentar el proceso de desarrollo generando los documentos de diseño pertinentes.</td>
 </tr>
 <tr>
-<td align="left">RF4</td>
-<td align="left">crear un entorno común que permita trabajar al equipo sobre las mismas fuentes de datos.</td>
+<td style="text-align: left;">RF4</td>
+<td style="text-align: left;">crear un entorno común que permita trabajar al equipo sobre las mismas fuentes de datos.</td>
 </tr>
 <tr>
-<td align="left">RF5</td>
-<td align="left">obtener una vista minable con la selección de <em>features</em> provenientes del modelo.</td>
+<td style="text-align: left;">RF5</td>
+<td style="text-align: left;">obtener una vista minable con la selección de <em>features</em> provenientes del modelo.</td>
 </tr>
 <tr>
-<td align="left">RF6</td>
-<td align="left">creación de un modelo de producción probando varios algoritmos de inteligencia artificial.</td>
+<td style="text-align: left;">RF6</td>
+<td style="text-align: left;">creación de un modelo de producción probando varios algoritmos de inteligencia artificial.</td>
 </tr>
 <tr>
-<td align="left">RF7</td>
-<td align="left">despliegue de los datos del modelo en la interfaz de la aplicación.</td>
+<td style="text-align: left;">RF7</td>
+<td style="text-align: left;">despliegue de los datos del modelo en la interfaz de la aplicación.</td>
 </tr>
 </tbody>
 </table>
@@ -776,61 +696,35 @@ graph LR;
 <table>
 <thead>
 <tr>
-<th align="left">REQUISITO</th>
-<th align="left">DESCRIPCIÓN</th>
+<th style="text-align: left;">REQUISITO</th>
+<th style="text-align: left;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">RNF1</td>
-<td align="left">Crear un entorno Linux local con la misma configuración necesaria en producción.</td>
+<td style="text-align: left;">RNF1</td>
+<td style="text-align: left;">Crear un entorno Linux local con la misma configuración necesaria en producción.</td>
 </tr>
 <tr>
-<td align="left">RNF2</td>
-<td align="left">Preparar las fuentes de datos con una muestra pequeña representativa de la aplicación en producción.</td>
+<td style="text-align: left;">RNF2</td>
+<td style="text-align: left;">Preparar las fuentes de datos con una muestra pequeña representativa de la aplicación en producción.</td>
 </tr>
 <tr>
-<td align="left">RNF3</td>
-<td align="left">Estudiar las posibles features para la vista minable que utilizará el modelo de producción de cultivo</td>
+<td style="text-align: left;">RNF3</td>
+<td style="text-align: left;">Estudiar las posibles features para la vista minable que utilizará el modelo de producción de cultivo</td>
 </tr>
 <tr>
-<td align="left">RNF4</td>
-<td align="left">Implantar un flujo de trabajo en el equipo para utilizar las mismas fuentes de datos</td>
+<td style="text-align: left;">RNF4</td>
+<td style="text-align: left;">Implantar un flujo de trabajo en el equipo para utilizar las mismas fuentes de datos</td>
 </tr>
 <tr>
-<td align="left">RNF5</td>
-<td align="left">Utilizar software libre</td>
+<td style="text-align: left;">RNF5</td>
+<td style="text-align: left;">Utilizar software libre</td>
 </tr>
 </tbody>
 </table></div><div id=INFRAESTRUCTURA><h3>1.5.0 INFRAESTRUCTURA</h3><div id=arquitectura_física><h3>1.5.1 arquitectura física</h3><p>El entorno local, sobre el cual desarrollamos, y el de producción, donde se despliega la aplicación, son actualmente diferentes. Todos los miembros del equipo utilizamos máquinas Windows, mientras que en el servidor de producción encontramos una máquina Ubuntu. Esto crea un problema importante en el proceso de instalación de las librerías necesarias para trabajar con los datos; se pierde gran cantidad de tiempo en preparar el entorno de cada persona que va a trabajar con el repositorio de la aplicación; además, las librerías necesarias necesitan de una gran cantidad de dependencias que varían en cuanto a las versiones. Como solución propondremos una nueva forma de trabajo que nos asegure un entorno común con las mismas librerías y paquetes.</p>
-<div class="mermaid">
-graph LR;    
-    subgraph desarollo
-        WSL--> WSL.1
-        WSL--> WSL.2
-        WSL--> WSL.3
-    end
-
-    subgraph producción
-
-        WSL.1--> Ubuntu
-        WSL.2--> Ubuntu
-        WSL.3--> Ubuntu
-
-    end
-
-
-        BD_test-->WSL
-        BD_prod-->Ubuntu
-
-
-    subgraph repositorio
-        CODE --> GIT    
-        GIT --> WSL
-        GIT --> Ubuntu
-    end
-</div>
-
+<p>'<figure><img src="mermaid\output_3.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Parte del trabajo consiste en la automatización del despliegue de la aplicación. En este punto vemos coómo la infraestructura como código permite aislar las librerías necesarias creando un script que deja una máquina en estado estable para ejecutar la aplicación.</p>
 <p>Para poder utilizar tecnologías que posibiliten la integración continua, transformamos el entorno de desarrollo desplegando la aplicación en UNIX. Identificamos las siguientes dependencias que necesitan ser instaladas:</p>
 <ul>
@@ -929,31 +823,11 @@ sudo python3 -m pip install -r requirements.txt
 </ul>
 <p>Actualmente, solo existe un entono virtual sobre el cual se instalan todas las librerías <em>Python</em> necesarias para el desarrollo y despliegue. Dicha refactorización sobre la infraestructura se contempla para próximos hitos en el proyecto. Es importante identificar aquellos puntos que sean propensos a un <em>refactor</em> grande, pero que no se lleven a cabo en el momento actual. Una vez identificados, valoramos su importancia y vemos si el diseño actual impediría su mejora. En este caso sería muy sencillo, una vez crezca la aplicación, separar los entornos virtuales para mejorar el tiempo de compilación y despliegue.</p></div><div id=control_de_versiones><h3>1.5.4 control de versiones</h3><p>Para poder desarrollar sobre software que está en producción estamos utilizando un sistema de control de versiones básico. Damos unas pequeñas pinceladas sobre cómo evoluciona el software y las ramas que utilizamos. </p>
 <p>El código de la aplicación se encuentra en un único servidor que gestiona su control de versiones a través de SVN, Subversion. El siguiente diagrama muestra el flujo de desarrollo con las ramas creadas para el trabajo independiente sin romper el producto en producción.</p>
-<div class="mermaid">
-       gitGraph
-           commit
-           branch origins
-           commit tag:"v1.0.0"
-           commit
-           checkout main
-           commit type: HIGHLIGHT
-           commit
-           merge origins
-           commit
-           branch featureA
-           commit
-</div>
-
+<p>'<figure><img src="mermaid\output_4.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Al plantear un nuevo rediseño del producto, el trabajo tiene lugar en una rama diferente a la que se encuentra en producción. Esta nueva rama, Origins, gestionará el rediseño del modelo de datos y la implementación del proceso de automatización de los datos. Si el trabajo evoluciona correctamente, los futuros merges no deberían ser problemáticos.</p></div><div id=DISEÑO><h3>1.6.0 DISEÑO</h3><div id=componentes><h3>1.6.1 componentes</h3><p>Cuando comencé a trabajar con la aplicación, todo el código se encontraba en un único paquete con muy poca forma. A medida que se he ido refactorizando, se han creado entidades para modelar los datos y éstas se han estructurado en componentes atómicas de la aplicación.</p>
-<div class="mermaid">
-erDiagram
-
-    CUADERNO ||--|{ CORE : uses
-    ROLES }|..|{ CORE : uses
-    METEO }|..|{ CORE : uses
-    AUTO }|..|{ CORE : uses
-</div>
-
+<p>'<figure><img src="mermaid\output_5.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>En Django podemos crear un proyecto compuesto por varias aplicaciones. En la documentación oficial se explica cómo funciona la arquitectura del framework y se exponen ejemplos para que, una vez creadas, podamos acoplar y desacoplar las aplicaciones al proyecto. Es una forma similar de trabajo al modo en que organizamos una librería en múltiples paquetes, pero un poco más complicada debido a que el ORM subyacente traduce los modelos a tablas en una BD. Veamos cómo con solo añadir o quitar un string en nuestro settings activamos o desactivamos la aplicación en el proyecto.</p>
 <div class="codehilite"><pre><span></span><code><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;django_apscheduler&#39;</span><span class="p">,</span>
@@ -979,30 +853,30 @@ erDiagram
 <table>
 <thead>
 <tr>
-<th align="left">ENTIDAD</th>
-<th align="right">DESCRIPCIÓN</th>
+<th style="text-align: left;">ENTIDAD</th>
+<th style="text-align: right;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Core</td>
-<td align="right">Como toda la información que se va a almacenar es referente a las parcelas y sus datos, toda la BD gira en torno a la tabla “Parcela”.</td>
+<td style="text-align: left;">Core</td>
+<td style="text-align: right;">Como toda la información que se va a almacenar es referente a las parcelas y sus datos, toda la BD gira en torno a la tabla “Parcela”.</td>
 </tr>
 <tr>
-<td align="left">Roles</td>
-<td align="right">Separa los interesados que realizan acciones sobre el parcelario de las entidades principales</td>
+<td style="text-align: left;">Roles</td>
+<td style="text-align: right;">Separa los interesados que realizan acciones sobre el parcelario de las entidades principales</td>
 </tr>
 <tr>
-<td align="left">Meteo</td>
-<td align="right">Gestiona la comunicación y descarga de datos de estaciones meteorológicas</td>
+<td style="text-align: left;">Meteo</td>
+<td style="text-align: right;">Gestiona la comunicación y descarga de datos de estaciones meteorológicas</td>
 </tr>
 <tr>
-<td align="left">Cuaderno</td>
-<td align="right">Extiende el almacenamiento de datos relacionado con incidencias en el parcelario.</td>
+<td style="text-align: left;">Cuaderno</td>
+<td style="text-align: right;">Extiende el almacenamiento de datos relacionado con incidencias en el parcelario.</td>
 </tr>
 <tr>
-<td align="left">Auto</td>
-<td align="right">Contiene scripts y dependencias externas para la automatización de procesos, como la descarga de imágenes satelitáles.</td>
+<td style="text-align: left;">Auto</td>
+<td style="text-align: right;">Contiene scripts y dependencias externas para la automatización de procesos, como la descarga de imágenes satelitáles.</td>
 </tr>
 </tbody>
 </table>
@@ -1011,12 +885,8 @@ erDiagram
 <p><img alt="" src="figures/visor_GIS.png" /></p>
 <p>El proceso de carga de datos hace uso de un módulo de descarga de imágenes satelitales que obtiene el valor de estos índices vegetativos. Este script de descarga ha sido desarrollado por el equipo y ha sido colocado dentro del módulo de automatización junto con otras tareas similares. 
 Utilizaremos el módulo como una caja negra y aseguraremos el correcto uso de este para que los índices vegetativos terminen en sus tablas correspondientes dentro de la BD.</p>
-<div class="mermaid">
-erDiagram
-    AUTO }|..|{ descarga_indices : contains
-    AUTO }|..|{ CORE : uses
-</div>
-
+<p>'<figure><img src="mermaid\output_6.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Los índices que renderiza el visor de la aplicación son el resultado de todo el proceso que estamos exponiendo. Es el punto más delicado que requiere del diseño de varias entidades para guardar un histórico de datos. En la visualización del histórico de índices vegetativos es el mayor valor que obtiene el cliente cuando accede a la aplicación.</p></div><div id=modelo_relacional><h3>1.6.3 modelo relacional</h3><p>Como inicio de la posterior automatización, se reestructura la arquitectura de la aplicación junto con su BD para soportar el almacenamiento de nuevos datos. El siguiente esquema de BD es el resultado de la implementación del análisis descrita en el planteamiento.</p>
 <p><img alt="" src="figures/modelo-BD.png" /></p>
 <p>Para la creación de este modelo he trabajado con el equipo en la identificación de los conceptos que necesitaban ser representados. El diseño en papel da la posibilidad de pensar abiertamente sobre las relaciones entre entidades, además de permitir la transmisión de ideas de forma sencilla durante las reuniones.</p>
@@ -1030,42 +900,42 @@ erDiagram
 <table>
 <thead>
 <tr>
-<th align="left">ENTIDAD</th>
-<th align="left">DESCRIPCIÓN</th>
+<th style="text-align: left;">ENTIDAD</th>
+<th style="text-align: left;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Parcela</td>
-<td align="left">Como toda la información que se va a almacenar es referente a las parcelas y sus datos, toda la BD gira en torno a la tabla “Parcela”.</td>
+<td style="text-align: left;">Parcela</td>
+<td style="text-align: left;">Como toda la información que se va a almacenar es referente a las parcelas y sus datos, toda la BD gira en torno a la tabla “Parcela”.</td>
 </tr>
 <tr>
-<td align="left">Cultivo</td>
-<td align="left">Esta tabla está directamente unida a la anterior, ya que un cultivo puede tener muchas variedades diferentes se modela de forma recursiva con una clave foránea a sí mismo (leer el siguiente punto, Ej: Guisante es un tipo de cultivo, pero tiene varias variedades: tirabeque, snap peas…).</td>
+<td style="text-align: left;">Cultivo</td>
+<td style="text-align: left;">Esta tabla está directamente unida a la anterior, ya que un cultivo puede tener muchas variedades diferentes se modela de forma recursiva con una clave foránea a sí mismo (leer el siguiente punto, Ej: Guisante es un tipo de cultivo, pero tiene varias variedades: tirabeque, snap peas…).</td>
 </tr>
 <tr>
-<td align="left">Indice</td>
-<td align="left">Esta taba es de vital importancia para el funcionamiento de la aplicación, toda nuestra información lleva a estos datos vegetativos. Serán datos calculados en un dominio, esto se hace así ya que existen cientos de formas de denominar un mismo índice de vegetación y podría ser confuso a la hora de realizar las consultas. Para ello se establecerán algunos campos determinados en el campo “tipo_indice” y se les dará un valor en “valor_indice”.</td>
+<td style="text-align: left;">Indice</td>
+<td style="text-align: left;">Esta taba es de vital importancia para el funcionamiento de la aplicación, toda nuestra información lleva a estos datos vegetativos. Serán datos calculados en un dominio, esto se hace así ya que existen cientos de formas de denominar un mismo índice de vegetación y podría ser confuso a la hora de realizar las consultas. Para ello se establecerán algunos campos determinados en el campo “tipo_indice” y se les dará un valor en “valor_indice”.</td>
 </tr>
 <tr>
-<td align="left">Mirar_Indice</td>
-<td align="left">Contempla un histórico de datos y permite dar valor concreto a un índice vegetativo en una fecha única.</td>
+<td style="text-align: left;">Mirar_Indice</td>
+<td style="text-align: left;">Contempla un histórico de datos y permite dar valor concreto a un índice vegetativo en una fecha única.</td>
 </tr>
 <tr>
-<td align="left">Fenologico</td>
-<td align="left">Permite registrar diferentes estados fenológicos por los que puede pasar un cultivo. La relación entre el estado fenológico y el cultivo se realiza a través de la tabla Mirar_Fenologico.</td>
+<td style="text-align: left;">Fenologico</td>
+<td style="text-align: left;">Permite registrar diferentes estados fenológicos por los que puede pasar un cultivo. La relación entre el estado fenológico y el cultivo se realiza a través de la tabla Mirar_Fenologico.</td>
 </tr>
 <tr>
-<td align="left">Mirar_Fenologico</td>
-<td align="left">Permite dar carácter temporal al estado fenológico de un cultivo. Registramos un estado para un cultivo en una fecha concreta.</td>
+<td style="text-align: left;">Mirar_Fenologico</td>
+<td style="text-align: left;">Permite dar carácter temporal al estado fenológico de un cultivo. Registramos un estado para un cultivo en una fecha concreta.</td>
 </tr>
 <tr>
-<td align="left">Campaña</td>
-<td align="left">Es una tabla muy importante, sirve para unir distintos tipos de registros (desde variedades hasta labores de campo pasando por unir los datos de parcelas y subparcelas).</td>
+<td style="text-align: left;">Campaña</td>
+<td style="text-align: left;">Es una tabla muy importante, sirve para unir distintos tipos de registros (desde variedades hasta labores de campo pasando por unir los datos de parcelas y subparcelas).</td>
 </tr>
 <tr>
-<td align="left">Interesado</td>
-<td align="left">Permite realizar el diseño de roles mediante su clave foránea a una parcela. Un intereseado (stakeholder) es una persona que tiene relación con una o varias parcelas (Ej, cultivador, propietario, etc).</td>
+<td style="text-align: left;">Interesado</td>
+<td style="text-align: left;">Permite realizar el diseño de roles mediante su clave foránea a una parcela. Un intereseado (stakeholder) es una persona que tiene relación con una o varias parcelas (Ej, cultivador, propietario, etc).</td>
 </tr>
 </tbody>
 </table>
@@ -1074,188 +944,52 @@ erDiagram
 <p>Una decisión complicada sobre el posible histórico de datos es el registro de la evolución de un cultivo en una parcela concreta. Mediante la tabla MIRAR_FENOLÓGICO damos carácter temporal al cultivo concreto de una parcela. De esta forma podemos registrar cuáles son los estados por los que ha pasado un cultivo, desde su "siembra" hasta su "recolección".</p>
 <p>El modelado de la entidad FENOLÓGICO ha sido una decisión complicada debido a que no se enlaza directamente con un cultivo. Entendemos que un estado como puede ser el de "siembra" tiene un carácter general y tiene sentido como entidad en sí misma (todos los cultivos pasan por siembra). Es su relación con CULTIVO mediante MIRAR_FENOLÓGICO lo que dice que dicho cultivo está en un estado fenológico concreto en un momento determinado. Por ejemplo, podemos decir que el cultivo "vid" estaba en estado de "siembra" el día "2022-01-23". </p>
 <p>También es importante destacar que CULTIVO es simplemente el tipo que se ha registrado, por lo tanto, para que la información sea completa, un avistamiento fenológico sucede sobre un tipo de cultivo físicamente sembrado en una PARCELA.  El siguiente esquema muestra cómo estas tres entidades se relacionará para dar carácter temporal y espacial a un tipo de cultivo.</p>
-<div class="mermaid">
-erDiagram
-    CULTIVO }o--|| CULTIVO : contains
-    CULTIVO {
-        string nombre FK
-        string descripcion
-        string es_variedad FK
-    }
-    FENOLOGICO {
-        string nombre FK
-        string descripcion
-    }
-    MIRAR_FENOLOGICO }o--|| FENOLOGICO : contains
-    MIRAR_FENOLOGICO }o--|| CULTIVO : contains
-    MIRAR_FENOLOGICO }o--|| PARCELA : contains
-    MIRAR_FENOLOGICO {
-        string fenologico FK
-        string parcela FK
-        string fecha FK
-    }
-    PARCELA {
-        string idx 
-        string estacion
-        float altitud
-        polygon geom
-    }
-</div>
-
+<p>'<figure><img src="mermaid\output_7.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Otro punto importante de la aplicación es la contemplación de variedades. Para poder mantener una jerarquía con las posibles entidades registradas en el sistema, enlazamos de forma recursiva el cultivo con una clave foránea a su misma tabla. Esta estructura permite el desglose de una jerarquía de cultivos en la que sabemos qué entidad es una subvariedad de un cultivo, dando la posibilidad de almacenar múltiples niveles.</p>
 <p><img alt="" src="figures/mirar_feno.png" title="original" /> </p>
 <B>Diseño de Índices Vegetativos</B>
 <p>Para nuestro sistema de información una parcela es una agrupación de varios píxeles. Entendemos como PIXEL a la imagen satelital más pequeña que se puede obtener sobre el terreno, a partir de la cual obtendremos los índices vegetativos. <em>(El valor del índice es una caja negra para este trabajo, proviene de scripts desarrollados por el resto del equipo)</em></p>
 <p>El trabajo con índices vegetativos por parte del equipo es uno de los puntos más importantes para que el rediseño sea satisfactorio. La entidad MIRAR_ÍNDICE es de vital importancia en el modelo, permite gestionar el histórico de valores de los índices para todos los píxeles. Esta tabla es una de las candidatas para realizar optimización en las consultas, algo que desde el ORM que utilizamos todavía queda un poco lejos. </p>
-<div class="mermaid">
-erDiagram
-    INDICE ||--o{ MIRAR_INDICE : contains
-    INDICE {
-        string nombre FK
-        string descripcion
-    }
-    PIXEL ||--o{ MIRAR_INDICE : contains
-    PIXEL o{--|| PARCELA : contains
-    PIXEL {
-        string parcela FK 
-        polygon geom
-        string idx
-    }
-    PARCELA {
-        string idx 
-        string estacion
-        float altitud
-        polygon geom
-    }
-    MIRAR_INDICE {
-        string indice FK
-        string pixel FK
-        date fecha
-        geojson json
-        float valor
-    }
-</div>
-
+<p>'<figure><img src="mermaid\output_8.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>El volumen de datos que la tabla MIRAR_INDICE puede contener es grande. Solo con la muestra representativa de las 25 parcelas con las que estamos trabajando (3000 píxeles), dos índices registrados, y contemplando sus valores en 6 fechas distintas, obtenemos un conjunto de 36.000 valores. Cuando la aplicación escale a un mayor número de parcelas, esta tabla será susceptible de utilizar índices (BD).</p>
 <p>Este diseño de índices permite mantener un histórico de datos preciso. Gestiona la evolución de los cultivos a través de las diferentes fechas en las que se persisten los valores de los índices. Destacamos que cada índice se corresponde con una capa de visualización sobre el visor GIS que contiene la presentación de la aplicación, requisito que hace que tenga mucha importancia el poder añadir índices a los datos a media que se vayan contemplando.</p>
 <B>Diseño de Roles</B>
 <p>Aunque es un punto secundario, la aplicación contempla que diferentes usuarios puedan realizar diferentes acciones. Recordamos que habíamos separado en componentes la aplicación, y los roles se encuentran en un módulo secundario independiente de las entidades anteriores, que representaban los principales conceptos agronómicos y vegetativos. El diseño modular del modelo de datos permite al equipo añadir diferentes roles sin que estos estén <em>hardcoded</em> en el código de la aplicación. </p>
-<div class="mermaid">
-erDiagram 
-    CULTIVADOR }o--|| INTERESADO : is
-    CULTIVADOR { 
-        string nombre 
-        string parent FK
-    }
-    TECNICO }o--|| INTERESADO : is
-    TECNICO { 
-        string nombre
-        string parent FK
-    }
-    PROPIETARIO }o--|| INTERESADO : is
-    PROPIETARIO { 
-        string nombre
-        string parent FK
-    }
-    COOPERATIVA ||--o{ TECNICO : contains
-    COOPERATIVA {
-        string nombre
-        string tecnicos FK
-    }
-    INTERESADO ||--o{ PARCELA : contains
-    INTERESADO {
-        string parcela FK 
-        string nombre
-    }
-    PARCELA {
-        string idx 
-        string estacion
-        float altitud
-        polygon geom
-    }
-
-</div>
-
+<p>'<figure><img src="mermaid\output_9.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Aunque la aplicación hace uso de estas entidades, no serán tan importantes para el desarrollo posterior del trabajo, debido a que la parte que necesita automatizarse es aquella relacionada con los índices vegetativos y la geometría de las parcelas anteriores. Como decíamos, estas entidades quedan separadas en un módulo de la aplicación con la única funcionalidad de controlar el acceso a la aplicación y dar permiso a las funcionalidades que cada cliente puede realizar dependiendo del rol que tenga asignado. La siguiente tabla describe los roles hasta ahora contemplados por el equipo y su relación con el parcelario.</p>
 <table>
 <thead>
 <tr>
-<th align="left">ROL</th>
-<th align="right">DESCRIPCIÓN</th>
+<th style="text-align: left;">ROL</th>
+<th style="text-align: right;">DESCRIPCIÓN</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Cultivador</td>
-<td align="right">persona encargada de realizar los mantenimientos en campo</td>
+<td style="text-align: left;">Cultivador</td>
+<td style="text-align: right;">persona encargada de realizar los mantenimientos en campo</td>
 </tr>
 <tr>
-<td align="left">Propietario</td>
-<td align="right">propietario catastral de las parcelas</td>
+<td style="text-align: left;">Propietario</td>
+<td style="text-align: right;">propietario catastral de las parcelas</td>
 </tr>
 <tr>
-<td align="left">Cooperativa</td>
-<td align="right">entidad que agrupa a técnos con diferentes cargos sobre un parcelario</td>
+<td style="text-align: left;">Cooperativa</td>
+<td style="text-align: right;">entidad que agrupa a técnos con diferentes cargos sobre un parcelario</td>
 </tr>
 <tr>
-<td align="left">Técnico</td>
-<td align="right">personal asignado a un número de parcelas.</td>
+<td style="text-align: left;">Técnico</td>
+<td style="text-align: right;">personal asignado a un número de parcelas.</td>
 </tr>
 </tbody>
 </table>
 <B>Modelo Final</B>
 <p>El siguiente diagrama recoge todas las relaciones descritas anteriormente y muestra el esquema completo que usa la aplicación. En los siguientes puntos hablaremos sobre los métodos definidos sobre este esquema de datos, dónde se localizan y cómo han de ser utilizados.</p>
-<div class="mermaid">
-erDiagram
-    CULTIVO ||--o{ CULTIVO : is
-    CULTIVO ||--o{ MIRAR_FENOLOGICO : contains
-    CULTIVO {
-        string nombre FK
-        string es_variedad FK
-    }
-    INDICE ||--o{ MIRAR_INDICE : contains
-    INDICE {
-        string nombre FK
-        string descripcion
-    }
-    PIXEL ||--o{ MIRAR_INDICE : contains
-    PIXEL }o--|| PARCELA : is
-    PIXEL {
-        string parcela FK 
-        polygon geom
-        string idx
-    }
-    PARCELA ||--o{ ESTACION : contains
-    PARCELA ||--o{ MIRAR_FENOLOGICO : contains
-    PARCELA {
-        string idx 
-        string estacion FK
-        float altitud
-        polygon geom
-    }
-    MIRAR_INDICE {
-        string indice FK
-        string pixel FK
-        date fecha
-        geojson json
-        float valor
-    }
-    MIRAR_FENOLOGICO {
-        string cultivo FK
-        string parcela FK
-        date fecha
-        string estado
-    }
-    ESTACION ||--o{ ESTACION_HISTORICO : contains
-    ESTACION {
-        string nombre FK
-    }
-    ESTACION_HISTORICO {
-        string estacion FK
-        date fecha
-        charfield file
-    }
-</div></div><div id=servicios><h3>1.6.4 servicios</h3><p>Ahora tenemos un modelo relacional que soporta la gestión de grandes volúmenes de datos. En este punto tenemos que diseñar las diferentes operaciones que necesitamos hacer sobre los datos almacenados. Discutimos cómo tiene que ser la implementación de las operaciones más frecuentes y por qué en un modelo de datos sin estado, con información histórica, es más importante diseñar estas operaciones sobre el modelo relacional como servicios.</p>
+<p>'<figure><img src="mermaid\output_10.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p></div><div id=servicios><h3>1.6.4 servicios</h3><p>Ahora tenemos un modelo relacional que soporta la gestión de grandes volúmenes de datos. En este punto tenemos que diseñar las diferentes operaciones que necesitamos hacer sobre los datos almacenados. Discutimos cómo tiene que ser la implementación de las operaciones más frecuentes y por qué en un modelo de datos sin estado, con información histórica, es más importante diseñar estas operaciones sobre el modelo relacional como servicios.</p>
 <p>El término servicio está sobrecargado y su significado adquiere diferentes matices según el contexto en que estemos. Como resultado, existe una nube de confusión en torno a la noción de servicios cuando se trata de distinguir entre servicios de aplicación, servicios de dominio, servicios de infraestructura, servicios SOA, etc. Las funciones de estos son diferentes y pueden abarcar todas las capas de una aplicación.</p>
 <p>De hecho, un servicio es un título un tanto genérico para un bloque de creación de una aplicación porque implica muy poco. En primer lugar, un servicio implica un cliente para cuyas solicitudes está diseñado. Otra característica de una operación de servicio es la de entrada y salida: se proporcionan argumentos  como entrada a una operación y se devuelve un resultado. Ms allá de esta implicación suelen estar los supuestos de "statelessness" y la idea de "pure fabrication", según GRASP:</p>
 <p><strong>When a significant process or transformation in the domain is not a natural responsibility of an ENTITY or VALUE OBJECT, add an operation to the model as standalone interface declared as a SERVICE. Define the interface in terms of the language of the model and make sure the operation name is part of the UBIQUITOUS LANGUAGE. Make the SERVICE stateless.</strong></p>
@@ -1378,54 +1112,42 @@ erDiagram
 <p>Con este patrón desarrollamos la infraestructura necesaria para cargar los datos en el modelo. Cada comando representa un proceso de carga de datos, el cual se puede componer posteriormente dentro de un proceso más complejo. Cada unidad de carga se comporta como un filtro que añade de forma ordenada la información al modelo de datos, enlazando las entidades con sus datos correspondientes. Utilizaremos estas unidades para generar diferentes tuberías que permitan dejar varias instancias de la aplicación en estados diferentes.</p>
 <p>Para AGRAI hace falta transformar los datos de índices vegetativos que maneja el equipo en información ordenada que llegue al modelo de datos desarrollado anteriormente. A continuación explicamos el flujo de procesos de carga más utilizado.</p>
 <p>Los datos principalmente provienen de <em>Qgis</em>, software para trabajar con información georreferenciada. El equipo pre-procesa la información sobre los índices vegetativos y da valores a los píxeles mediante dicho software. La principal función de este trabajo es dar sentido a esa información, guardando los datos tomados junto con sus relaciones con el parcelario físico.</p>
-<div class="mermaid">
-graph LR;
-    qgis-->parcelas;
-    parcelas-->cultivos;
-    cultivos-->índices;
-    índices-->vista_minable;
-    vista_minable-->modelo;
-</div>
-
+<p>'<figure><img src="mermaid\output_11.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>La información de los píxeles tiene que enlazarse con los datos de parcelas y cultivos. Cuando obtenemos los índices vegetativos solo contemplamos la información sobre la geometría de la parcela, no sabemos nada más. Esta información tiene que almacenarse junto con el cultivo, el estado fenológico, los datos físicos de la parcela, etc. En la siguiente tabla explicamos cada uno de los <a href="https://github.com/alesteba/tfg/tree/main/entregables/pipeline">scripts</a> que conforman los procesos del pipeline.</p>
 <table>
 <thead>
 <tr>
-<th align="left">SCRIPT</th>
-<th align="right">TAREA</th>
+<th style="text-align: left;">SCRIPT</th>
+<th style="text-align: right;">TAREA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">load_qgis</td>
-<td align="right">Extrae la información geomrética de cada pixel proveniente de "qgis" e inserta dicha información en las tablas de "parcela" y "pixel" de la BD.</td>
+<td style="text-align: left;">load_qgis</td>
+<td style="text-align: right;">Extrae la información geomrética de cada pixel proveniente de "qgis" e inserta dicha información en las tablas de "parcela" y "pixel" de la BD.</td>
 </tr>
 <tr>
-<td align="left">load_parcela</td>
-<td align="right">Lee de un excel información fisca sobre las parcelas e inserta los datos en la BD.</td>
+<td style="text-align: left;">load_parcela</td>
+<td style="text-align: right;">Lee de un excel información fisca sobre las parcelas e inserta los datos en la BD.</td>
 </tr>
 <tr>
-<td align="left">load_cultivos</td>
-<td align="right">Lee de un excel información sobre cultivos con sus variedades e inserta los datos en la BD.</td>
+<td style="text-align: left;">load_cultivos</td>
+<td style="text-align: right;">Lee de un excel información sobre cultivos con sus variedades e inserta los datos en la BD.</td>
 </tr>
 <tr>
-<td align="left">download_img</td>
-<td align="right">Usa uno de los módulos desarrollado por el equipo para descargar índices vegetativos a partir de imágenes satelitales. No almacen nada directamente, devuelve un dataframe con los datos descargados.</td>
+<td style="text-align: left;">download_img</td>
+<td style="text-align: right;">Usa uno de los módulos desarrollado por el equipo para descargar índices vegetativos a partir de imágenes satelitales. No almacen nada directamente, devuelve un dataframe con los datos descargados.</td>
 </tr>
 <tr>
-<td align="left">load_indice</td>
-<td align="right">integra la información de índices descargada en el paso anterior en la tabla de "pixel" de la BD.</td>
+<td style="text-align: left;">load_indice</td>
+<td style="text-align: right;">integra la información de índices descargada en el paso anterior en la tabla de "pixel" de la BD.</td>
 </tr>
 </tbody>
 </table>
 <p>Para entender detalladamente qué hacen los scripts de carga de índices tenemos que explicar algunos de los procesos de automatización de los que hacemos uso. </p>
-<div class="mermaid">
-graph LR;
-    indices --> download_indices;
-    download_indices --> download_today
-    download_indices --> download_range
-</div>
-
+<p>'<figure><img src="mermaid\output_12.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>Estos scripts nos permiten crear el flujo necesario para que la aplicación procese la información y termine en un estado consistente. Parte del proceso necesita ser automatizado y ejecutado reiteradamente, añadiendo los datos a la BD y relacionándolos adecuadamente. En nuestro contexto agronómico, es la descarga de índices la parte del proceso que necesita ser automatizada, mientras que los datos de las parcelas y cultivos y la información geoespacial se pueden cargar directamente en el despliegue de la aplicación. </p>
 <p>Con esta estructura de tuberías lista, podemos reutilizar cualquier parte del proceso. Un planificador de tareas nos ayuda a establecer el tiempo que tiene que transcurrir entre las descargas.  Se ha utilizado el scheduler por defecto del framework de Django que estamos utilizando para esta gestión de tiempos y descarga.</p>
 <p>Finalmente, para realizar pruebas, queremos crear un único script que ejecute el proceso de forma ordenada. El resto de tuberías que se adjuntan en el proyecto tienen una forma similar y hacen el mismo uso de los comandos de Django que hemos explicado.</p>
@@ -1650,15 +1372,8 @@ implementación, modelos y seguimiento y control.</p>
 <li>Implementamos el modelo para predecir nuevos valores que no han sido usados en el entrenamiento.</li>
 </ul>
 <p>Para finalizar, volvemos a los conceptos de los procesos 'lean' que mencionábamos al principio. La fácil comprensión que permiten los esquemas de datos aquí planteados dotan al equipo de trabajo del lenguaje ubicuo necesario para que el software pueda crecer y ser escalado, evitando bloqueos por falta de comprensión. El lenguaje que maneja el equipo está directamente relacionado con su buen funcionamiento y garantiza el proceso de  optimización continua. Los artefactos obtenidos y la explicación de los modelos quedan así como documentación interna que debe ser mantenida al mismo nivel de importancia que el software que la implementa. </p>
-<div class="mermaid">
-
-graph LR;
-    infraestructura-->diseño_relacional;
-    diseño_relacional-->pipeline_datos;
-    pipeline_datos-->vista_minable;
-    vista_minable-->modelo_producción;
-</div>
-
+<p>'<figure><img src="mermaid\output_13.svg" /><figcaption>mermaid</figcaption>
+</figure>'</p>
 <p>En cuanto a la aplicación, se ha conseguido terminar con un producto funcional que cumple con los requisitos planteados. El proceso de arquitectura conseguido facilita el uso de múltiples datos provenientes de las fuentes estudiadas. El esquema de datos relacional implementado soporta la carga de los índices vegetativos, así como el resto de información relativa al parcelario. Los bloques atómicos de carga diseñados permiten planificar y automatizar la ingestión de los datos provenientes de las fuentes descritas. Por último, la capacidad para utilizar modelos de regresión sobre los datos dota a la arquitectura de la capa necesaria para realizar predicciones y configurar los estudios necesarios. Hemos conseguido crear las bases de un proceso que tiene un gran potencial para monitorizar y proporcionar una adecuada toma de decisiones sobre conceptos agronómicos.</p></div><div id=bibliografía><h4>1.10.2 bibliografía</h4><ul>
 <li>plan</li>
 </ul>
