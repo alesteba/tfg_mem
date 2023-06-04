@@ -2,9 +2,9 @@ name: recursive web_notes build
 
 run-name: ${{ github.actor }} is building TFG notes
 
-on: [push]
-
-workflow_dispatch:
+on: 
+  [push]
+  workflow_dispatch:
 
 jobs:
 
