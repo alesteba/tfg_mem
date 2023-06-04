@@ -1,4 +1,6 @@
-name: ${{ github.actor }} recursive web_notes build:
+name: recursive web_notes build:
+
+run-name: ${{ github.actor }} is building TFG notes
 
 on: [push]
 
