@@ -1,0 +1,7 @@
+pandas
+obsidiantools
+networkx
+matplotlib
+markdown
+markdown_captions
+ftfy
