@@ -39,12 +39,15 @@ jobs:
           python ./_k.pcs.zen/automate_md.py      
           
       - name: Commit and Push Changes
+        env: 
+          CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
+          CI_COMMIT_AUTHOR: Continuous Integration
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add . 
-          git commit -m "updated github actions - TFG notes"
-          git push origin master
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "username@users.noreply.github.com"
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
 
 
 # https://towardsdatascience.com/scheduling-notebook-and-script-runs-with-github-actions-cc60f3ac17f2
+# https://stackoverflow.com/questions/64374179/how-to-push-to-another-repository-in-github-actions
