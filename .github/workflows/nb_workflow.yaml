@@ -35,8 +35,9 @@ jobs:
 
       - name: Run Script and Build Notes
         run: |
-          jupyter nbconvert --to script ./_k.pcs.zen/automate_md.ipynb
-          python ./_k.pcs.zen/automate_md.py      
+          cd _k.pcs.zen/
+          jupyter nbconvert --to script ./automate_md.ipynb
+          python ./automate_md.py      
           
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
