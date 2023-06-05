@@ -46,7 +46,7 @@ jobs:
         with:
           source-directory: '_k.pcs.zen/publish'
           destination-github-username: 'alesteba'
-          destination-repository-name: './'
+          destination-repository-name: 'tfg'
           user-email: alesteba@unirioja.es
           target-branch: main
 
