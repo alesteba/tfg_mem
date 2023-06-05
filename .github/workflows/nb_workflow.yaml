@@ -38,13 +38,13 @@ jobs:
           jupyter nbconvert --to script ./_k.pcs.zen/automate_md.ipynb
           python ./_k.pcs.zen/automate_md.py      
           
-      # - name: Commit and Push Changes
-      #   run: |
-      #     git config --local user.email "actions@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git add weather_locations.csv weather_locations.png
-      #     git commit -m "Updated plot on `date` with GitHub Actions"
-      #     git push origin master
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add . 
+          git commit -m "updated github actions - TFG notes"
+          git push origin master
 
 
 # https://towardsdatascience.com/scheduling-notebook-and-script-runs-with-github-actions-cc60f3ac17f2
