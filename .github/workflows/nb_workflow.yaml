@@ -17,8 +17,6 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.WORKFLOW_GIT_ACCESS_TOKEN }}     
 
       - name: Setup Python
         uses: actions/setup-python@v3
