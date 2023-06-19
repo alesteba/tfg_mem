@@ -2,7 +2,7 @@ La vista minable que hemos obtenido representa los datos necesarios para crear u
 
 ![](figures/view-capture.PNG)
 
-En el punto en el que estamos, podemos pensar en las múltiples vistas que se pueden generar a partir de los datos persistidos en el BD. Desde aquí desarrollaremos la automatización de la búsqueda del mejor modelo posible para la vista anterior, pero siempre teniendo en cuenta que a partir de los datos almacenados podemos predecir muchos otros valores, no solo la producción de un cultivo. 
+En el punto en el que estamos, podemos pensar en las múltiples vistas que se pueden generar a partir de los datos persistidos en la BD. Desde aquí desarrollaremos la automatización de la búsqueda del mejor modelo posible para la vista anterior, pero siempre teniendo en cuenta que a partir de los datos almacenados podemos predecir muchos otros valores, no solo la producción de un cultivo. 
 
 ```python
 

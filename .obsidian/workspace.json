@@ -20,24 +20,12 @@
             }
           },
           {
-            "id": "3504f893dac78993",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "9-conclusiones/conclusiones.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "80d1a3a68b4eeb3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-plan/metodología.md",
+                "file": "4-infraestructura/control de versiones.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9-conclusiones/conclusiones.md",
+                "file": "4-infraestructura/control de versiones.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,17 +124,35 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "3504f893dac78993",
+  "active": "86b13b76461c064d",
   "lastOpenFiles": [
-    "9-conclusiones/0-conclusiones.md",
+    "_k.pcs.zen/out_3.pdf",
+    "_k.pcs.zen/out_2.pdf",
+    "_k.pcs.zen/out.pdf",
+    "4-infraestructura/arquitectura física.md",
+    "3-análisis/tecnologías.md",
+    "3-análisis/requisitos.md",
+    "3-análisis/fuentes de datos.md",
+    "3-análisis/dominio agronómico.md",
+    "3-análisis/automatizacion.md",
     "6-implementación/design pattern.md",
-    "2-plan/metodología.md",
-    "6-implementación/transformación datos.md",
     "6-implementación/PIPELINE.md",
+    "6-implementación/transformación datos.md",
+    "6-implementación/vista minable.md",
+    "RESUMEN.md",
+    "7-modelo/mejor modelo.md",
     "7-modelo/modelo de regresión.md",
+    "7-modelo/preprocesamiento.md",
     "7-modelo/MODELO IA.md",
-    "8-seguimiento/memoria.md",
-    "8-seguimiento/desviaciones.md",
-    "8-seguimiento/SEGUIMIENTO.md"
+    "5-diseño/servicios.md",
+    "5-diseño/modelo relacional.md",
+    "5-diseño/DISEÑO.md",
+    "5-diseño/componentes.md",
+    "5-diseño/carga de datos.md",
+    "2-plan/metodología.md",
+    "9-conclusiones/0-conclusiones.md",
+    "4-infraestructura/control de versiones.md",
+    "4-infraestructura/entorno.md",
+    "8-seguimiento/desviaciones.md"
   ]
 }
