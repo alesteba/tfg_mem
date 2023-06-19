@@ -33,7 +33,6 @@ jobs:
       - name: Install Mermaid Converter
         run: |
           npm install -g @mermaid-js/mermaid-cli
-          ./node_modules/.bin/mmdc -h
 
       - name: Run Script and Build Notes
         run: |
