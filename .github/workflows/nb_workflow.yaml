@@ -52,5 +52,43 @@ jobs:
           user-email: alesteba@unirioja.es
           target-branch: main
 
+  domain_img:
+
+    name: Adding domain to relative path images
+    runs-on: ubuntu-latest
+    needs: build_notes
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+          cache: 'pip'  
+
+      - name: Install Jupyter
+        run: sudo -H pip install jupyter
+
+      - name: Run Script and Transform PDF
+        run: |
+          cd _k.pcs.zen/
+          jupyter nbconvert --to script ./automate_pdf.ipynb
+          python ./automate_pdf.py
+
+      - name: GIT commit and push docs
+        env: 
+          CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
+          CI_COMMIT_AUTHOR: Continuous Integration
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "username@users.noreply.github.com"
+          git add docs
+          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
+
 # https://towardsdatascience.com/scheduling-notebook-and-script-runs-with-github-actions-cc60f3ac17f2
 # https://stackoverflow.com/questions/64374179/how-to-push-to-another-repository-in-github-actions
+# https://joht.github.io/johtizen/build/2022/01/20/github-actions-push-into-repository.html
