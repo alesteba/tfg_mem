@@ -72,6 +72,9 @@ jobs:
       - name: Install Jupyter
         run: sudo -H pip install jupyter
 
+      - name: General-Update
+        run: sudo apt update
+
       - name: Install Dependencies
         run: | 
           sudo apt-get install wkhtmltopdf
