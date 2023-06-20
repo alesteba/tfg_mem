@@ -74,10 +74,10 @@ jobs:
 
       - name: Install Dependencies
         run: | 
+          sudo apt-get install wkhtmltopdf
           pip install pdfkit 
           pip install validators
           pip install bs4
-          sudo apt install wkhtmltopdf
 
       - name: Run Script and Transform PDF
         run: |
