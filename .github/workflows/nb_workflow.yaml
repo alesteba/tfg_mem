@@ -76,6 +76,7 @@ jobs:
         run: | 
           pip install pdkit 
           pip install validators
+          pip install bs4
 
       - name: Run Script and Transform PDF
         run: |
