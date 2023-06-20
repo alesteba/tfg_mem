@@ -74,6 +74,7 @@ jobs:
 
       - name: Install Dependencies
         run: | 
+          sudo apt-get install wkhtmltopdf
           pip install pdkit 
           pip install validators
           pip install bs4
