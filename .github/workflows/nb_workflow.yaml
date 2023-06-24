@@ -54,7 +54,7 @@ jobs:
 
   domain_img:
 
-    name: Adding domain to relative path images
+    name: Generate PDF
     runs-on: ubuntu-latest
     needs: build_notes
 
