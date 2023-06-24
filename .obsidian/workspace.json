@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7-modelo/mejor modelo.md",
+                "file": "3-análisis/tecnologías.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7-modelo/mejor modelo.md",
+                "file": "3-análisis/tecnologías.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,6 +150,14 @@
   },
   "active": "fe4a5553261a5d61",
   "lastOpenFiles": [
+    "3-análisis/requisitos.md",
+    "3-análisis/fuentes de datos.md",
+    "3-análisis/dominio agronómico.md",
+    "4-infraestructura/arquitectura física.md",
+    "4-infraestructura/control de versiones.md",
+    "4-infraestructura/INFRAESTRUCTURA.md",
+    "4-infraestructura/entorno.md",
+    "7-modelo/mejor modelo.md",
     "6-implementación/transformación datos.md",
     "6-implementación/integración continua.md",
     "6-implementación/vista minable.md",
@@ -157,16 +165,11 @@
     "6-implementación/design pattern.md",
     "7-modelo/modelo de regresión.md",
     "7-modelo/Model Deployment.md",
-    "7-modelo/mejor modelo.md",
     "7-modelo/MODELO IA.md",
     "_k.pcs.zen/out_3.pdf",
     "_k.pcs.zen/out_2.pdf",
     "_k.pcs.zen/out.pdf",
-    "4-infraestructura/arquitectura física.md",
     "3-análisis/tecnologías.md",
-    "3-análisis/requisitos.md",
-    "3-análisis/fuentes de datos.md",
-    "3-análisis/dominio agronómico.md",
     "3-análisis/automatizacion.md",
     "RESUMEN.md",
     "7-modelo/preprocesamiento.md",
@@ -175,9 +178,6 @@
     "5-diseño/DISEÑO.md",
     "5-diseño/componentes.md",
     "5-diseño/carga de datos.md",
-    "2-plan/metodología.md",
-    "9-conclusiones/0-conclusiones.md",
-    "4-infraestructura/control de versiones.md",
-    "4-infraestructura/entorno.md"
+    "2-plan/metodología.md"
   ]
 }

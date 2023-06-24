@@ -29,9 +29,9 @@ graph LR;
 	end
 ```
 
-Parte del trabajo consiste en la automatización del despliegue de la aplicación. En este punto vemos coómo la infraestructura como código permite aislar las librerías necesarias creando un script que deja una máquina en estado estable para ejecutar la aplicación.
+Parte del trabajo consiste en la automatización del despliegue de la aplicación. En este punto vemos cómo la infraestructura como código permite aislar las librerías necesarias creando un script que deja una máquina en estado estable para ejecutar la aplicación.
 
-Para poder utilizar tecnologías que posibiliten la integración continua, transformamos el entorno de desarrollo desplegando la aplicación en UNIX. Identificamos las siguientes dependencias que necesitan ser instaladas:
+Para poder utilizar tecnologías que posibiliten la integración continua, transformamos el entorno de desarrollo desplegando la aplicación en UNIX mediante una máquina Vagrant en la que podamos reproducir vairas veces el proceso. Identificamos las siguientes dependencias que necesitan ser instaladas:
 
 - postgres 14 + postgis
 - python3.10
@@ -41,7 +41,7 @@ Para poder utilizar tecnologías que posibiliten la integración continua, trans
 
 Suele ser complicado encontrar todas las dependencias con sus versiones correctas; en este caso el punto más complicado ha sido la instalación de Python con su versión correspondiente de GDAL, librería que permite tratar con los datos geoespaciales. Además, el sistema gestor de BD, 'postgres', necesita una extensión especial, 'postgis', para poder guardar los datos georreferenciados. Como este tipo de trabajo es casi de prueba y error, la utilidad del script que obtenemos es de gran valor.
 
-El primero de los entregables hace referencia a esta parte del proceso. El siguiente script automatiza la creación de una máquina con las librerías necesarias, el cual, una vez ejecutado, deja la aplicación lista para su desligue.
+El primero de los entregables hace referencia a esta parte del proceso. El siguiente script automatiza la creación de una máquina con las librerías necesarias, el cual, una vez ejecutado, deja la máquina lista para el despliegue de la aplicación.
 
 ```bash
 
