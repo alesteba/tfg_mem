@@ -150,6 +150,7 @@
   },
   "active": "fe4a5553261a5d61",
   "lastOpenFiles": [
+    "_k.pcs.zen/publish/body.css",
     "3-análisis/tecnologías.md",
     "3-análisis/requisitos.md",
     "3-análisis/fuentes de datos.md",
@@ -177,7 +178,6 @@
     "5-diseño/modelo relacional.md",
     "5-diseño/DISEÑO.md",
     "5-diseño/componentes.md",
-    "5-diseño/carga de datos.md",
-    "2-plan/metodología.md"
+    "5-diseño/carga de datos.md"
   ]
 }
