@@ -90,7 +90,8 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
 
  - SVR
  - MLP
- - Lineales {Lasso, Ridge, Elastic}
+ - Lineales {ElasticNet}
+ - Random Forest
 
 El modelo que mejor MAE obtienen es la red neuronal; esperamos que no sobre-ajuste  los datos, aunque cabe la posibilidad.
 

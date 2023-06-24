@@ -17,7 +17,7 @@ X_train, X_test, y_train, y_test= train_test_split(
 
 Resaltamos esta idea debido a que es el punto más fuerte del trabajo realizado. La arquitectura obtenida para la aplicación nos permite generar diferentes vistas con el objetivo de utilizar la información en diversos estudios. Los índices vegetativos y la información almacenada sobre de los cultivos se pueden presentar en el formato necesario que el estudio requiera. 
 
-Por último, deberíamos poder utilizar este modelo obtenido dentro de la arquitectura de la aplicación para predecir, casi en tiempo real, cómo evolucionan los cultivos que se están monitorizando. El punto en el que se encuentra la arquitectura soporta casi de forma directa la inclusión de las predicciones de la aplicación.
+Por último, deberíamos poder utilizar este modelo obtenido dentro de la arquitectura de la aplicación para predecir,  cómo evolucionan los cultivos que se están monitorizando. El punto en el que se encuentra la arquitectura soporta casi de forma directa la inclusión de las predicciones de la aplicación.
 
 ```python
 
