@@ -5,8 +5,8 @@ El código de la aplicación que heredamos está escrito en Python. El lenguaje 
 - ORM, Object-Relational-Mapping: permite crear un modelo de datos y gestiona automáticamente la BD (base de datos) subyacente. Abstrae las consultas SQL y evita tener que realizar migraciones manuales de los esquemas.
 - Static File Generator: podemos diseñar la interfaz de la aplicación en formato web y desplegar en un servidor.
 - Commands-System: gestión de comandos internos mediante los que se puede automatizar tareas; utilizaremos esta arquitectura para diseñar el pipeline de datos y almacenar la información proveniente de diferentes fuentes.
-- Vagrant:
-- Jenkins;
+- Vagrant: virtualizamos una máquina Unix en la que podamos provisionar el proyecto y reproducir los pasos necesarios de nuestro pipeline.
+- Jenkins: herrmienta de intrgración continua que permite declarar un pipeline a modo de infraestructura como código.
 
 Aunque el framework es muy potente, harán falta otras herramientas y entornos para completar con éxito la automatización que buscamos para así conseguir un proceso de optimización continua. En el siguiente punto hablaremos de la infraestructura que la aplicación requiere y de cómo podemos solventar algunos de los problemas de integración más importantes.
 

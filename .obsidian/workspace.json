@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3-análisis/tecnologías.md",
+                "file": "4-infraestructura/arquitectura física.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3-análisis/tecnologías.md",
+                "file": "4-infraestructura/arquitectura física.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,9 +150,11 @@
   },
   "active": "fe4a5553261a5d61",
   "lastOpenFiles": [
+    "3-análisis/tecnologías.md",
     "3-análisis/requisitos.md",
     "3-análisis/fuentes de datos.md",
     "3-análisis/dominio agronómico.md",
+    "3-análisis/automatizacion.md",
     "4-infraestructura/arquitectura física.md",
     "4-infraestructura/control de versiones.md",
     "4-infraestructura/INFRAESTRUCTURA.md",
@@ -169,8 +171,6 @@
     "_k.pcs.zen/out_3.pdf",
     "_k.pcs.zen/out_2.pdf",
     "_k.pcs.zen/out.pdf",
-    "3-análisis/tecnologías.md",
-    "3-análisis/automatizacion.md",
     "RESUMEN.md",
     "7-modelo/preprocesamiento.md",
     "5-diseño/servicios.md",

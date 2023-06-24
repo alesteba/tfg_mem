@@ -14,8 +14,6 @@ A nivel interno, el equipo trabaja con datos provenientes de imágenes descargad
 
 Por otro lado, el proceso actual de esta información es tedioso para el equipo. Los diferentes miembros trabajan con tecnologías distintas sobre datos, muchas veces duplicados, que provienen de fuentes comunes. Los requisitos que identificamos en el siguiente punto consideran la idea de optimización continua necesaria.
 
-![caption](figures/lean.png)
-
 
 
 
