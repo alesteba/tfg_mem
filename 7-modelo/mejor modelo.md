@@ -11,7 +11,9 @@ Los cuadernos que conforman el entregable contienen código que busca el mejor m
 for col in df.columns:
 
 	df2 = df[col].mean()
+	
 	if (df2 < 0):
+	
 		df = df.drop(columns=[col], axis =1)
 ```
 
@@ -33,6 +35,8 @@ print('MAE: %.3f (%.3f)' % (mean(n_scores), std(n_scores)))
 ```
 
 Para la variable objetivo de producción también hacemos un pequeño análisis. Queremos ver si esta contiene outilers, para ello analizamos la distribución y seleccionamos aquellos valores que se alejan mucho de la media y desviación típica de la muestra. Es importante que los datos con los que vamos a predecir estén limpios para que el modelo obtenga una buena métrica, como puede ser el "mean absolute error", MAE, puntuación para problemas de regresión en el que el resultado está contemplado en las unidades de la variable analizada.
+
+Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los índices, procedemos a probar aquellos modelos de inteligencia artificial que mejor puedan predecir este valor de kg de producción. Los modelos que probamos son los siguientes.
 
 <table border="1" class="dataframe">
   <thead>
@@ -86,36 +90,53 @@ Para la variable objetivo de producción también hacemos un pequeño análisis.
   </tbody>
 </table>
 
-Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los índices, procedemos a probar aquellos modelos de inteligencia artificial que mejor puedan predecir este valor de kg de producción. Los modelos que probamos son los siguientes.
 
- - SVR
- - MLP
- - Lineales {ElasticNet}
- - Random Forest
-
-El modelo que mejor MAE obtienen es la red neuronal; esperamos que no sobre-ajuste  los datos, aunque cabe la posibilidad.
+La tabla anterior muestra ciertas métricas para los algoritmos probados. Al ordenar la tabla por el RMSE vemos qué algoritmo predice un poco mejor y observamos aquellos hiperparámetros que mejor score obtienen.
 
 ```python
-
-# MLP
-from sklearn.neural_network import MLPRegressor
-
-# utilizamos los mejores parámetros observados en pts anteriores:
-mlp = MLPRegressor(
-
-    **{
-		'activation': 'tanh', 
-		'alpha': 0.05, 
-		'hidden_layer_sizes': (120, 80, 40), 
-		'learning_rate': 'adaptive', 
-		'max_iter': 50, 
-		'solver': 'sgd'
-    }
-)
-
+df_sorted = df.sort_values(by='RMSE', ascending=True, na_position='first');
 ```
 
+```python
+df_sorted = df.sort_values(by='RMSE', ascending=True, na_position='first'); 
+
+best_models = []
+
+for index, row in df_sorted.iterrows():
+
+	model_str, model_prm= row["MODEL"], row["PARAMS"]
+	model_type = getattr(sys.modules[__name__], model_str)
+	rm_pre_parms = rm_dict_pre(model_prm) # modify dict keys
+	best_model = model_type(**rm_pre_parms)
+	best_models.append(best_model)
+```
+
+```python
+best_estimators = []
+
+for idx, est in enumerate(best_models):
+
+	best_estimators.append((est.__class__.__name__, est))
+```
+
+Como cada modelo aporta un punto de vista diferente, vamos a utilizar los resultados obtenidos para generar un modelo ensemble que generalice las predicciones de los modelos anteriores. Utilizaremos las métricas obtenidas para establecer el orden en el que construir un modelo 'stacking'. Como estimador final nos quedamos como el mejor modelo obtenido al ordenar la tabla anterior por el MAE, es decir el RandomForestRegressor.
+
+```python
+reg = StackingRegressor(
+		estimators=estimators,
+		final_estimator=estimators[0][1])
+
+reg.fit(x, y)
+
+y_pred_e = reg.predict(x)
+```
+
+algo entre medio, describir las gráficas :
+
+![](figures/actual-predict.PNG)
 
 Este pequeño estudio nos permite orientarnos para ver por dónde van los datos, pero no es nuestro objetivo final que el modelo prediga con exactitud: solo queremos dejar automatizada una pequeña visualización de las relaciones entre los índices para así poder intuir qué modelo nos puede funcionar mejor. De hecho, los datos representativos con los que trabajamos nos impiden buscar un modelo real preciso.
+
+
 
 Como hemos dicho, un último punto para completar el desarrollo de la arquitectura sería hacer uso de este modelo para mostrar directamente en la presentación de la aplicación valores predichos con datos almacenados en la aplicación, algo que aún no está desarrollado, pero que resulta trivial en relación  con la arquitectura y el modelo de datos obtenidos hasta este punto.

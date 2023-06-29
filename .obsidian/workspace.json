@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "57dd6eee5766a6f0",
+        "id": "f590364018ed142c",
         "type": "tabs",
         "children": [
           {
-            "id": "cfd906a019645a99",
+            "id": "aba95d39afcf2fd0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-conclusiones/0-conclusiones.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80d1a3a68b4eeb3f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4-infraestructura/control de versiones.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe4a5553261a5d61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4-infraestructura/arquitectura física.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "833a0b7cbc2af013",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6-implementación/transformación datos.md",
+                "file": "6-implementación/design pattern.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 200
   },
   "right": {
     "id": "a9b9efdbcf351e49",
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4-infraestructura/control de versiones.md",
+                "file": "6-implementación/design pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,9 +112,24 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "80d1a3a68b4eeb3f",
+  "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
     "4-infraestructura/arquitectura física.md",
+    "6-implementación/PIPELINE.md",
+    "4-infraestructura/control de versiones.md",
+    "4-infraestructura/entorno.md",
+    "4-infraestructura/INFRAESTRUCTURA.md",
+    "4-infraestructura/UNIX en local.md",
+    "7-modelo/Model Deployment.md",
+    "7-modelo/mejor modelo.md",
+    "7-modelo/modelo de regresión.md",
+    "6-implementación/integración continua.md",
+    "6-implementación/design pattern.md",
+    "6-implementación/vista minable.md",
+    "6-implementación/transformación datos.md",
+    "9-conclusiones/0-conclusiones.md",
+    "figures/actual-predict.png",
+    "7-modelo/MODELO IA.md",
     "_k.pcs.zen/publish/style_2.css",
     "_k.pcs.zen/publish/body.css",
     "3-análisis/tecnologías.md",
@@ -158,18 +137,6 @@
     "3-análisis/fuentes de datos.md",
     "3-análisis/dominio agronómico.md",
     "3-análisis/automatizacion.md",
-    "4-infraestructura/control de versiones.md",
-    "4-infraestructura/INFRAESTRUCTURA.md",
-    "4-infraestructura/entorno.md",
-    "7-modelo/mejor modelo.md",
-    "6-implementación/transformación datos.md",
-    "6-implementación/integración continua.md",
-    "6-implementación/vista minable.md",
-    "6-implementación/PIPELINE.md",
-    "6-implementación/design pattern.md",
-    "7-modelo/modelo de regresión.md",
-    "7-modelo/Model Deployment.md",
-    "7-modelo/MODELO IA.md",
     "_k.pcs.zen/out_3.pdf",
     "_k.pcs.zen/out_2.pdf",
     "_k.pcs.zen/out.pdf",
@@ -178,7 +145,6 @@
     "5-diseño/servicios.md",
     "5-diseño/modelo relacional.md",
     "5-diseño/DISEÑO.md",
-    "5-diseño/componentes.md",
-    "5-diseño/carga de datos.md"
+    "5-diseño/componentes.md"
   ]
 }

@@ -74,4 +74,4 @@ Hablábamos anteriormente de entornos virtuales, por el momento la aplicación u
 
 ## Variable Objetivo
 
-Junto con los datos extraídos añadiremos la variable "objetivo de producción". Esta variable, aún sin almacenar en el modelo, hace referencia a los kilos de producción de cada parcela en su cosecha. A partir de ella, obtenida de históricos de campañas anteriores, junto con las features anteriores, vamos a poder predecir la evolución del cultivo con precisión en estados concretos de su maduración. Se explica con detalle en el siguiente punto.
+Junto con los datos extraídos añadiremos la variable objetivo, "producción". Esta variable, aún sin almacenar en el modelo relacional, hace referencia a los kilos de producción de cada parcela en su cosecha, se obtiene a partir de históricos de campañas anteriores. A partir de ella, junto con las features anteriores, vamos a poder predecir la evolución del cultivo con precisión en estados concretos de su maduración. Se explica con detalle en el siguiente punto.
