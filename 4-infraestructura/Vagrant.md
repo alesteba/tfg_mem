@@ -1,3 +1,6 @@
+
+--> explicación vagrant: 
+
 Hacemos uso de WSL (Windows Subsystem for Linux) para crear el entorno de desarrollo necesario para el proyecto. De esta forma conseguimos que los entornos de pruebas y producción sean muy similares, permitiendo automatizar el despliegue de la aplicación mediante técnicas de infraestructura como código. Una de las ventajas de tener una máquina Ubuntu como entorno de desarrollo es que mediante un script .sh instalamos todas las dependencias necesarias para dejar dicha máquina lista para el despliegue de la aplicación.
 
 Para el trabajo interno de la aplicación necesitamos entornos con librerías más pesadas como numpy o scikit-learn que no deberíamos usar en la producción de la interfaz web, ya que ésta simplemente muestra los datos del parcelario registrado con su producción estimada. Consideramos la posibilidad de crear varios entornos virtuales para los diferentes flujos de trabajo que contempla la aplicación.

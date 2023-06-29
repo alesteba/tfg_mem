@@ -4,6 +4,4 @@
 
 [[entorno]]
 
-[[UNIX en local]]
-
-[[control de versiones]]
+[[Vagrant]]

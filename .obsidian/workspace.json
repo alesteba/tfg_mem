@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3-análisis/fuentes de datos.md",
+                "file": "6-implementación/integración continua.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3-análisis/fuentes de datos.md",
+                "file": "6-implementación/integración continua.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,19 +114,24 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
-    "3-análisis/requisitos.md",
-    "5-diseño/carga de datos.md",
-    "5-diseño/componentes.md",
-    "5-diseño/DISEÑO.md",
-    "5-diseño/modelo relacional.md",
-    "5-diseño/servicios.md",
     "6-implementación/design pattern.md",
-    "4-infraestructura/arquitectura física.md",
-    "6-implementación/PIPELINE.md",
-    "4-infraestructura/control de versiones.md",
+    "5-diseño/servicios.md",
+    "5-diseño/modelo relacional.md",
+    "5-diseño/DISEÑO.md",
+    "5-diseño/componentes.md",
+    "5-diseño/carga de datos.md",
+    "4-infraestructura/Vagrant.md",
     "4-infraestructura/entorno.md",
+    "4-infraestructura/control de versiones.md",
+    "4-infraestructura/arquitectura física.md",
+    "1-intro/previos.md",
+    "3-análisis/tecnologías.md",
+    "3-análisis/requisitos.md",
+    "3-análisis/fuentes de datos.md",
+    "3-análisis/dominio agronómico.md",
+    "3-análisis/automatizacion.md",
     "4-infraestructura/INFRAESTRUCTURA.md",
-    "4-infraestructura/UNIX en local.md",
+    "6-implementación/PIPELINE.md",
     "7-modelo/Model Deployment.md",
     "7-modelo/mejor modelo.md",
     "7-modelo/modelo de regresión.md",
@@ -138,13 +143,8 @@
     "7-modelo/MODELO IA.md",
     "_k.pcs.zen/publish/style_2.css",
     "_k.pcs.zen/publish/body.css",
-    "3-análisis/tecnologías.md",
-    "3-análisis/fuentes de datos.md",
-    "3-análisis/dominio agronómico.md",
-    "3-análisis/automatizacion.md",
     "_k.pcs.zen/out_3.pdf",
     "_k.pcs.zen/out_2.pdf",
-    "_k.pcs.zen/out.pdf",
-    "RESUMEN.md"
+    "_k.pcs.zen/out.pdf"
   ]
 }

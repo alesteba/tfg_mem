@@ -11,8 +11,6 @@ El valor más importante que predecimos es el número de kg que se espera cosech
 
 Serán las etapas de infraestructura, diseño, implementación y modelado las que buscaremos optimizar en el contexto de todo el equipo, debido a que estas etapas se reparten entre sus miembros.
 
-![caption](figures/lean_1.gif)
-
 Justificamos este cambio como parte de una búsqueda de procesos esbeltos (lean), que consisten en la eliminación de los "desperdicios", o fuentes de despilfarro de tiempo y trabajo en la elaboración de productos o servicios. A través de la solución que vamos a implantar buscamos la optimización continua del proceso y la aceptación de esta cultura de optimización por el equipo.
 
 Los puntos más importantes de los procesos "lean" son los siguientes:
