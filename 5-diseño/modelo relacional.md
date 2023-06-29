@@ -1,8 +1,6 @@
 
 Como inicio de la posterior automatización, se reestructura la arquitectura de la aplicación junto con su BD para soportar el almacenamiento de nuevos datos. El siguiente esquema de BD es el resultado de la implementación del análisis descrita en el planteamiento.
 
-![](figures/modelo-BD.png)
-
 Para la creación de este modelo he trabajado con el equipo en la identificación de los conceptos que necesitaban ser representados. El diseño en papel da la posibilidad de pensar abiertamente sobre las relaciones entre entidades, además de permitir la transmisión de ideas de forma sencilla durante las reuniones.
   
 Dentro del entorno de trabajo de _Django,_ el ORM proporcionado aísla la base de datos y nos permite diseñar directamente en _Python_ dicho modelo. Las entidades se diseñan como clases y las relaciones entre ellas se especifican mediante el lenguaje de mapeo proporcionado. De dicha forma creamos las claves foráneas que físicamente contiene la base de datos.
@@ -117,42 +115,6 @@ Este diseño de índices permite mantener un histórico de datos preciso. Gestio
 ### Diseño de Roles
 
 Aunque es un punto secundario, la aplicación contempla que diferentes usuarios puedan realizar diferentes acciones. Recordamos que habíamos separado en componentes la aplicación, y los roles se encuentran en un módulo secundario independiente de las entidades anteriores, que representaban los principales conceptos agronómicos y vegetativos. El diseño modular del modelo de datos permite al equipo añadir diferentes roles sin que estos estén *hardcoded* en el código de la aplicación. 
-
-```mermaid
-erDiagram 
-    CULTIVADOR }o--|| INTERESADO : is
-    CULTIVADOR { 
-	    string nombre 
-        string parent FK
-    }
-    TECNICO }o--|| INTERESADO : is
-    TECNICO { 
-        string nombre
-        string parent FK
-    }
-    PROPIETARIO }o--|| INTERESADO : is
-    PROPIETARIO { 
-        string nombre
-        string parent FK
-    }
-    COOPERATIVA ||--o{ TECNICO : contains
-    COOPERATIVA {
-	    string nombre
-        string tecnicos FK
-    }
-    INTERESADO ||--o{ PARCELA : contains
-    INTERESADO {
-        string parcela FK 
-        string nombre
-    }
-    PARCELA {
-        string idx 
-        string estacion
-        float altitud
-        polygon geom
-    }
-
-```
 
 Aunque la aplicación hace uso de estas entidades, no serán tan importantes para el desarrollo posterior del trabajo, debido a que la parte que necesita automatizarse es aquella relacionada con los índices vegetativos y la geometría de las parcelas anteriores. Como decíamos, estas entidades quedan separadas en un módulo de la aplicación con la única funcionalidad de controlar el acceso a la aplicación y dar permiso a las funcionalidades que cada cliente puede realizar dependiendo del rol que tenga asignado. La siguiente tabla describe los roles hasta ahora contemplados por el equipo y su relación con el parcelario.
 

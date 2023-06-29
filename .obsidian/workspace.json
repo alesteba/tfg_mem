@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6-implementación/design pattern.md",
+                "file": "3-análisis/fuentes de datos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6-implementación/design pattern.md",
+                "file": "3-análisis/fuentes de datos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +114,13 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
+    "3-análisis/requisitos.md",
+    "5-diseño/carga de datos.md",
+    "5-diseño/componentes.md",
+    "5-diseño/DISEÑO.md",
+    "5-diseño/modelo relacional.md",
+    "5-diseño/servicios.md",
+    "6-implementación/design pattern.md",
     "4-infraestructura/arquitectura física.md",
     "6-implementación/PIPELINE.md",
     "4-infraestructura/control de versiones.md",
@@ -124,7 +131,6 @@
     "7-modelo/mejor modelo.md",
     "7-modelo/modelo de regresión.md",
     "6-implementación/integración continua.md",
-    "6-implementación/design pattern.md",
     "6-implementación/vista minable.md",
     "6-implementación/transformación datos.md",
     "9-conclusiones/0-conclusiones.md",
@@ -133,18 +139,12 @@
     "_k.pcs.zen/publish/style_2.css",
     "_k.pcs.zen/publish/body.css",
     "3-análisis/tecnologías.md",
-    "3-análisis/requisitos.md",
     "3-análisis/fuentes de datos.md",
     "3-análisis/dominio agronómico.md",
     "3-análisis/automatizacion.md",
     "_k.pcs.zen/out_3.pdf",
     "_k.pcs.zen/out_2.pdf",
     "_k.pcs.zen/out.pdf",
-    "RESUMEN.md",
-    "7-modelo/preprocesamiento.md",
-    "5-diseño/servicios.md",
-    "5-diseño/modelo relacional.md",
-    "5-diseño/DISEÑO.md",
-    "5-diseño/componentes.md"
+    "RESUMEN.md"
   ]
 }
