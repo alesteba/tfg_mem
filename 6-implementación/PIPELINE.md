@@ -6,3 +6,5 @@
 [[design pattern]]
 
 [[vista minable]]
+
+[[integración continua]]
