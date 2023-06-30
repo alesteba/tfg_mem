@@ -29,8 +29,7 @@ Campaña | Es una tabla muy importante, sirve para unir distintos tipos de regis
 Interesado | Permite realizar el diseño de roles mediante su clave foránea a una parcela. Un intereseado (stakeholder) es una persona que tiene relación con una o varias parcelas (Ej, cultivador, propietario, etc).
 
 
-
-![](figures/modelo-end.png "original") 
+![](figures/modelo-end.png) 
 
 ### Diseño del Cultivo y Fenología
 
@@ -70,7 +69,7 @@ erDiagram
 
 Otro punto importante de la aplicación es la contemplación de variedades. Para poder mantener una jerarquía con las posibles entidades registradas en el sistema, enlazamos de forma recursiva el cultivo con una clave foránea a su misma tabla. Esta estructura permite el desglose de una jerarquía de cultivos en la que sabemos qué entidad es una subvariedad de un cultivo, dando la posibilidad de almacenar múltiples niveles.
 
-![](figures/mirar_feno.png "original") 
+![](figures/mirar_feno.png) 
 
 ### Diseño de Índices Vegetativos
 
