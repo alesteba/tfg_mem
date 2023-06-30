@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7-modelo/MODELO IA.md",
+                "file": "2-plan/EDT.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7-modelo/MODELO IA.md",
+                "file": "2-plan/EDT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +114,13 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
+    "2-plan/entregables.md",
+    "2-plan/alcance.md",
+    "2-plan/comunicaciones.md",
+    "2-plan/riegos.md",
+    "2-plan/PLANIFICACIÓN.md",
+    "2-plan/metodología.md",
+    "7-modelo/MODELO IA.md",
     "7-modelo/Model Deployment.md",
     "6-implementación/vista minable.md",
     "6-implementación/transformación datos.md",
@@ -133,14 +140,7 @@
     "3-análisis/fuentes de datos.md",
     "3-análisis/dominio agronómico.md",
     "4-infraestructura/arquitectura física.md",
-    "4-infraestructura/Vagrant.md",
-    "1-intro/previos.md",
-    "3-análisis/automatizacion.md",
-    "7-modelo/mejor modelo.md",
-    "7-modelo/modelo de regresión.md",
-    "9-conclusiones/0-conclusiones.md",
     "figures/actual-predict.png",
-    "7-modelo/MODELO IA.md",
     "_k.pcs.zen/publish/style_2.css",
     "_k.pcs.zen/publish/body.css",
     "_k.pcs.zen/out_3.pdf",
