@@ -79,7 +79,7 @@ jobs:
 
       - name: Install Dependencies
         run: | 
-          sudo apt install -y libxml2-dev libxslt-dev libffi-dev libcairo2-dev libpango1.0-dev python-dev python-pip
+          sudo apt install -y libxml2-dev libxslt-dev libffi-dev libcairo2-dev libpango1.0-dev
           sudo pip install weasyprint
 
       - name: Run Script and Transform PDF
