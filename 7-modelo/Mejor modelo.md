@@ -98,8 +98,6 @@ df_sorted = df.sort_values(by='RMSE', ascending=True, na_position='first');
 ```
 
 ```python
-df_sorted = df.sort_values(by='RMSE', ascending=True, na_position='first'); 
-
 best_models = []
 
 for index, row in df_sorted.iterrows():

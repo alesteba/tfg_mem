@@ -1,6 +1,8 @@
 
 Como inicio de la posterior automatización, se reestructura la arquitectura de la aplicación junto con su BD para soportar el almacenamiento de nuevos datos. El siguiente esquema de BD es el resultado de la implementación del análisis descrita en el planteamiento.
 
+![](figures/modelo-end.png)
+
 Para la creación de este modelo he trabajado con el equipo en la identificación de los conceptos que necesitaban ser representados. El diseño en papel da la posibilidad de pensar abiertamente sobre las relaciones entre entidades, además de permitir la transmisión de ideas de forma sencilla durante las reuniones.
   
 Dentro del entorno de trabajo de _Django,_ el ORM proporcionado aísla la base de datos y nos permite diseñar directamente en _Python_ dicho modelo. Las entidades se diseñan como clases y las relaciones entre ellas se especifican mediante el lenguaje de mapeo proporcionado. De dicha forma creamos las claves foráneas que físicamente contiene la base de datos.
@@ -27,9 +29,7 @@ Fenologico | Permite registrar diferentes estados fenológicos por los que puede
 Mirar_Fenologico | Permite dar carácter temporal al estado fenológico de un cultivo. Registramos un estado para un cultivo en una fecha concreta. 
 Campaña | Es una tabla muy importante, sirve para unir distintos tipos de registros (desde variedades hasta labores de campo pasando por unir los datos de parcelas y subparcelas).
 Interesado | Permite realizar el diseño de roles mediante su clave foránea a una parcela. Un intereseado (stakeholder) es una persona que tiene relación con una o varias parcelas (Ej, cultivador, propietario, etc).
-
-
-![](figures/modelo-end.png) 
+ 
 
 ### Diseño del Cultivo y Fenología
 
@@ -37,35 +37,7 @@ Una decisión complicada sobre el posible histórico de datos es el registro de 
 
 El modelado de la entidad FENOLÓGICO ha sido una decisión complicada debido a que no se enlaza directamente con un cultivo. Entendemos que un estado como puede ser el de "siembra" tiene un carácter general y tiene sentido como entidad en sí misma (todos los cultivos pasan por siembra). Es su relación con CULTIVO mediante MIRAR_FENOLÓGICO lo que dice que dicho cultivo está en un estado fenológico concreto en un momento determinado. Por ejemplo, podemos decir que el cultivo "vid" estaba en estado de "siembra" el día "2022-01-23". 
 
-También es importante destacar que CULTIVO es simplemente el tipo que se ha registrado, por lo tanto, para que la información sea completa, un avistamiento fenológico sucede sobre un tipo de cultivo físicamente sembrado en una PARCELA.  El siguiente esquema muestra cómo estas tres entidades se relacionará para dar carácter temporal y espacial a un tipo de cultivo.
-
-```mermaid
-erDiagram
-    CULTIVO }o--|| CULTIVO : contains
-    CULTIVO {
-        string nombre FK
-        string descripcion
-        string es_variedad FK
-    }
-    FENOLOGICO {
-        string nombre FK
-        string descripcion
-    }
-    MIRAR_FENOLOGICO }o--|| FENOLOGICO : contains
-	MIRAR_FENOLOGICO }o--|| CULTIVO : contains
-	MIRAR_FENOLOGICO }o--|| PARCELA : contains
-    MIRAR_FENOLOGICO {
-        string fenologico FK
-        string parcela FK
-        string fecha FK
-    }
-    PARCELA {
-        string idx 
-        string estacion
-        float altitud
-        polygon geom
-    }
-```
+También es importante destacar que CULTIVO es simplemente el tipo que se ha registrado, por lo tanto, para que la información sea completa, un avistamiento fenológico sucede sobre un tipo de cultivo físicamente sembrado en una PARCELA.  En la próxima figura podemos ver cómo estas tres entidades se relacionan para dar carácter temporal y espacial a un tipo de cultivo.
 
 Otro punto importante de la aplicación es la contemplación de variedades. Para poder mantener una jerarquía con las posibles entidades registradas en el sistema, enlazamos de forma recursiva el cultivo con una clave foránea a su misma tabla. Esta estructura permite el desglose de una jerarquía de cultivos en la que sabemos qué entidad es una subvariedad de un cultivo, dando la posibilidad de almacenar múltiples niveles.
 
@@ -76,36 +48,6 @@ Otro punto importante de la aplicación es la contemplación de variedades. Para
 Para nuestro sistema de información una parcela es una agrupación de varios píxeles. Entendemos como PIXEL a la imagen satelital más pequeña que se puede obtener sobre el terreno, a partir de la cual obtendremos los índices vegetativos. *(El valor del índice es una caja negra para este trabajo, proviene de scripts desarrollados por el resto del equipo)*
 
 El trabajo con índices vegetativos por parte del equipo es uno de los puntos más importantes para que el rediseño sea satisfactorio. La entidad MIRAR_ÍNDICE es de vital importancia en el modelo, permite gestionar el histórico de valores de los índices para todos los píxeles. Esta tabla es una de las candidatas para realizar optimización en las consultas, algo que desde el ORM que utilizamos todavía queda un poco lejos. 
-
-
-```mermaid
-erDiagram
-    INDICE ||--o{ MIRAR_INDICE : contains
-    INDICE {
-        string nombre FK
-        string descripcion
-    }
-    PIXEL ||--o{ MIRAR_INDICE : contains
-    PIXEL o{--|| PARCELA : contains
-    PIXEL {
-        string parcela FK 
-        polygon geom
-        string idx
-    }
-    PARCELA {
-        string idx 
-        string estacion
-        float altitud
-        polygon geom
-    }
-    MIRAR_INDICE {
-        string indice FK
-        string pixel FK
-        date fecha
-        geojson json
-        float valor
-    }
-```
 
 El volumen de datos que la tabla MIRAR_INDICE puede contener es grande. Solo con la muestra representativa de las 25 parcelas con las que estamos trabajando (3000 píxeles), dos índices registrados, y contemplando sus valores en 6 fechas distintas, obtenemos un conjunto de 36.000 valores. Cuando la aplicación escale a un mayor número de parcelas, esta tabla será susceptible de utilizar índices (BD).
 
@@ -179,3 +121,4 @@ erDiagram
 		charfield file
     }
 ```
+

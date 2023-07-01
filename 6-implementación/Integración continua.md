@@ -4,11 +4,7 @@ El siguiente script reproduce el flujo de uso común de la aplicación desde su 
 
 La ejecución del siguiente pipeline tiene lugar tras lanzar la máquina Vagrant sobre la que corre el proyecto. En el comienzo de la memoria habíamos hablado de que dicha máquina se provisiona con los scripts necesarios para instalar las dependencias del proyecto. En este punto con la máquina en dicho estado, los primeros pasos del pipeline descargan la última versión estable del código del proyecto y crean un entorno virtual que hace uso del las librerías correctas. 
 
-
-
-Hablar de los varios pipelines posibles que puede contener el proyecto.
-
-Carga consecutiva de múltiples datos: 
+Los siguientes pasos ejecutan uno a uno los comandos definidos anteriormente, cargando así en la base de datos los datos provenientes de las distintas fuentes (en este caso excels) y procesando su vista minable. El proceso se realiza de forma ordenada para las 25 parcelas de muestra con las que estamos trabajando, remarcamos que el proceso tiene una alta escalabilidad debido a que podemos reproducir aquellos 'stages' necesarios en los momentos que nos interese. Es decir, podemos comenzar con un pipeline para insertar la información de 25 parcelas, pero posteriormente podríamos añadir más pasos a medida que dispongamos de más información. Por otra parte, la infraestructura como código que conseguimos posibilita definir el flujo concreto que un cliente puede tener con la aplicación. 
 
 ```jenkins
 
@@ -68,13 +64,5 @@ pipeline {
 ```
 
 
-La integración en este punto ... genera el flujo completo del caso de uso convencional de la aplicación. 
-
-
-podríamos repreducir el proceso con más pasos para seguir añadiendo datos al modelo relacional y recalcular la vista con solo ejecutar alguno de los pasos propuestos por el script en el momento adecuado.
 
 imagen con el proceso ejecutado, --->
-
----> explicar algún paso concreto, 
-
----> relación directa con lo mostrado aneriormente: 

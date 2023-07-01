@@ -1,4 +1,3 @@
-* posiblemente todos los scripts que permiten el flujo de datos * 
 
 Adjuntamos los scripts utilizados para el desarrollo del flujo de datos con su arquitectura y diseño como pipeline. 
 
