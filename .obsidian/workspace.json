@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6-implementación/Transformación de datos.md",
+                "file": "1-intro/Previos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6-implementación/Transformación de datos.md",
+                "file": "1-intro/Previos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +114,9 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
+    "1-intro/Contexto.md",
+    "1-intro/INTRODUCCIÓN.md",
+    "6-implementación/Transformación de datos.md",
     "6-implementación/PIPELINE.md",
     "6-implementación/Integración continua.md",
     "8-seguimiento/memoria.md",
@@ -121,7 +124,6 @@
     "8-seguimiento/desviaciones.md",
     "7-modelo/Predicciones.md",
     "7-modelo/MODELO IA.md",
-    "6-implementación/Transformación de datos.md",
     "6-implementación/Design pattern.md",
     "5-diseño/Servicios.md",
     "5-diseño/Modelo relacional.md",
@@ -138,8 +140,6 @@
     "2-plan/PLANIFICACIÓN.md",
     "2-plan/metodología.md",
     "2-plan/gantt.md",
-    "2-plan/EDT.md",
-    "2-plan/comunicaciones.md",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/figures/actual-predict.png",
     "mermaid/output_7.svg",
