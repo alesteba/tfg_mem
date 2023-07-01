@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4-infraestructura/Vagrant.md",
+                "file": "2-plan/gantt.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4-infraestructura/Vagrant.md",
+                "file": "2-plan/gantt.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +114,19 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
+    "_k.pcs.zen/publish/mermaid/output_5.svg",
+    "_k.pcs.zen/publish/mermaid/output_4.svg",
+    "_k.pcs.zen/publish/mermaid/output_3.svg",
+    "_k.pcs.zen/publish/mermaid/output_2.svg",
+    "_k.pcs.zen/publish/mermaid/output_1.svg",
+    "_k.pcs.zen/publish/mermaid/output_0.svg",
+    "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
+    "mermaid/output_5.svg",
+    "mermaid/output_4.svg",
+    "mermaid/output_3.svg",
+    "mermaid/output_2.svg",
+    "2-plan/PLANIFICACIÓN.md",
+    "4-infraestructura/Vagrant.md",
     "_k.pcs.zen/publish/print.css",
     "4-infraestructura/INFRAESTRUCTURA.md",
     "4-infraestructura/Entorno.md",
@@ -138,20 +151,8 @@
     "6-implementación/Vista minable.md",
     "6-implementación/Design pattern.md",
     "5-diseño/Carga de datos.md",
-    "5-diseño/Componentes.md",
-    "5-diseño/DISEÑO.md",
-    "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
-    "_k.pcs.zen/publish/figures/visor_GIS_det.png",
-    "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
-    "_k.pcs.zen/publish/figures/visor_GIS.png",
-    "_k.pcs.zen/publish/figures/view-capture.PNG",
-    "_k.pcs.zen/publish/figures/spectralgeo_db.png",
-    "_k.pcs.zen/publish/figures/pipeline_state.webp",
-    "_k.pcs.zen/publish/figures/pipeline_pattern.PNG",
-    "_k.pcs.zen/publish/figures/nubes.png",
     "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/automate_pdf2.ipynb",
-    "_k.pcs.zen/publish/figures/actual-predict.png",
     "_k.pcs.zen/publish/style_2.css",
     "_k.pcs.zen/publish/body.css",
     "_k.pcs.zen/out_3.pdf",
