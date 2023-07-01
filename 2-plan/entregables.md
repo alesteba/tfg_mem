@@ -11,3 +11,4 @@ IDENT | ENTREGABLE | DESCRIPCIÓN
 [E07](https://github.com/alesteba/tfg/blob/main/entregables/view.ipynb) | Vista Minable | Método algorítmico que genera la estructura tabular de datos necesaria para el modelo de producción
 [E08](https://github.com/alesteba/tfg/blob/main/entregables/view.ipynb) | Datos Vista | Estructura tabulada con las 'features' necesarias y los datos requeridos. (Estudio con 25 parcelas)
 [E09](https://github.com/alesteba/tfg/blob/main/entregables/model_IA) | Modelo de producción | Cuaderno jupyter en el que buscamos el mejor modelo posible
+

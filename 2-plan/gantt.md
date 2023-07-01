@@ -52,3 +52,4 @@ Este diagrama es una estipulación de cómo se desarrolla el proyecto. En la sec
 Destacamos que las tareas de escritura de la memoria y pruebas unitarias se realizan durante casi todo el proyecto. Las pruebas nos permiten asegurarnos de que el proyecto funciona adecuadamente: así no pasamos a una nueva tarea si no hemos dejado la aplicación estable al terminar la anterior.
 
 
+

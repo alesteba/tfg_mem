@@ -14,3 +14,4 @@ De la tabla anterior se prestará especial atención a los riesgos valorados com
 Los riesgos de valoración Media y Baja tendrán un control basado en un plan de mitigación simple de seguimientos del cronograma, con intervalos cortos de tiempo.
 
 
+

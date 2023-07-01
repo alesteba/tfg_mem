@@ -131,3 +131,4 @@ def run (self, DATA, INDICES):
 
 Adjuntamos en los entregables los [scripts](https://github.com/alesteba/tfg/tree/main/entregables/pipeline) que forman este proceso de almacenamiento de datos. 
 
+

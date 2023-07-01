@@ -19,3 +19,4 @@ Identificamos tres conceptos que definen la canalización de datos que vamos a l
 - Data Storage: almacenamos los datos en el modelo a través de Django, manteniendo una base de datos relacional en la máquina en la que se encuentra la aplicación.
 
 Como hemos dicho, hay varias formas de realizar este proceso de canalización; en nuestro caso identificaremos los bloques y diseñaremos el proceso casi de forma manual, para que se ajuste con exactitud a lo que queremos hacer. En el siguiente punto exponemos la tecnología subyacente que utilizaremos para ello. 
+

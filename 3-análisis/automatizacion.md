@@ -14,3 +14,4 @@ graph LR;
 
 Con un modelo relacional para los datos, los bloques atómicos de carga se podrán ejecutar periódicamente utilizando las fuentes de datos necesarias. El proceso de automatización termina, una vez que están almacenados los datos, con la extracción de una vista minable que permite obtener el mejor modelo de regresión para los kg de cultivo que se van a cosechar en una fecha determinada.
 
+

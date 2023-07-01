@@ -23,3 +23,4 @@ django.setup()
 ```
 
 Los cuadernos jupyter que se encuentran en esta memoria se han exportado desde la propia aplicación. Vemos la facilidad con la que el equipo puede redactar informes para clientes concretos, utilizando los datos de la aplicación directamente.  El código anterior es el 'snippet' necesario para poder integrar los cuadernos con las llamadas concretas a los modelos de Django. Estos cuadernos son un punto tan importante de la arquitectura como puede ser el módulo de servicios.
+

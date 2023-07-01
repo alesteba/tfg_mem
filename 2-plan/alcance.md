@@ -10,3 +10,4 @@ El proyecto planteado inicialmente por la empresa tiene una planificación de cu
 -   Probar técnicas de Inteligencia Artificial para entrenar el mejor modelo de regresión para la producción anterior.
 -   Utilizar el modelo de producción de cultivo para predecir nuevos valores que no han sido usados en el entrenamiento.
 -   Incluir los resultados en la presentación de la aplicación.
+- 
