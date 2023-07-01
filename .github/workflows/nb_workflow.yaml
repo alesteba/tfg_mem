@@ -85,8 +85,8 @@ jobs:
       - name: Run Script and Transform PDF
         run: |
           cd _k.pcs.zen/
-          jupyter nbconvert --to script ./automate_pdf2.ipynb
-          python ./automate_pdf2.py
+          sudo jupyter nbconvert --to script ./automate_pdf2.ipynb
+          sudo python ./automate_pdf2.py
 
       - name: GIT commit and push docs
         env: 
