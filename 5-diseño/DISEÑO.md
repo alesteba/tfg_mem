@@ -1,10 +1,10 @@
 
 -- LINK_NOTE --
 
-[[componentes]]
+[[Componentes]]
 
-[[carga de datos]]
+[[Carga de datos]]
 
-[[modelo relacional]]
+[[Modelo relacional]]
 
-[[servicios]]
+[[Servicios]]

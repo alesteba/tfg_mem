@@ -1,5 +1,5 @@
 -- LINK_NOTE --
 
-[[contexto]]
+[[Contexto]]
 
-[[previos]]
+[[Previos]]

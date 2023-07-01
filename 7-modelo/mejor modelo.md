@@ -119,7 +119,7 @@ for idx, est in enumerate(best_models):
 	best_estimators.append((est.__class__.__name__, est))
 ```
 
-Como cada modelo aporta un punto de vista diferente, vamos a utilizar los resultados obtenidos para generar un modelo ensemble que generalice las predicciones de los modelos anteriores. Utilizaremos las métricas obtenidas para establecer el orden en el que construir un modelo 'stacking'. Como estimador final nos quedamos como el mejor modelo obtenido al ordenar la tabla anterior por el MAE, es decir el RandomForestRegressor.
+Como cada modelo aporta un punto de vista diferente, vamos a utilizar los resultados obtenidos para generar un modelo ensemble que generalice las predicciones de los anteriores. Utilizaremos las métricas obtenidas para establecer el orden en el que construir un modelo 'stacking'. Como estimador final nos quedamos como el mejor modelo obtenido al ordenar la tabla anterior por el valor del RMSE obtenido para cada uno de ellos, es decir, el RandomForestRegressor.
 
 ```python
 reg = StackingRegressor(
@@ -131,12 +131,8 @@ reg.fit(x, y)
 y_pred_e = reg.predict(x)
 ```
 
-algo entre medio, describir las gráficas :
+A continuación mostramos una gráfica para cada modelo en la que vemos la relación entre los valores actuales y los valores predichos por el modelo. Esta pequeña visualización nos permite ver si cada algoritmo sobreajusta a los datos de entrenamiento o realmente tiene el rango que necesitamos. El punto más interesante es el análisis del modelo 'stacking' en el que vemos que es capaz de inferir los estilos de los algoritmos anteriores.
 
 ![](figures/actual-predict.PNG)
 
-Este pequeño estudio nos permite orientarnos para ver por dónde van los datos, pero no es nuestro objetivo final que el modelo prediga con exactitud: solo queremos dejar automatizada una pequeña visualización de las relaciones entre los índices para así poder intuir qué modelo nos puede funcionar mejor. De hecho, los datos representativos con los que trabajamos nos impiden buscar un modelo real preciso.
-
-
-
-Como hemos dicho, un último punto para completar el desarrollo de la arquitectura sería hacer uso de este modelo para mostrar directamente en la presentación de la aplicación valores predichos con datos almacenados en la aplicación, algo que aún no está desarrollado, pero que resulta trivial en relación  con la arquitectura y el modelo de datos obtenidos hasta este punto.
+Hemos analizado cada algoritmo con la intención de ver si modeliza correctamente nuestro problema de regresión, pero no es nuestro objetivo final que el modelo prediga con exactitud: solo queremos dejar automatizada una pequeña visualización de las relaciones entre los índices para así poder intuir qué modelo nos puede funcionar mejor. De hecho, los datos representativos con los que trabajamos nos impiden buscar un modelo real preciso.

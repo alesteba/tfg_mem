@@ -1,7 +1,7 @@
 -- LINK_NOTE --
 
-[[arquitectura física]]
+[[Arquitectura física]]
 
-[[entorno]]
+[[Entorno]]
 
 [[Vagrant]]

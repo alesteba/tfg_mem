@@ -79,16 +79,14 @@ jobs:
 
       - name: Install Dependencies
         run: | 
-          sudo apt-get install wkhtmltopdf
-          pip install pdfkit 
-          pip install validators
-          pip install bs4
+          sudo apt install python3-pip libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
+          pip install weasyprint 
 
       - name: Run Script and Transform PDF
         run: |
           cd _k.pcs.zen/
-          jupyter nbconvert --to script ./automate_pdf.ipynb
-          python ./automate_pdf.py
+          jupyter nbconvert --to script ./automate_pdf2.ipynb
+          python ./automate_pdf2.py
 
       - name: GIT commit and push docs
         env: 

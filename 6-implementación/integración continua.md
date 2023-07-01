@@ -1,12 +1,14 @@
-Una vez hemos indentificado los pasos atómicos que queremos ejecutar de forma secuencial, utilizamos la herramienta de integración continua, Jenkins, para ejecutar estos pasos de forma ordenada y ver poco a poco el proceso. 
+Una vez hemos identificado los pasos atómicos que queremos ejecutar de forma secuencial, utilizamos la herramienta de integración continua, Jenkins, para ejecutar estos pasos de forma ordenada y ver poco a poco el proceso. 
 
-ejemplo script automatización ,
+El siguiente script reproduce el flujo de uso común de la aplicación desde su creación, pasando por todos los pasos de carga de datos en el modelo, hasta la vista minable sobre la cual se obtiene el modelo de producción de kg de cultivo. 
 
-descripción de los pasos hasta completar vista y modelo:
+La ejecución del siguiente pipeline tiene lugar tras lanzar la máquina Vagrant sobre la que corre el proyecto. En el comienzo de la memoria habíamos hablado de que dicha máquina se provisiona con los scripts necesarios para instalar las dependencias del proyecto. En este punto con la máquina en dicho estado, los primeros pasos del pipeline descargan la última versión estable del código del proyecto y crean un entorno virtual que hace uso del las librerías correctas. 
 
-puedo tenerlo mañana y hablar con Jonathan.
 
-pipeline;
+
+Hablar de los varios pipelines posibles que puede contener el proyecto.
+
+Carga consecutiva de múltiples datos: 
 
 ```jenkins
 

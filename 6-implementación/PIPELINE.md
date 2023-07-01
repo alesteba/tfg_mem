@@ -1,10 +1,10 @@
 
 -- LINK_NOTE --
 
-[[transformación datos]]
+[[Transformación de datos]]
 
-[[design pattern]]
+[[Design pattern]]
 
-[[vista minable]]
+[[Vista minable]]
 
-[[integración continua]]
+[[Integración continua]]

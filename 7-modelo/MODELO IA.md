@@ -1,10 +1,10 @@
 -- LINK_NOTE --
 
-[[preprocesamiento]]
+[[Preprocesamiento]]
 
-[[modelo de regresión]]
+[[Regresión]]
 
-[[mejor modelo]]
+[[Mejor modelo]]
 
-[[Model Deployment]]
+[[Predicciones]]
 
