@@ -43,5 +43,3 @@ Tarea | Descripción
 	REDACCIÓN | Redactamos la memoria a medida que avanza el proyecto.
 	EXPORTACIÓN | La memoria se escribe en notas de "markdown" debido a la simplicidad con la que se pueden integrar diagramas y código. Al terminarl, exportaremos la memoria como páginal "html".
 	REVISIÓN | Al finalizar el proyecto, revisamos el escrito para asegurarnos de no cometer errores.
-
-

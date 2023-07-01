@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RESUMEN.md",
+                "file": "2-plan/PLANIFICACIÓN.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RESUMEN.md",
+                "file": "2-plan/PLANIFICACIÓN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,8 +114,19 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
-    "planificación.md",
+    "TFG.md",
+    "2-plan/tiempos.md",
+    "2-plan/rrhh.md",
+    "2-plan/riegos.md",
+    "2-plan/PLANIFICACIÓN.md",
+    "2-plan/metodología.md",
+    "2-plan/gantt.md",
+    "2-plan/entregables.md",
+    "2-plan/EDT.md",
+    "2-plan/comunicaciones.md",
+    "2-plan/alcance.md",
     "RESUMEN.md",
+    "planificación.md",
     "7-modelo/Regresión.md",
     "7-modelo/Preprocesamiento.md",
     "7-modelo/Predicciones.md",
@@ -129,17 +140,6 @@
     "5-diseño/Servicios.md",
     "5-diseño/Modelo relacional.md",
     "5-diseño/DISEÑO.md",
-    "5-diseño/Componentes.md",
-    "5-diseño/Carga de datos.md",
-    "4-infraestructura/Vagrant.md",
-    "4-infraestructura/INFRAESTRUCTURA.md",
-    "4-infraestructura/Entorno.md",
-    "4-infraestructura/Arquitectura física.md",
-    "3-análisis/tecnologías.md",
-    "3-análisis/requisitos.md",
-    "3-análisis/fuentes de datos.md",
-    "3-análisis/dominio agronómico.md",
-    "3-análisis/automatizacion.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
     "_k.pcs.zen/publish/figures/visor_GIS_det.png",
     "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
