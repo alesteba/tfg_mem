@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-plan/PLANIFICACIÓN.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2-plan/PLANIFICACIÓN.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,6 +127,8 @@
   },
   "active": "d7eab338a46d3db0",
   "lastOpenFiles": [
+    "7-modelo/MODELO IA.md",
+    "2-plan/PLANIFICACIÓN.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
     "_k.pcs.zen/publish/figures/visor_GIS_det.png",
     "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
@@ -140,7 +142,6 @@
     "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/publish/figures/models-predictions.png",
     "_k.pcs.zen/publish/figures/modelo_end.png.md",
-    "_k.pcs.zen/publish/figures/modelo-end.png",
     "_k.pcs.zen/publish/figures/llean_1.png.md",
     "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
     "6-implementación/Integración continua.md",
@@ -148,7 +149,6 @@
     "7-modelo/Mejor modelo.md",
     "7-modelo/Predicciones.md",
     "7-modelo/Preprocesamiento.md",
-    "7-modelo/MODELO IA.md",
     "8-seguimiento/Memoria.md",
     "8-seguimiento/Desviaciones.md",
     "5-diseño/Modelo relacional.md",
@@ -160,7 +160,6 @@
     "5-diseño/Carga de datos.md",
     "5-diseño/Componentes.md",
     "2-plan/tiempos.md",
-    "2-plan/PLANIFICACIÓN.md",
     "2-plan/EDT.md",
     "2-plan/entregables.md",
     "3-análisis/Automatizacion.md",
