@@ -18,19 +18,20 @@ def statistic_indices(indices = ['ndvi', 'ndre'], func=np.mean):
         
     df['IDX'] = col_ids
     
-    # para cada indice:
     for ind in indices:
 
-        indice_p = Indice.objects.get(nombre=ind) # if type(indice_p) == str else indice_p
+        indice_p = Indice.objects.get(nombre=ind)
 
         for fecha in fechas: 
 
             col_data = []
 
-            # por cada iteración de esto tienes una fila en el df:
+            # por cada iteración creamos una fila en el df:
+            
             for p in Parcela.objects.all():
 
                 # la media de todos sus índices
+                
                 p_indices = Pixel.objects.filter(parcela=p)
 
                 list_values = []

@@ -4,4 +4,15 @@ A continuación mostrar, a modo de ejemplo, cómo el último stage del pipeline 
 
 En este punto, deberíamos poder utilizar este modelo obtenido dentro de la arquitectura de la aplicación para predecir,  cómo evolucionan los cultivos que se están monitorizando. El punto en el que se encuentra la arquitectura soporta casi de forma directa la inclusión de las predicciones de la aplicación.
 
-ejemplo predecir y listo. 
+```python
+
+clf = RandomForestRegressor(**CV_rfr.best_params_)
+
+clf.fit(X_train, y_train)
+
+y_pred = clf.predict(X_test)
+
+print(y_pred)
+
+```
+

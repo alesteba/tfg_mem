@@ -10,7 +10,7 @@ En el apartado anterior hemos visto cómo se ha diseñado el modelo de datos. Ah
 
 ### Procesos de una canalización
 
-Identificamos tres conceptos que definen la canalización de datos que vamos a llevar a cabo y exponemos qué hace el 'pipeline' de nuestra aplicación en cada uno de ellos.  
+Identificamos tres conceptos que definen la canalización de datos que vamos a llevar a cabo y exponemos qué hace el *pipeline* de nuestra aplicación en cada uno de ellos.  
 
 - Data Ingestion: diseñamos bloques atómicos de carga que almacenan datos de fuentes diferentes en la base de datos de la aplicación.
 
