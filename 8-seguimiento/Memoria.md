@@ -11,7 +11,6 @@ Utilizamos algunas herramientas de integración continua como Github Actions par
 
 Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos Github Actions para definir las acciones necesarias cuando se realicen cambios en el repositirio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice cuando se hacen cambios en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de Github Pages. En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. 
 
-
 ```yaml
   build_notes:
   
