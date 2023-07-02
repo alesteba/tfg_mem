@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7-modelo/Mejor modelo.md",
+                "file": "6-implementación/Integración continua.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7-modelo/Mejor modelo.md",
+                "file": "2-plan/PLANIFICACIÓN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,17 +125,8 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "86b13b76461c064d",
+  "active": "d7eab338a46d3db0",
   "lastOpenFiles": [
-    "7-modelo/Predicciones.md",
-    "6-implementación/Design pattern.md",
-    "7-modelo/Mejor modelo.md",
-    "7-modelo/Preprocesamiento.md",
-    "7-modelo/MODELO IA.md",
-    "8-seguimiento/Memoria.md",
-    "8-seguimiento/Desviaciones.md",
-    "5-diseño/Modelo relacional.md",
-    "RESUMEN.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
     "_k.pcs.zen/publish/figures/visor_GIS_det.png",
     "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
@@ -146,10 +138,23 @@
     "_k.pcs.zen/publish/figures/pipeline_pattern.PNG",
     "_k.pcs.zen/publish/figures/nubes.png",
     "_k.pcs.zen/publish/figures/nubes",
+    "_k.pcs.zen/publish/figures/models-predictions.png",
+    "_k.pcs.zen/publish/figures/modelo_end.png.md",
     "_k.pcs.zen/publish/figures/modelo-end.png",
+    "_k.pcs.zen/publish/figures/llean_1.png.md",
+    "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
+    "6-implementación/Integración continua.md",
+    "6-implementación/Design pattern.md",
+    "7-modelo/Mejor modelo.md",
+    "7-modelo/Predicciones.md",
+    "7-modelo/Preprocesamiento.md",
+    "7-modelo/MODELO IA.md",
+    "8-seguimiento/Memoria.md",
+    "8-seguimiento/Desviaciones.md",
+    "5-diseño/Modelo relacional.md",
+    "RESUMEN.md",
     "6-implementación/Transformación de datos.md",
     "6-implementación/PIPELINE.md",
-    "6-implementación/Integración continua.md",
     "5-diseño/Servicios.md",
     "5-diseño/DISEÑO.md",
     "5-diseño/Carga de datos.md",
@@ -159,10 +164,6 @@
     "2-plan/EDT.md",
     "2-plan/entregables.md",
     "3-análisis/Automatizacion.md",
-    "3-análisis/Dominio agronómico.md",
-    "3-análisis/Fuentes de datos.md",
-    "3-análisis/Requisitos.md",
-    "3-análisis/Tecnologías.md",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",

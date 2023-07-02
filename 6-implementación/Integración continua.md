@@ -63,3 +63,4 @@ pipeline {
 
 ```
 
+Además de este último, podemos crear varios entornos con tuberías diferentes que den como resultado bases de datos con estados distintos. Como mencionábamos anteriormente, esto es muy útil debido al funcionamiento del equipo en relación con el procesamiento de datos con varios clientes. La aplicación puede trabajar con instancias diferentes de la misma base de datos dependiendo del proyecto en el que se encuentre; por ejemplo, la misma instancia de la BD sirve tanto para una bodega con variedades de vino como para una cooperativa que contempla varios cultivos como guisantes, olivas, peras, etc. Por ello, definir scripts como el anterior utilizando los mismos comandos con distintas fuentes de datos es una forma clara y ordenada de automatizar los procesos.
