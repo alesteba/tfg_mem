@@ -11,4 +11,53 @@ Utilizamos algunas herramientas de integración continua como Github Actions par
 
 Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos Github Actions para definir las acciones necesarias cuando se realicen cambios en el repositirio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice cuando se hacen cambios en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de Github Pages. En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. 
 
-CODIGO ACTIONS: 
+
+```yaml
+  build_notes:
+  
+    name: Building web notes from graph
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+          cache: 'pip'      
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt   
+
+      - name: Install Jupyter
+        run: sudo -H pip install jupyter
+
+      - name: Install Mermaid Converter
+        run: |
+          npm install -g @mermaid-js/mermaid-cli
+
+      - name: Run Script and Build Notes
+        run: |
+          cd _k.pcs.zen/
+          jupyter nbconvert --to script ./automate_md.ipynb
+          python ./automate_md.py      
+          
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '_k.pcs.zen/publish'
+          destination-github-username: 'alesteba'
+          destination-repository-name: 'tfg'
+          user-email: alesteba@unirioja.es
+          target-branch: main
+
+```
+
+El código anterior se corresponde con la transformación de la memoria en notas de Markdown al documento en HTML. Como podemos observar en los pasos se utiliza una máquina Ubuntu en la que se instalan librerías necesarias para transformar los diagramas en imágenes y poder trabajar con cuadernos Jupyter. Posteriormente, se transforma el cuaderno con el código de conversión de las notas en un único script, se ejecuta y se publican los resultados en otro repositorio diferente, el cual mediante Github Pages crea la página HTML correspondiente con la memoria final. 
+
+![](figures/github-actions.png)

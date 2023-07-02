@@ -1,18 +1,18 @@
 
 -- LINK_NOTE --
 
-[[alcance]]
+[[Alcance]]
 
-[[metodología]]
+[[Metodología]]
 
 [[EDT]]
 
-[[entregables]]
+[[Entregables]]
 
-[[gantt]]
+[[Gantt]]
 
-[[rrhh]]
+[[RRHH]]
 
-[[comunicaciones]] 
+[[Comunicaciones]] 
 
-[[riesgos]]
+[[Riesgos]]
