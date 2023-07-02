@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,8 +124,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "aba95d39afcf2fd0",
+  "active": "86b13b76461c064d",
   "lastOpenFiles": [
+    "7-modelo/Predicciones.md",
+    "6-implementación/Design pattern.md",
+    "7-modelo/Mejor modelo.md",
+    "7-modelo/Preprocesamiento.md",
+    "7-modelo/MODELO IA.md",
+    "8-seguimiento/Memoria.md",
     "8-seguimiento/Desviaciones.md",
     "5-diseño/Modelo relacional.md",
     "RESUMEN.md",
@@ -141,7 +147,6 @@
     "_k.pcs.zen/publish/figures/nubes.png",
     "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/publish/figures/modelo-end.png",
-    "8-seguimiento/Memoria.md",
     "6-implementación/Transformación de datos.md",
     "6-implementación/PIPELINE.md",
     "6-implementación/Integración continua.md",
@@ -158,11 +163,6 @@
     "3-análisis/Fuentes de datos.md",
     "3-análisis/Requisitos.md",
     "3-análisis/Tecnologías.md",
-    "2-plan/gantt.md",
-    "2-plan/comunicaciones.md",
-    "2-plan/metodología.md",
-    "2-plan/rrhh.md",
-    "2-plan/riesgos.md",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",
