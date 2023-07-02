@@ -1,12 +1,12 @@
 
 -- LINK_NOTE --
 
-[[dominio agronómico]]
+[[Dominio agronómico]]
 
-[[fuentes de datos]]
+[[Fuentes de datos]]
 
-[[automatizacion]]
+[[Automatizacion]]
 
-[[tecnologías]]
+[[Tecnologías]]
 
-[[requisitos]]
+[[Requisitos]]

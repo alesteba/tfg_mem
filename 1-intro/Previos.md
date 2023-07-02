@@ -18,5 +18,4 @@ Los puntos más importantes de los procesos "lean" son los siguientes:
 - identificar los desperdicios y tratar de eliminarlos
 - mejorar la comunicación interna de la organización
 - reducir costes y tiempos de entrega y mejorar la calidad
-- 
 

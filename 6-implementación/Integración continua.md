@@ -63,6 +63,3 @@ pipeline {
 
 ```
 
-
-
-imagen con el proceso ejecutado, --->

@@ -53,7 +53,7 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
   <tbody>
     <tr>
       <th>2</th>
-      <td>RandomForestRegressor</td>
+      <td>RandomForest</td>
       <td>{'rf__max_depth': 7, 'rf__max_features': 'sqrt', 'rf__n_estimators': 5, 'rf__random_state': 42}</td>
       <td>-4.475243e+07</td>
       <td>2282.013333</td>
@@ -71,7 +71,7 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
     </tr>
     <tr>
       <th>3</th>
-      <td>MLPRegressor</td>
+      <td>MLP</td>
       <td>{'mlpr__activation': 'tanh', 'mlpr__alpha': 0.0001, 'mlpr__hidden_layer_sizes': (100, 50, 30), 'mlpr__learning_rate': 'adaptive', 'mlpr__max_iter': 50, 'mlpr__solver': 'sgd'}</td>
       <td>-4.524895e+07</td>
       <td>4616.211769</td>

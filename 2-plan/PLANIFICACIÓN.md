@@ -9,12 +9,10 @@
 
 [[entregables]]
 
-[[tiempos]]
-
 [[gantt]]
 
 [[rrhh]]
 
 [[comunicaciones]] 
 
-[[riegos]]
+[[riesgos]]

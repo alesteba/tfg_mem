@@ -1,5 +1,5 @@
 -- LINK_NOTE --
 
-[[desviaciones]]
+[[Desviaciones]]
 
-[[memoria]]
+[[Memoria]]

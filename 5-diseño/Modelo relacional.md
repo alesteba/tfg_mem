@@ -30,7 +30,6 @@ Mirar_Fenologico | Permite dar carácter temporal al estado fenológico de un cu
 Campaña | Es una tabla muy importante, sirve para unir distintos tipos de registros (desde variedades hasta labores de campo pasando por unir los datos de parcelas y subparcelas).
 Interesado | Permite realizar el diseño de roles mediante su clave foránea a una parcela. Un intereseado (stakeholder) es una persona que tiene relación con una o varias parcelas (Ej, cultivador, propietario, etc).
  
-
 ### Diseño del Cultivo y Fenología
 
 Una decisión complicada sobre el posible histórico de datos es el registro de la evolución de un cultivo en una parcela concreta. Mediante la tabla MIRAR_FENOLÓGICO damos carácter temporal al cultivo concreto de una parcela. De esta forma podemos registrar cuáles son los estados por los que ha pasado un cultivo, desde su "siembra" hasta su "recolección".
@@ -60,7 +59,7 @@ Aunque es un punto secundario, la aplicación contempla que diferentes usuarios 
 Aunque la aplicación hace uso de estas entidades, no serán tan importantes para el desarrollo posterior del trabajo, debido a que la parte que necesita automatizarse es aquella relacionada con los índices vegetativos y la geometría de las parcelas anteriores. Como decíamos, estas entidades quedan separadas en un módulo de la aplicación con la única funcionalidad de controlar el acceso a la aplicación y dar permiso a las funcionalidades que cada cliente puede realizar dependiendo del rol que tenga asignado. La siguiente tabla describe los roles hasta ahora contemplados por el equipo y su relación con el parcelario.
 
 ROL | DESCRIPCIÓN
-:----------------|-------------:
+:----------------|:-------------:
 Cultivador | persona encargada de realizar los mantenimientos en campo
 Propietario | propietario catastral de las parcelas
 Cooperativa | entidad que agrupa a técnos con diferentes cargos sobre un parcelario

@@ -2,6 +2,4 @@ El trabajo consistirá en la reestructuración de una aplicación de gestión de
 
 The work will consist of the restructuring of an agronomic data management application. These data, which currently come from various sources, are going to be processed in a new architecture that will enable continuous integration and deployment techniques. In its design we go through the successive stages of infrastructure, design of a relational model, use of a pipeline for data loading and, finally, obtaining a mineable view on which Artificial Intelligence models will be executed. This view will make it possible to predict through regression the amount of kg of crop that is expected to be harvested in a plot and on a given date.
 
-<p style="page-break-after: always;">&nbsp;</p>
-
 

@@ -8,37 +8,27 @@ gantt
     axisFormat  %d
     
 	section ANALISIS
-    ALCANCE: 01-01, 2d
-    METODOLOGIA: 02-01, 3d
-	EDT: 03-01, 5d
-	GANNT: 04-01, 5d
-    RRHH: 05-01, 3d
-    COMUNICACIONES: 06-01, 5d
-	RIESGOS: 07-01, 5d
+    ANALISIS: 01-01, 10d
 	
 	section INFRAESTRUCTURA
-    DJANGO+JUPYTER: 08-01, 3d
-    SCRIPT_.SH: 09-01, 4d
+    ARQUITECTURA: 10-01, 50d
+    VAGRANT: 10-01, 10d
+    ENTORNO: 10-01, 10d
     
-	section MODELO_DATOS
+	section DATOS
     RELACIONES BD: 10-01, 20d
-    REDISEÑO: crit, 11-01, 20d
+    REDISEÑO: crit, 10-01, 20d
     
 	section PIPELINE
     BLOQUES:  30-01, 10d
-    FEATURES: 05-02, 5d
+    SCRIPT: 05-02, 5d
     VISTA: 05-02, 5d
     
-    section MODELO_PRODUCCIÓN
+    section MODELO
     LOAD: 10-02, 5d
     VIEW: 11-02, 5d
 	REGRESSION: 12-02, 10d
-    BEST_MODEL: 15-02, 10d
-    
-    section TEST
-    TEST 1: 20-01, 30d
-    TEST 2: 30-01, 30d
-    Phase 3 complete: milestone, 01-03, 0d
+    BEST_MODEL: crit, 15-02, 10d
 
 	section MEMORIA
 	MEM_WRITE: 01-01, 60d

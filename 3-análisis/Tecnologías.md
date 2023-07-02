@@ -17,7 +17,7 @@ Aunque el framework es muy potente, harán falta otras herramientas y entornos p
 La utilización de *Python*, aparte de incluir este framework, nos da la posibilidad de utilizar las librerías de inteligencia artificial y ciencia de datos que son necesarias para la creación del modelo de producción de cultivo. Algunas de librerías principales que vamos a utilizar son las siguientes:
 
 LIBRERÍA | DESCRIPCIÓN
-:----------------|:-------------
+:----------------|:-------------:
 scikit-learn | creación de modelos de inteligencia artificial
 numpy | tratamiento de datos multidimensionales
 pandas | uso de datos tabulados con herramientas para su procesamiento

@@ -7,7 +7,7 @@ Como estamos buscando una optimización continua, a medida que voy haciendo prue
 La siguiente tabla muestra las principales fuentes de datos de las que se obtienen y enlaza la información. El volumen de datos que se puede llegar a manejar es grande ya que por cada parcela se almacenan varios índices vegetativos en cada uno de sus píxeles. 
 
 FUENTE DATOS | DESCRIPCIÓN
-:----------------|:-------------
+:----------------|:-------------:
 QGIS | información geomométrica de parcelas y sus pixéles
 Índices Vegetativos | información provenientes de imágenes satelitales descargadas en diferentes fechas
 Cultivos / Variedad | información tabulada en excels sobre tipo de cultivos y sus variedades
