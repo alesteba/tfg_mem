@@ -53,7 +53,7 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
   <tbody>
     <tr>
       <th>2</th>
-      <td>RandomForest</td>
+      <td>RandomForestRegressor</td>
       <td>{'rf__max_depth': 7, 'rf__max_features': 'sqrt', 'rf__n_estimators': 5, 'rf__random_state': 42}</td>
       <td>-4.475243e+07</td>
       <td>2282.013333</td>
@@ -70,13 +70,22 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
       <td>6494.212821</td>
     </tr>
     <tr>
+      <th>4</th>
+      <td>KNeighborsRegressor</td>
+      <td>{'knn__metric': 'manhattan', 'knn__n_neighbors': 11, 'knn__weights': 'uniform'}</td>
+      <td>-4.566995e+07</td>
+      <td>5109.534545</td>
+      <td>4.310770e+07</td>
+      <td>6565.645200</td>
+    </tr>
+    <tr>
       <th>3</th>
-      <td>MLP</td>
-      <td>{'mlpr__activation': 'tanh', 'mlpr__alpha': 0.0001, 'mlpr__hidden_layer_sizes': (100, 50, 30), 'mlpr__learning_rate': 'adaptive', 'mlpr__max_iter': 50, 'mlpr__solver': 'sgd'}</td>
-      <td>-4.524895e+07</td>
-      <td>4616.211769</td>
-      <td>4.322007e+07</td>
-      <td>6574.197540</td>
+      <td>MLPRegressor</td>
+      <td>{'mlpr__activation': 'tanh', 'mlpr__alpha': 0.05, 'mlpr__hidden_layer_sizes': (100, 50, 30), 'mlpr__learning_rate': 'adaptive', 'mlpr__max_iter': 50, 'mlpr__solver': 'sgd'}</td>
+      <td>-4.550295e+07</td>
+      <td>4585.188137</td>
+      <td>4.325927e+07</td>
+      <td>6577.177888</td>
     </tr>
     <tr>
       <th>1</th>
@@ -89,7 +98,6 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
     </tr>
   </tbody>
 </table>
-
 
 La tabla anterior muestra ciertas métricas para los algoritmos probados. Al ordenar la tabla por el RMSE vemos qué algoritmo predice un poco mejor y observamos aquellos hiperparámetros que mejor score obtienen.
 

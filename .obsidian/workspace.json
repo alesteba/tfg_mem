@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,9 +127,10 @@
   },
   "active": "993ea5312d2387b8",
   "lastOpenFiles": [
+    "7-modelo/MODELO IA.md",
+    "8-seguimiento/Memoria.md",
     "7-modelo/Preprocesamiento.md",
     "7-modelo/Predicciones.md",
-    "7-modelo/MODELO IA.md",
     "9-conclusiones/Conclusiones.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
     "_k.pcs.zen/publish/figures/visor_GIS_det.png",
@@ -164,7 +165,6 @@
     "2-plan/Riesgos.md",
     "2-plan/RRHH.md",
     "4-infraestructura/Vagrant.md",
-    "4-infraestructura/Entorno.md",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",
