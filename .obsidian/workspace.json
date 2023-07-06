@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-conclusiones/Conclusiones.md",
+                "file": "9-conclusiones/Bibliografía.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,10 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7-modelo/Mejor modelo.md",
+                "file": "6-implementación/Design pattern.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "a93c64428339898c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -98,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7-modelo/Mejor modelo.md",
+                "file": "6-implementación/Design pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,11 +135,31 @@
   },
   "active": "993ea5312d2387b8",
   "lastOpenFiles": [
-    "7-modelo/MODELO IA.md",
-    "8-seguimiento/Memoria.md",
+    "9-conclusiones/Bibliografía.md",
+    "6-implementación/Design pattern.md",
+    "9-conclusiones/Figuras.md",
+    "6-implementación/Integración continua.md",
+    "6-implementación/Transformación de datos.md",
+    "9-conclusiones/Conclusiones.md",
+    "6-implementación/PIPELINE.md",
+    "5-diseño/Servicios.md",
+    "5-diseño/Modelo relacional.md",
+    "5-diseño/DISEÑO.md",
+    "5-diseño/Carga de datos.md",
     "7-modelo/Preprocesamiento.md",
     "7-modelo/Predicciones.md",
-    "9-conclusiones/Conclusiones.md",
+    "7-modelo/MODELO IA.md",
+    "7-modelo/Mejor modelo.md",
+    "4-infraestructura/Entorno.md",
+    "4-infraestructura/Arquitectura física.md",
+    "2-plan/Riesgos.md",
+    "2-plan/PLANIFICACIÓN.md",
+    "2-plan/Metodología.md",
+    "2-plan/Gantt.md",
+    "2-plan/Entregables.md",
+    "8-seguimiento/Memoria.md",
+    "7-modelo/Regresión.md",
+    "9-conclusiones/TESIS.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
     "_k.pcs.zen/publish/figures/visor_GIS_det.png",
     "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
@@ -142,29 +170,9 @@
     "_k.pcs.zen/publish/figures/pipeline_state.webp",
     "_k.pcs.zen/publish/figures/pipeline_pattern.PNG",
     "_k.pcs.zen/publish/figures/pipeline.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-35.png",
     "_k.pcs.zen/publish/figures/pipeline",
     "_k.pcs.zen/publish/figures/nubes",
-    "_k.pcs.zen/publish/figures/modelo_end.png.md",
-    "_k.pcs.zen/publish/figures/llean_1.png.md",
-    "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
-    "9-conclusiones/Bibliografía.md",
-    "8-seguimiento/Desviaciones.md",
-    "7-modelo/Regresión.md",
-    "9-conclusiones/Figuras.md",
-    "5-diseño/Carga de datos.md",
-    "6-implementación/Integración continua.md",
-    "figures/pipeline/Screenshot.md",
-    "6-implementación/Transformación de datos.md",
-    "6-implementación/PIPELINE.md",
-    "6-implementación/Vista minable.md",
-    "2-plan/Entregables.md",
-    "2-plan/Metodología.md",
-    "2-plan/PLANIFICACIÓN.md",
-    "2-plan/Riesgos.md",
-    "2-plan/RRHH.md",
-    "4-infraestructura/Vagrant.md",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",

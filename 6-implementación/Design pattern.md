@@ -40,12 +40,16 @@ graph LR;
 La información de los píxeles tiene que enlazarse con los datos de parcelas y cultivos. Cuando obtenemos los índices vegetativos solo contemplamos la información sobre la geometría de la parcela, no sabemos nada más. Esta información tiene que almacenarse junto con el cultivo, el estado fenológico, los datos físicos de la parcela, etc. En la siguiente tabla explicamos cada uno de los [scripts](https://github.com/alesteba/tfg/tree/main/entregables/pipeline) que conforman los procesos del pipeline.
 
 SCRIPT | TAREA
-:----------------|-------------:
-load_qgis | Extrae la información geomrética de cada pixel proveniente de "qgis" e inserta dicha información en las tablas de "parcela" y "pixel" de la BD. 
+:----------------|:-------------:
+load_qgis | Extrae la información geométrica de cada pixel proveniente de "qgis" e inserta dicha información en las tablas de "parcela" y "pixel" de la BD. 
 load_parcela | Lee de un excel información fisca sobre las parcelas e inserta los datos en la BD.
 load_cultivos | Lee de un excel información sobre cultivos con sus variedades e inserta los datos en la BD.
 download_img | Usa uno de los módulos desarrollado por el equipo para descargar índices vegetativos a partir de imágenes satelitales. No almacen nada directamente, devuelve un dataframe con los datos descargados.
-load_indice | integra la información de índices descargada en el paso anterior en la tabla de "pixel" de la BD.
+load_indice | Integra la información de índices descargada en el paso anterior en la tabla de "pixel" de la BD.
+load_range | Utiliza el script anterior para cargar varios índices. 
+create_view | Construye la vista minable de la que hablaremos en el siguiente punto.
+create_model | Busca y entrena el mejor modelo IA posible sobre la vista minable anterior.
+predict_model | Utiliza el modelo entrenado para predecir sobre los datos de prueba que contiene la vista minable.
 
 Para entender detalladamente qué hacen los scripts de carga de índices tenemos que explicar algunos de los procesos de automatización de los que hacemos uso. 
 

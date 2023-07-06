@@ -1,15 +1,17 @@
 
 - plan (ordenar esto;) -> tfg listo; -> correción mañana;
 
-citar PMBOOK
-
 https://www.pmi.org/pmbok-guide-standards/foundational/pmbok#
 
 - Infraestructura
 
 https://en.wikipedia.org/wiki/Infrastructure_as_code
 
-- diseño modelo relacional
+https://www.jenkins.io/
+
+https://www.vagrantup.com/
+
+- Diseño modelo relacional
 
 https://mermaid.js.org/syntax/entityRelationshipDiagram.html
 
@@ -29,7 +31,7 @@ https://medium.com/@bonnotguillaume/software-architecture-the-pipeline-design-pa
 
 https://www.astera.com/es/type/blog/etl-pipeline-vs-data-pipeline/
 
-- modelo-producción
+- Modelo IA
 
 https://stackabuse.com/random-forest-algorithm-with-python-and-scikit-learn/
 
@@ -42,3 +44,8 @@ https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_pipeline_displa
 https://scikit-learn.org/stable/modules/cross_validation.html
 
 https://www.cienciadedatos.net/documentos/py19-pca-python.html
+
+* redacción memoria
+
+
+(solo enlaces 'oficiales')
