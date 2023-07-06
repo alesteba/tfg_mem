@@ -1,5 +1,3 @@
-enlace a las figuras utilizadas:  (esto)
-
 Figura 1 - Imagen del frontend de la aplicación en la que se muestran, mediante un mapeo con colores, la evolución de los índices vegetativos en varias parcelas agrícolas.
 
 Figura 2 - Esquema ciclo iterativo en cascada.

@@ -53,7 +53,7 @@
 <li>Incluir los resultados en la presentación de la aplicación.</li>
 </ul></div><div id=Metodología><h3>1.3.2 Metodología</h3><p>En el equipo hacemos uso de SCRUM para la gestión del proyecto. Dicha metodología permite un desarrollo en cascada de las diferentes tareas propuestas para la creación del pipeline.</p>
 <p>Se usará un ciclo de vida iterativo e incremental. Dentro de las fases del proyecto (también llamadas iteraciones), se repiten de manera intencionada una o más actividades del  proyecto. Con estas iteraciones el entendimiento del producto por parte del equipo va aumentando. Las fases (iteraciones) desarrollan el producto a través de una serie de ciclos repetidos, mientras que los incrementos van añadiendo sucesivamente funcionalidad al producto. Esto, en definitiva, consiste en varios ciclos de vida en cascada. Al final de cada iteración se entrega una versión mejorada. Las versiones que entregamos se corresponden con las cuatro grandes fases de la arquitectura que desarrollamos.</p>
-<p><img alt="" src="figures/iteraciones.PNG" /></p></div><div id=EDT><h3>1.3.3 EDT</h3><p>Mostramos el desglose de las tareas más importantes para la correcta realización del proyecto. Para poder realizar un posterior seguimiento y control del proyecto asignamos a cada tarea un tiempo adecuado a la complejidad que estimamos para ésta. En caso de que posteriormente nos alejemos de lo que aquí planificamos, anotaremos dichas desviaciones en la sección de 'seguimiento y control'</p>
+<p><img alt="" src="figures/iteraciones.png" /></p></div><div id=EDT><h3>1.3.3 EDT</h3><p>Mostramos el desglose de las tareas más importantes para la correcta realización del proyecto. Para poder realizar un posterior seguimiento y control del proyecto asignamos a cada tarea un tiempo adecuado a la complejidad que estimamos para ésta. En caso de que posteriormente nos alejemos de lo que aquí planificamos, anotaremos dichas desviaciones en la sección de 'seguimiento y control'</p>
 <table>
 <thead>
 <tr>
@@ -325,9 +325,8 @@
 <td style="text-align: center;">Cuaderno jupyter en el que buscamos el mejor modelo posible</td>
 </tr>
 </tbody>
-</table></div><div id=Gantt><h3>1.3.5 Gantt</h3><p>El siguiente diagrama propone un desglose de tareas para la planificación del proyecto. El tiempo estipulado es de dos meses y una semana.</p>
+</table></div><div id=Gantt><h3>1.3.5 Gantt</h3><p>El siguiente diagrama propone un desglose de tareas para la planificación del proyecto. Este diagrama es una estipulación de cómo se desarrolla el proyecto. En la sección final de seguimiento y control analizamos las desviaciones encontradas y cómo han sido solucionados estos contratiempos.</p>
 <p>'<img alt="" src="mermaid\output_0.png" />'</p>
-<p>Este diagrama es una estipulación de cómo se desarrolla el proyecto. En la sección final de seguimiento y control analizamos las desviaciones encontradas y cómo han sido solucionados estos contratiempos.</p>
 <p>Destacamos que las tareas de escritura de la memoria y pruebas unitarias se realizan durante casi todo el proyecto. Las pruebas nos permiten asegurarnos de que el proyecto funciona adecuadamente: así no pasamos a una nueva tarea si no hemos dejado la aplicación estable al terminar la anterior.</p></div><div id=Comunicaciones><h3>1.3.6 Comunicaciones</h3><p>Para mantener informados tanto al tutor académico como a la tutora de la empresa, utilizaremos los siguientes canales:  </p>
 <table>
 <thead>
@@ -444,7 +443,7 @@
 <li>Static File Generator: podemos diseñar la interfaz de la aplicación en formato web y desplegar en un servidor.</li>
 <li>Commands-System: gestión de comandos internos mediante los que se puede automatizar tareas; utilizaremos esta arquitectura para diseñar el pipeline de datos y almacenar la información proveniente de diferentes fuentes.</li>
 </ul>
-<p><img alt="" src="figures/django_migrate.PNG" /></p>
+<p><img alt="" src="figures/django_migrate.png" /></p>
 <p>Aunque el framework es muy potente, harán falta otras herramientas y entornos para completar con éxito la automatización que buscamos para así conseguir un proceso de optimización continua. En el siguiente punto hablaremos de la infraestructura que la aplicación requiere y de cómo podemos solventar algunos de los problemas de integración más importantes. Mencionamos algunas de estas tecnologías:</p>
 <ul>
 <li>Vagrant: virtualización de una máquina Unix en la que podamos provisionar el proyecto y reproducir los pasos necesarios de nuestro pipeline.</li>
@@ -819,7 +818,7 @@ sudo apt install -y gdal-bin
 </ul>
 <p>Como hemos dicho, hay varias formas de realizar este proceso de canalización; en nuestro caso identificaremos los bloques y diseñaremos el proceso casi de forma manual, para que se ajuste con exactitud a lo que queremos hacer. En el siguiente punto exponemos la tecnología subyacente que utilizaremos para ello. </p></div><div id=Design_pattern><h3>1.7.2 Design pattern</h3><p>En ingeniería de software, un <strong>patrón de diseño</strong> es una solución general y reutilizable para un problema común dentro de un contexto dado. El término "pipeline" puede hacer referencia a diferentes soluciones y contextos. De momento vamos a centrarnos en su aplicación como patrón de diseño ya que en nuestra aplicación se está utilizando como tal.</p>
 <p><strong>Podemos definir un pipeline como una cadena de elementos de procesamiento (procesos, subprocesos, rutinas, funciones, etc.) dispuestos de modo que la salida de cada elemento sea la entrada del siguiente; el nombre hace referencia al flujo de una o varias tuberías.</strong></p>
-<p>En nuestro caso vamos a utilizar la arquitectura de comandos que proporciona Django para diseñar los procesos de transformación de datos que van a poblar la base de datos. La definición y reutilización del proceso de población es muy importante debido a la forma de trabajo que tiene la empresa con diferentes clientes. Dependiendo del cliente se prepara una copia de la aplicación para trabajar con sus datos; por ello una vez definidas las unidades atómicas del proceso de carga de datos, se podrán diseñar diferentes pipelines para cada cliente. Para este trabajo nos conformaremos con el diseño y la implementación de un proceso general, pero manteniendo la idea de que pueda ser escalado más adelante.</p>
+<p>En nuestro caso vamos a utilizar la arquitectura de comandos que proporciona Django para diseñar los procesos de transformación de datos que van a poblar la base de datos. La definición y reutilización del proceso de población es muy importante debido a la forma de trabajo que tiene la empresa con diferentes clientes. Dependiendo del cliente, se prepara una copia de la aplicación para trabajar con sus datos; por ello, una vez definidas las unidades atómicas del proceso de carga de datos, se podrán diseñar diferentes pipelines para cada cliente. Para este trabajo nos conformaremos con el diseño y la implementación de un proceso general, pero manteniendo la idea de que pueda ser escalado más adelante.</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">django.core.management.base</span> <span class="kn">import</span> <span class="n">BaseCommand</span>
 
 <span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
@@ -840,36 +839,52 @@ sudo apt install -y gdal-bin
 <thead>
 <tr>
 <th style="text-align: left;">SCRIPT</th>
-<th style="text-align: right;">TAREA</th>
+<th style="text-align: center;">TAREA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">load_qgis</td>
-<td style="text-align: right;">Extrae la información geomrética de cada pixel proveniente de "qgis" e inserta dicha información en las tablas de "parcela" y "pixel" de la BD.</td>
+<td style="text-align: center;">Extrae la información geométrica de cada pixel proveniente de "qgis" e inserta dicha información en las tablas de "parcela" y "pixel" de la BD.</td>
 </tr>
 <tr>
 <td style="text-align: left;">load_parcela</td>
-<td style="text-align: right;">Lee de un excel información fisca sobre las parcelas e inserta los datos en la BD.</td>
+<td style="text-align: center;">Lee de un excel información fisca sobre las parcelas e inserta los datos en la BD.</td>
 </tr>
 <tr>
 <td style="text-align: left;">load_cultivos</td>
-<td style="text-align: right;">Lee de un excel información sobre cultivos con sus variedades e inserta los datos en la BD.</td>
+<td style="text-align: center;">Lee de un excel información sobre cultivos con sus variedades e inserta los datos en la BD.</td>
 </tr>
 <tr>
 <td style="text-align: left;">download_img</td>
-<td style="text-align: right;">Usa uno de los módulos desarrollado por el equipo para descargar índices vegetativos a partir de imágenes satelitales. No almacen nada directamente, devuelve un dataframe con los datos descargados.</td>
+<td style="text-align: center;">Usa uno de los módulos desarrollado por el equipo para descargar índices vegetativos a partir de imágenes satelitales. No almacen nada directamente, devuelve un dataframe con los datos descargados.</td>
 </tr>
 <tr>
 <td style="text-align: left;">load_indice</td>
-<td style="text-align: right;">integra la información de índices descargada en el paso anterior en la tabla de "pixel" de la BD.</td>
+<td style="text-align: center;">Integra la información de índices descargada en el paso anterior en la tabla de "pixel" de la BD.</td>
+</tr>
+<tr>
+<td style="text-align: left;">load_range</td>
+<td style="text-align: center;">Utiliza el script anterior para cargar varios índices.</td>
+</tr>
+<tr>
+<td style="text-align: left;">create_view</td>
+<td style="text-align: center;">Construye la vista minable de la que hablaremos en el siguiente punto.</td>
+</tr>
+<tr>
+<td style="text-align: left;">create_model</td>
+<td style="text-align: center;">Busca y entrena el mejor modelo IA posible sobre la vista minable anterior.</td>
+</tr>
+<tr>
+<td style="text-align: left;">predict_model</td>
+<td style="text-align: center;">Utiliza el modelo entrenado para predecir sobre los datos de prueba que contiene la vista minable.</td>
 </tr>
 </tbody>
 </table>
 <p>Para entender detalladamente qué hacen los scripts de carga de índices tenemos que explicar algunos de los procesos de automatización de los que hacemos uso. </p>
 <p>Estos scripts nos permiten crear el flujo necesario para que la aplicación procese la información y termine en un estado consistente. Parte del proceso necesita ser automatizado y ejecutado reiteradamente, añadiendo los datos a la BD y relacionándolos adecuadamente. En nuestro contexto agronómico, es la descarga de índices la parte del proceso que necesita ser automatizada, mientras que los datos de las parcelas y cultivos y la información geoespacial se pueden cargar directamente en el despliegue de la aplicación. </p>
-<p>Con esta estructura de tuberías lista, podemos reutilizar cualquier parte del proceso. Un planificador de tareas nos ayuda a establecer el tiempo que tiene que transcurrir entre las descargas.  Se ha utilizado el scheduler por defecto del framework de Django que estamos utilizando para esta gestión de tiempos y descarga.</p>
-<p>Finalmente, para realizar pruebas, queremos crear un único script que ejecute el proceso de forma ordenada. El resto de tuberías que se adjuntan en el proyecto tienen una forma similar y hacen el mismo uso de los comandos de Django que hemos explicado.</p>
+<p>Con esta estructura de tuberías lista, podemos reutilizar cualquier parte del proceso. Un planificador de tareas nos ayuda a establecer el tiempo que tiene que transcurrir entre las descargas.  Se ha utilizado el scheduler por defecto del framework de Django que estamos utilizando para esta gestión de tiempos y descarga,</p>
+<p>Finalmente, para realizar pruebas y exponer el proceso en esta memoria, Jenkins nos permite ejecutar de forma ordenada el flujo completo del pipeline mediante infraestructura como código. El resto de tuberías que se utilzian en el proyecto tienen una forma similar y hacen el mismo uso de los comandos de Django que hemos explicado.</p>
 <p>Por último, este patrón nos permite ejecutar comandos de forma asíncrona y gestionar los procesos con un planificador. Actualmente, aunque el tiempo de carga es alto, podemos asumir una carga lenta. Pero es este mismo patrón de diseño el que nos puede permitir a futuro la carga asíncrona de los datos en cada una de los componentes que lo forman.</p>
 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">run</span> <span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">DATA</span><span class="p">,</span> <span class="n">INDICES</span><span class="p">):</span>
 
@@ -1076,7 +1091,7 @@ sudo apt install -y gdal-bin
   <tbody>
     <tr>
       <th>2</th>
-      <td>RandomForest</td>
+      <td>RandomForestRegressor</td>
       <td>{'rf__max_depth': 7, 'rf__max_features': 'sqrt', 'rf__n_estimators': 5, 'rf__random_state': 42}</td>
       <td>-4.475243e+07</td>
       <td>2282.013333</td>
@@ -1093,13 +1108,22 @@ sudo apt install -y gdal-bin
       <td>6494.212821</td>
     </tr>
     <tr>
+      <th>4</th>
+      <td>KNeighborsRegressor</td>
+      <td>{'knn__metric': 'manhattan', 'knn__n_neighbors': 11, 'knn__weights': 'uniform'}</td>
+      <td>-4.566995e+07</td>
+      <td>5109.534545</td>
+      <td>4.310770e+07</td>
+      <td>6565.645200</td>
+    </tr>
+    <tr>
       <th>3</th>
-      <td>MLP</td>
-      <td>{'mlpr__activation': 'tanh', 'mlpr__alpha': 0.0001, 'mlpr__hidden_layer_sizes': (100, 50, 30), 'mlpr__learning_rate': 'adaptive', 'mlpr__max_iter': 50, 'mlpr__solver': 'sgd'}</td>
-      <td>-4.524895e+07</td>
-      <td>4616.211769</td>
-      <td>4.322007e+07</td>
-      <td>6574.197540</td>
+      <td>MLPRegressor</td>
+      <td>{'mlpr__activation': 'tanh', 'mlpr__alpha': 0.05, 'mlpr__hidden_layer_sizes': (100, 50, 30), 'mlpr__learning_rate': 'adaptive', 'mlpr__max_iter': 50, 'mlpr__solver': 'sgd'}</td>
+      <td>-4.550295e+07</td>
+      <td>4585.188137</td>
+      <td>4.325927e+07</td>
+      <td>6577.177888</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1147,11 +1171,7 @@ sudo apt install -y gdal-bin
 
 <p>A continuación mostramos una gráfica para cada modelo en la que vemos la relación entre los valores actuales y los valores predichos por el modelo. Esta pequeña visualización nos permite ver si cada algoritmo sobreajusta a los datos de entrenamiento o realmente tiene el rango que necesitamos. El punto más interesante es el análisis del modelo 'stacking' en el que vemos que es capaz de inferir los estilos de los algoritmos anteriores.</p>
 <p><img alt="" src="figures/models-predictions.png" /></p>
-<p>Hemos analizado cada algoritmo con la intención de ver si modeliza correctamente nuestro problema de regresión, pero no es nuestro objetivo final que el modelo prediga con exactitud: solo queremos dejar automatizada una pequeña visualización de las relaciones entre los índices para así poder intuir qué modelo nos puede funcionar mejor. De hecho, los datos representativos con los que trabajamos nos impiden buscar un modelo real preciso.</p></div><div id=Predicciones><h3>1.8.4 Predicciones</h3><p>Nuestro último paso en el pipeline mostrado anteriormente es la capacidad para utilizar el modelo y predecir qué cantidad de kg se pueden cosechar cuando se pasa una nueva parcela al sistema. </p>
-<p>A continuación mostrar, a modo de ejemplo, cómo el último 'stage' del pipeline utiliza el modelo para predecir sobre la tabla minable utilizada.</p>
-<p>En este punto, deberíamos poder utilizar este modelo obtenido dentro de la arquitectura de la aplicación para predecir, cómo evolucionan los cultivos que se están monitorizando. El punto en el que se encuentra la arquitectura soporta casi de forma directa la inclusión de las predicciones de la aplicación.</p>
-<p>-&gt; ultimo stage del pipeline.
--&gt; cambio a modelo ensemble.</p>
+<p>Hemos analizado cada algoritmo con la intención de ver si modeliza correctamente nuestro problema de regresión, pero no es nuestro objetivo final que el modelo prediga con exactitud: solo queremos dejar automatizada una pequeña visualización de las relaciones entre los índices para así poder intuir qué modelo nos puede funcionar mejor. De hecho, los datos representativos con los que trabajamos nos impiden buscar un modelo real preciso.</p></div><div id=Predicciones><h3>1.8.4 Predicciones</h3><p>Nuestro último paso en el pipeline mostrado anteriormente es la capacidad para utilizar el modelo y predecir qué cantidad de kg se pueden cosechar cuando se pasa una nueva parcela al sistema. A continuación mostramos cómo el último 'stage' del pipeline utiliza el modelo que acabamos de entenar para predecir sobre la vista minable.</p>
 <div class="codehilite"><pre><span></span><code><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;script/finalized_model.sav&#39;</span>
 
 <span class="n">df_x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;script/view.csv&#39;</span><span class="p">)</span>
@@ -1161,7 +1181,10 @@ sudo apt install -y gdal-bin
 <span class="n">y_pred_e</span> <span class="o">=</span> <span class="n">loaded_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_x</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">y_pred_e</span><span class="p">)</span>
-</code></pre></div></div><p style="page-break-after: always;">&nbsp;</p><div id=SEGUIMIENTO><h3>1.9.0 SEGUIMIENTO</h3><div id=Desviaciones><h3>1.9.1 Desviaciones</h3><p>El proyecto se ha desarrollado sin grandes cambios relativos a la planificación estipulada, pero a pesar de realizar la planificación del proyecto con su desglose en entregables y horas para los paquetes de trabajo, el tiempo de desarrollo ha diferido de la misma en algunas ocasiones, especialmente en la memoria.</p>
+</code></pre></div>
+
+<p>En este punto, deberíamos poder utilizar este modelo obtenido dentro de la arquitectura de la aplicación para predecir, cómo evolucionan los cultivos que se están monitorizando. El punto en el que se encuentra la arquitectura soporta casi de forma directa la inclusión de las predicciones de la aplicación.</p>
+<p><img alt="" src="figures/predict.png" /></p></div><p style="page-break-after: always;">&nbsp;</p><div id=SEGUIMIENTO><h3>1.9.0 SEGUIMIENTO</h3><div id=Desviaciones><h3>1.9.1 Desviaciones</h3><p>El proyecto se ha desarrollado sin grandes cambios relativos a la planificación estipulada, pero a pesar de realizar la planificación del proyecto con su desglose en entregables y horas para los paquetes de trabajo, el tiempo de desarrollo ha diferido de la misma en algunas ocasiones, especialmente en la memoria.</p>
 <p>El número de horas planificadas era de 300, las cuales se repartían en varias etapas marcadas  por los diversos puntos de control: planificación, análisis, infraestructura, diseño,  implementación, modelos y seguimiento y control.</p>
 <p>No ha habido grandes desviaciones en cuanto a la planificación estipulada en el <a href="https://alesteba.github.io/tfg/#tiempos">desglose de tareas</a>. Sí que podemos remarcar que se han dedicado más horas a la redacción de la memoria y a algunas tareas secundarias relacionadas con esta, como pueden ser la integración de los diversos diagramas que apareceno la automatización en Github Actions. Podemos estimar entre 15 o 20 horas más para esta tarea sobre las 20 estimadas al principio.</p></div><div id=Memoria><h3>1.9.2 Memoria</h3><p>Esta memoria se incluye como un entregable del proyecto debido a las explicaciones y esquemas que contiene (principalmente para el modelo relacional). Para poder mejorar el flujo de trabajo, ciertos conceptos necesitan ser entendidos por los desarrolladores. La documentación aquí expuesta tiene un gran valor por el lenguaje ubicuo que implanta en el proyecto. </p>
 <p>El documento se ha escrito como notas en <em>Markdown</em> por la facilidad que da para incluir fragmentos de código relativos al proyecto y poder explicar decisiones y conceptos. Para integrar los diagramas expuestos utilizamos tecnologías como <em>Mermaid</em>, que posibilita editar los diagramas directamente en el documento, algo totalmente necesario cuando estos modelos se modifican a medida que avanzamos.</p>
@@ -1271,36 +1294,38 @@ sudo apt install -y gdal-bin
 <p>Para finalizar, volvemos a los conceptos de los procesos 'lean' que mencionábamos al principio. La fácil comprensión que permiten los esquemas de datos aquí planteados dotan al equipo de trabajo del lenguaje ubicuo necesario para que el software pueda crecer y ser escalado, evitando bloqueos por falta de comprensión. El lenguaje que maneja el equipo está directamente relacionado con su buen funcionamiento y garantiza el proceso de  optimización continua. Los artefactos obtenidos y la explicación de los modelos quedan así como documentación interna que debe ser mantenida al mismo nivel de importancia que el software que la implementa. </p>
 <p>'<img alt="" src="mermaid\output_4.png" />'</p>
 <p>En cuanto a la aplicación, se ha conseguido terminar con un producto funcional que cumple con los requisitos planteados. El proceso de arquitectura conseguido facilita el uso de múltiples datos provenientes de las fuentes estudiadas. El esquema de datos relacional implementado soporta la carga de los índices vegetativos, así como el resto de información relativa al parcelario. Los bloques atómicos de carga diseñados permiten planificar y automatizar la ingestión de los datos provenientes de las fuentes descritas. Por último, la capacidad para utilizar modelos de regresión sobre los datos dota a la arquitectura de la capa necesaria para realizar predicciones y configurar los estudios necesarios. Hemos conseguido crear las bases de un proceso que tiene un gran potencial para monitorizar y proporcionar una adecuada toma de decisiones sobre conceptos agronómicos.</p>
-<p><img alt="" src="figures/completed.PNG" /></p>
-<p>(recortar y hasta aquí:)</p></div><div id=Figuras><h4>1.10.2 Figuras</h4><p>enlace a las figuras utilizadas:  (esto)</p>
-<p>Figura 1 - Imagen del frontend de la aplicación en la que se muestran, mediante un mapeo con colores, la evolución de los índices vegetativos en varias parcelas agrícolas.</p>
+<p><img alt="" src="figures/completed.png" /></p></div><div id=Figuras><h4>1.10.2 Figuras</h4><p>Figura 1 - Imagen del frontend de la aplicación en la que se muestran, mediante un mapeo con colores, la evolución de los índices vegetativos en varias parcelas agrícolas.</p>
 <p>Figura 2 - Esquema ciclo iterativo en cascada.</p>
 <p>Figura 3 - Diagrama Gantt con un desglose estipulado de la evolución del proyecto.</p>
 <p>Figura 4 - Captura del visor web en la que se aprecia cómo se monitorizan varias parcelas.</p>
 <p>Figura 5 - Esquema de las etapas de desarrollo planificadas para el trabajo.</p>
 <p>Figura 6 - Ejemplo de uso de una migración en Django al estado inicial de la base de datos.</p>
-<p>Figura 7 - estoy repitiendo utilizar otra cosa.</p>
-<p>Figura 8 - esquema relacional en uso de la aplicación</p>
-<p>Figura 9 - esquema relacional inicial de partida, con entidades definidas, pero sin implementar, se toma como idea para el comienzo del diseño.</p>
-<p>Figura 10 - modelo relacional de las entidades descritas para su mejor comprensión.</p>
-<p>Figura 11 - pipeline design pattern, diagrama de clases para exponer cómo vamos a utilizar los bloques de carga creamos.</p>
-<p>Figura 12 - estados del pipeline.</p>
+<p>Figura 7 - Ejecución del pipeline mientras realiza la descarga de datos del satélite Copernicus.</p>
+<p>Figura 8 - Esquema relacional en uso de la aplicación</p>
+<p>Figura 9 - Esquema relacional inicial de partida, con entidades definidas, pero sin implementar, se toma como idea para el comienzo del diseño.</p>
+<p>Figura 10 - Modelo relacional de las entidades descritas para su mejor comprensión.</p>
+<p>Figura 11 - Pipeline design pattern, diagrama de clases para exponer cómo vamos a utilizar los bloques de carga creamos.</p>
+<p>Figura 12 - Estados ordenados del pipeline que queremos implementar.</p>
 <p>Figura 13 - Imagen satelital con nubes para indicar cómo afectan a los índices vegetativos calculados en la vista minable.</p>
-<p>Figura 14 - tabla con la vista minable calculada para un rango de fechas concretas.</p>
-<p>Figura 15 - comparación de los algoritmos. Valores reales vs los predichos por cada uno de los algoritmos utilizados.</p>
+<p>Figura 13 - Ejecución del pipeline implementado desde la herramienta de integración continua Jenkins.</p>
+<p>Figura 14 - Tabla con la vista minable calculada para un rango de fechas concretas.</p>
+<p>Figura 15 - Comparación de los algoritmos. Valores reales vs los predichos por cada uno de los algoritmos utilizados.</p>
+<p>Figura 15 - Predicción de la cantidad de Kg de cultivo que se va ha cosechar. Resultado tras la ejecución del último 'stage' en el pipeline.</p>
 <p>Figura 16 - Imagen del grafo asociado a las notas en las que se ha escrito esta memoria.</p>
-<p>Figura 17 - resumen del pipeline implementado a lo largo de este trabajo.</p>
-<p>Figura 18 - ejemplo construcción de la memoria desde Github Actions.</p></div><div id=Bibliografía><h4>1.10.3 Bibliografía</h4><ul>
+<p>Figura 17 - Resumen del pipeline implementado a lo largo de este trabajo.</p>
+<p>Figura 18 - Ejemplo construcción de la memoria desde Github Actions.</p>
+<p>Figura 19 - Captura de la ejecución del pipeline tras terminar la ejecución por completo.</p></div><div id=Bibliografía><h4>1.10.3 Bibliografía</h4><ul>
 <li>plan (ordenar esto;) -&gt; tfg listo; -&gt; correción mañana;</li>
 </ul>
-<p>citar PMBOOK</p>
 <p>https://www.pmi.org/pmbok-guide-standards/foundational/pmbok#</p>
 <ul>
 <li>Infraestructura</li>
 </ul>
 <p>https://en.wikipedia.org/wiki/Infrastructure_as_code</p>
+<p>https://www.jenkins.io/</p>
+<p>https://www.vagrantup.com/</p>
 <ul>
-<li>diseño modelo relacional</li>
+<li>Diseño modelo relacional</li>
 </ul>
 <p>https://mermaid.js.org/syntax/entityRelationshipDiagram.html</p>
 <p>https://docs.djangoproject.com/en/4.1/intro/tutorial01/</p>
@@ -1314,14 +1339,18 @@ sudo apt install -y gdal-bin
 <p>https://medium.com/@bonnotguillaume/software-architecture-the-pipeline-design-pattern-from-zero-to-hero-b5c43d8a4e60</p>
 <p>https://www.astera.com/es/type/blog/etl-pipeline-vs-data-pipeline/</p>
 <ul>
-<li>modelo-producción</li>
+<li>Modelo IA</li>
 </ul>
 <p>https://stackabuse.com/random-forest-algorithm-with-python-and-scikit-learn/</p>
 <p>https://towardsdatascience.com/random-forest-regression-5f605132d19d</p>
 <p>https://www.kaggle.com/code/sociopath00/random-forest-using-gridsearchcv</p>
 <p>https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_pipeline_display.html#sphx-glr-auto-examples-miscellaneous-plot-pipeline-display-py</p>
 <p>https://scikit-learn.org/stable/modules/cross_validation.html</p>
-<p>https://www.cienciadedatos.net/documentos/py19-pca-python.html</p></div>
+<p>https://www.cienciadedatos.net/documentos/py19-pca-python.html</p>
+<ul>
+<li>redacción memoria</li>
+</ul>
+<p>(solo enlaces 'oficiales')</p></div>
 
         <div>
 

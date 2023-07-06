@@ -11,7 +11,7 @@ gantt
     ANALISIS: 01-01, 10d
 	
 	section INFRAESTRUCTURA
-    ARQUITECTURA: 10-01, 50d
+    ARQUITECT : 10-01, 10d
     VAGRANT: 10-01, 10d
     ENTORNO: 10-01, 10d
     
@@ -20,21 +20,19 @@ gantt
     REDISEÑO: crit, 10-01, 20d
     
 	section PIPELINE
-    BLOQUES:  30-01, 10d
-    SCRIPT: 05-02, 5d
-    VISTA: 05-02, 5d
+    BLOQUES: 30-01, 10d
+    SCRIPT: 04-02, 8d
+    JENKINS: 04-02, 8d
     
     section MODELO
     LOAD: 10-02, 5d
-    VIEW: 11-02, 5d
-	REGRESSION: 12-02, 10d
-    BEST_MODEL: crit, 15-02, 10d
+    VIEW: 10-02, 10d
+	REGRESSION: 10-02, 10d
+    BEST_MODEL: crit, 15-02, 15d
 
 	section MEMORIA
-	MEM_WRITE: 01-01, 60d
-    SEG_Y_CONT: 01-01, 60d
-	
-    Project complete: milestone, 10-03, 0d
+	MEM_WRITE: 01-01, 70d
+    SEG_Y_CONT: 01-01, 70d
 ```
 
 Destacamos que las tareas de escritura de la memoria y pruebas unitarias se realizan durante casi todo el proyecto. Las pruebas nos permiten asegurarnos de que el proyecto funciona adecuadamente: así no pasamos a una nueva tarea si no hemos dejado la aplicación estable al terminar la anterior.

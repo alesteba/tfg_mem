@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-conclusiones/Bibliografía.md",
+                "file": "2-plan/Metodología.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6-implementación/Design pattern.md",
+                "file": "2-plan/Gantt.md",
                 "mode": "source",
                 "source": false
               }
@@ -39,8 +39,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6-implementación/Design pattern.md",
+                "file": "2-plan/Metodología.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,11 +132,33 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "993ea5312d2387b8",
+  "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
-    "9-conclusiones/Bibliografía.md",
-    "6-implementación/Design pattern.md",
+    "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
+    "_k.pcs.zen/publish/figures/visor_GIS_det.png",
+    "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
+    "_k.pcs.zen/publish/figures/visor_GIS.png",
+    "_k.pcs.zen/publish/figures/view.p.md",
+    "_k.pcs.zen/publish/figures/view-capture.png",
+    "_k.pcs.zen/publish/figures/spectralgeo_db.png",
+    "_k.pcs.zen/publish/figures/predict.png",
+    "_k.pcs.zen/publish/figures/pipeline_state.webp",
+    "_k.pcs.zen/publish/figures/pipeline_pattern.png",
+    "_k.pcs.zen/publish/figures/pipeline.png",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-35.png",
+    "_k.pcs.zen/publish/figures/nubes",
+    "_k.pcs.zen/publish/figures/modelo_end.png.md",
+    "_k.pcs.zen/publish/figures/llean_1.png.md",
+    "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
+    "3-análisis/Tecnologías.md",
     "9-conclusiones/Figuras.md",
+    "9-conclusiones/Bibliografía.md",
+    "2-plan/Gantt.md",
+    "7-modelo/Regresión.md",
+    "7-modelo/Preprocesamiento.md",
+    "7-modelo/Predicciones.md",
+    "6-implementación/Design pattern.md",
     "6-implementación/Integración continua.md",
     "6-implementación/Transformación de datos.md",
     "9-conclusiones/Conclusiones.md",
@@ -146,33 +167,11 @@
     "5-diseño/Modelo relacional.md",
     "5-diseño/DISEÑO.md",
     "5-diseño/Carga de datos.md",
-    "7-modelo/Preprocesamiento.md",
-    "7-modelo/Predicciones.md",
     "7-modelo/MODELO IA.md",
     "7-modelo/Mejor modelo.md",
     "4-infraestructura/Entorno.md",
     "4-infraestructura/Arquitectura física.md",
-    "2-plan/Riesgos.md",
-    "2-plan/PLANIFICACIÓN.md",
-    "2-plan/Metodología.md",
-    "2-plan/Gantt.md",
-    "2-plan/Entregables.md",
-    "8-seguimiento/Memoria.md",
-    "7-modelo/Regresión.md",
-    "9-conclusiones/TESIS.md",
-    "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
-    "_k.pcs.zen/publish/figures/visor_GIS_det.png",
-    "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
-    "_k.pcs.zen/publish/figures/visor_GIS.png",
-    "_k.pcs.zen/publish/figures/view.p.md",
-    "_k.pcs.zen/publish/figures/view-capture.PNG",
-    "_k.pcs.zen/publish/figures/spectralgeo_db.png",
-    "_k.pcs.zen/publish/figures/pipeline_state.webp",
-    "_k.pcs.zen/publish/figures/pipeline_pattern.PNG",
-    "_k.pcs.zen/publish/figures/pipeline.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-35.png",
     "_k.pcs.zen/publish/figures/pipeline",
-    "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",
