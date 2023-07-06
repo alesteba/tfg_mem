@@ -13,48 +13,48 @@ El principal interés de que la redacción se realice de esta forma es que al co
 
 ```python
 def neigh(G, node, depth):
+  
+  """ given starting node, recursively find neighbours until desired depth is reached """
 
-    """ given starting node, recursively find neighbours until desired depth is reached """
+    node_list = []
+    
+    if depth==0:
+      
+      node_list.append(node)
+      
+    else:
 
-    node_list = []
-
-    if depth==0:
-
-        node_list.append(node)
-
-    else:
-
-        for neighbor in G.neighbors(node):
-
-            node_list.append(node)
-
-            node_list += neigh(G, neighbor, depth-1)
-
-    return list(set(node_list))
+    for neighbor in G.neighbors(node):
+      
+      node_list.append(node)
+      
+      node_list += neigh(G, neighbor, depth-1)
+    
+  return list(set(node_list))
 ```
 
 Entre estas funciones ... 
 
 ```python
 def rec_note_prcs(G, start='TFG', ident='1'):
-
-    ident = ident + '.0'
-
-    neigh = list(G.neighbors(start))
-
-    if (len(neigh) == 0):
-
-        return note_decorate(start,ident[:-2])
-
-    end_doc =  note_decorate(start,ident)
-
-    for con in neigh:
-
-        ident = ident[:-1] + str(int(ident[-1])+1)
-
-        end_doc = end_doc + rec_note_prcs(G, con, ident)
-
-    return end_doc
+  
+  ident = ident + '.0'
+  
+  neigh = list(G.neighbors(start))
+  
+  if (len(neigh) == 0):
+    
+    return note_decorate(start,ident[:-2])
+    
+  end_doc =  note_decorate(start,ident)
+    
+  for con in neigh:
+    
+    ident = ident[:-1] + str(int(ident[-1])+1)
+    
+    end_doc = end_doc + rec_note_prcs(G, con, ident)
+    
+  return end_doc
 ```
 
 
