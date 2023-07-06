@@ -11,8 +11,6 @@
 
 [[Gantt]]
 
-[[RRHH]]
-
 [[Comunicaciones]] 
 
 [[Riesgos]]

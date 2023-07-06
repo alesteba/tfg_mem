@@ -1,4 +1,4 @@
-El objetivo de esta tabla es aumentar la probabilidad de eventos positivos y disminuir la de los negativos.
+El objetivo de esta tabla es aumentar la probabilidad de eventos positivos y disminuir la de los negativos. (cambiar)
 
 FUENTE | RIESGO | SI SUCEDE | MINIMIZAR
 :----------------|:-------------:|:-------------:|:-------------:

@@ -1,5 +1,5 @@
 
-- plan
+- plan (ordenar esto;) -> tfg listo; -> correción mañana;
 
 citar PMBOOK
 

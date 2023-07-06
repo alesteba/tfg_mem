@@ -7,7 +7,6 @@ La ejecución del siguiente pipeline tiene lugar tras lanzar la máquina Vagrant
 Los siguientes pasos ejecutan uno a uno los comandos definidos anteriormente, cargando así en la base de datos los datos provenientes de las distintas fuentes (en este caso excels) y procesando su vista minable. El proceso se realiza de forma ordenada para las 25 parcelas de muestra con las que estamos trabajando, remarcamos que el proceso tiene una alta escalabilidad debido a que podemos reproducir aquellos 'stages' necesarios en los momentos que nos interese. Es decir, podemos comenzar con un pipeline para insertar la información de 25 parcelas, pero posteriormente podríamos añadir más pasos a medida que dispongamos de más información. Por otra parte, la infraestructura como código que conseguimos posibilita definir el flujo concreto que un cliente puede tener con la aplicación. 
 
 ```jenkins
-
 pipeline {
     agent any
 
@@ -25,42 +24,42 @@ pipeline {
                 sh('pip install --upgrade numpy')
             }
         }
-        stage('migrate')
-        {
+        stage('migrate') {
            steps {
                 sh('python3.10 manage.py makemigrations core')
                 sh('python3.10 manage.py migrate')
                 sh('python3.10 manage.py flush --no-input')
             }
-       }    
-        stage('qgis') {
+       	}    
+        stage('sources') {
             steps {
                 sh('python3.10 manage.py 1-load-qgis --parcelas "data/parcelas/25/parcelas.shp" --pixels "data/parcelas/25/pixeles.shp" ')
-            }
-        }
-        stage('parcela') {
-            steps {
                 sh('python3.10 manage.py 2-load-parcela-data -xls "data/excels/datos-test-2.xls" ')
-            }
-        }
-	stage('cultivos') {
-            steps {
                 sh('python3.10 manage.py 3-load-cultivos -xls "data/excels/datos-test-2.xls" ')
             }
         }
-        stage('indices') {
+        stage('sentinel') {
             steps {
-                sh('python3.10 manage.py 4-download_img -a "20220601" -b "20220701" -p "data/parcelas/25/pixeles.shp" -i ndvi ndre' )
+                sh("""python3.10 manage.py 4-download_img 
+                -a "20220601" 
+                -b "20220701" 
+                -p "data/parcelas/25/pixeles.shp" 
+                -i ndvi ndre""" )
             }
         }
-        stage('vista') {
-            steps {
-                sh('python3.10 manage.py 5-load_range')
-            }
-        }
+        stage('indices') { steps { sh('python3.10 manage.py 5-load_range -i ndvi ndre ') } }
+        
+        stage('view') { steps { sh('python3.10 manage.py 6-create-view') } }
+        
+        stage('train') { steps { sh('python3.10 manage.py 7-create-mode') } }
+        
+        stage('predict') { steps { sh('python3.10 manage.py 8-predict-model') } }
     }
 }
-
 ```
 
 Además de este último, podemos crear varios entornos con tuberías diferentes que den como resultado bases de datos con estados distintos. Como mencionábamos anteriormente, esto es muy útil debido al funcionamiento del equipo en relación con el procesamiento de datos con varios clientes. La aplicación puede trabajar con instancias diferentes de la misma base de datos dependiendo del proyecto en el que se encuentre; por ejemplo, la misma instancia de la BD sirve tanto para una bodega con variedades de vino como para una cooperativa que contempla varios cultivos como guisantes, olivas, peras, etc. Por ello, definir scripts como el anterior utilizando los mismos comandos con distintas fuentes de datos es una forma clara y ordenada de automatizar los procesos.
+
+![](figures/pipeline.png)
+
+Por último, mencionar que en los últimos pasos del pipeline se entrena el mejor modelo y se predice a modo de ejemplo la cantidad de kg de cultivo que van a ser cosechados para las 25 parcelas con las que estamos trabajando.

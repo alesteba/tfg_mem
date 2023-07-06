@@ -9,6 +9,55 @@ Utilizamos algunas herramientas de integración continua como *Github Actions* p
 ![](figures/graph.png)
 
 
+El principal interés de que la redacción se realice de esta forma es que al comienzo del proyecto no había una idea clara de cómo se tenían que desarrollar los contenidos. Escribir un capítulo o tema en una nota es algo más sencillo (por lo tanto, se puede terminar) que pensar desde el principio dónde colocar esta sección que quiero escribir en la memoria. Utilizando Obsidian como gestor de las notas, podemos definir relaciones entre ellas simplemente conectando palabras claves entre ellas. De esta forma conseguimos un esquema mental del proyecto simplemente visualizando el grafo generado. Finalmente, a medida que nos acercamos al cierre del proyecto, escribimos en un notebook una serie de algoritmos que nos permiten presentar el resultado de la memoria de la forma que deseamos. En ellos implementamos los pasos necesarios para transformar cada nota a HTML, integrar aquellos sniptes de código que pueda contener, representar tablas y diagramas, etc. Muy importante, el grafo permite generar los niveles de identación asociados a cada capítulo o sección del documento. A continuación, mostramos algunas de las funciones utilizadas en el cuaderno para obtener el resultado que está leyendo.
+
+```python
+def neigh(G, node, depth):
+
+    """ given starting node, recursively find neighbours until desired depth is reached """
+
+    node_list = []
+
+    if depth==0:
+
+        node_list.append(node)
+
+    else:
+
+        for neighbor in G.neighbors(node):
+
+            node_list.append(node)
+
+            node_list += neigh(G, neighbor, depth-1)
+
+    return list(set(node_list))
+```
+
+Entre estas funciones ... 
+
+```python
+def rec_note_prcs(G, start='TFG', ident='1'):
+
+    ident = ident + '.0'
+
+    neigh = list(G.neighbors(start))
+
+    if (len(neigh) == 0):
+
+        return note_decorate(start,ident[:-2])
+
+    end_doc =  note_decorate(start,ident)
+
+    for con in neigh:
+
+        ident = ident[:-1] + str(int(ident[-1])+1)
+
+        end_doc = end_doc + rec_note_prcs(G, con, ident)
+
+    return end_doc
+```
+
+
 Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos *Github Actions* para definir las acciones necesarias cuando se realicen cambios en el repositorio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice cuando se hacen cambios en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de *Github Pages*. En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. 
 
 ```yaml
