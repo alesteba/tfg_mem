@@ -37,7 +37,7 @@ Entre estas funciones ...
 
 ```python
 def rec_note_prcs(G, start='TFG', ident='1'):
-  
+
   ident = ident + '.0'
   
   neigh = list(G.neighbors(start))
