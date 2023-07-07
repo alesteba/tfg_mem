@@ -1227,12 +1227,12 @@ sudo apt install -y gdal-bin
 
         <span class="k">return</span> <span class="n">text</span>
 
-    <span class="n">sub_text</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="err">!</span><span class="p">[](</span><span class="n">mermaid</span>\<span class="n">output_5</span><span class="o">.</span><span class="n">png</span><span class="p">)</span><span class="s1">&#39;mermaid(?s:.*?)```&#39;</span><span class="p">,</span> 
-    <span class="n">Â</span>  <span class="n">Â</span>  <span class="n">mmd_to_img</span><span class="p">(</span><span class="n">sub_text</span><span class="p">,</span> <span class="n">mermaid_dir</span><span class="p">)</span> <span class="p">,</span>
-    <span class="n">Â</span>  <span class="n">Â</span>  <span class="n">text</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="n">sub_text</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="err">!</span><span class="p">[](</span><span class="n">mermaid</span>\<span class="n">output_5</span><span class="o">.</span><span class="n">png</span><span class="p">)</span><span class="s1">&#39;mermaid_digram(?s:.*?)```&#39;</span><span class="p">,</span> 
+        <span class="n">mmd_to_img</span><span class="p">(</span><span class="n">sub_text</span><span class="p">,</span> <span class="n">mermaid_dir</span><span class="p">)</span> <span class="p">,</span>
+        <span class="n">text</span><span class="p">,</span> <span class="mi">1</span>
     <span class="p">)</span>
 
-<span class="n">Â</span>  <span class="n">Â</span>  <span class="k">return</span> <span class="n">mermaid_process</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mermaid_process</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos <em>Github Actions</em> para definir las acciones necesarias cuando se realicen cambios en el repositorio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice cuando se hacen cambios en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de <em>Github Pages</em>. En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. </p>
