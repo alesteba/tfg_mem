@@ -24,21 +24,21 @@ Figura 12 - Estados ordenados del pipeline que queremos implementar.
 
 Figura 13 - Imagen satelital con nubes para indicar cómo afectan a los índices vegetativos calculados en la vista minable.
 
-Figura 13 - Ejecución del pipeline implementado desde la herramienta de integración continua Jenkins.
+Figura 14 - Ejecución del pipeline implementado desde la herramienta de integración continua Jenkins.
 
-Figura 14 - Tabla con la vista minable calculada para un rango de fechas concretas.
+Figura 15 - Tabla con la vista minable calculada para un rango de fechas concretas.
 
-Figura 15 - Comparación de los algoritmos. Valores reales vs los predichos por cada uno de los algoritmos utilizados.
+Figura 16 - Comparación de los algoritmos. Valores reales vs. los predichos por cada uno de los algoritmos utilizados.
 
-Figura 15 - Predicción de la cantidad de Kg de cultivo que se va ha cosechar. Resultado tras la ejecución del último 'stage' en el pipeline.
+Figura 17 - Predicción de la cantidad de Kg de cultivo que se va a cosechar. Resultado tras la ejecución del último 'stage' en el pipeline.
 
-Figura 16 - Imagen del grafo asociado a las notas en las que se ha escrito esta memoria.
+Figura 18 - Imagen del grafo asociado a las notas en las que se ha escrito esta memoria.
 
-Figura 17 - Resumen del pipeline implementado a lo largo de este trabajo.
+Figura 19 - Resumen del pipeline implementado a lo largo de este trabajo.
 
-Figura 18 - Ejemplo construcción de la memoria desde Github Actions.
+Figura 20 - Ejemplo construcción de la memoria desde Github Actions.
 
-Figura 19 - Captura de la ejecución del pipeline tras terminar la ejecución por completo.
+Figura 21 - Captura de la ejecución del pipeline tras terminar la ejecución por completo.
 
 
 

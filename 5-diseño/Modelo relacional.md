@@ -110,14 +110,8 @@ erDiagram
         date fecha
         string estado
     }
-    ESTACION ||--o{ ESTACION_HISTORICO : contains
     ESTACION {
 		string nombre FK
-    }
-    ESTACION_HISTORICO {
-		string estacion FK
-		date fecha
-		charfield file
     }
 ```
 

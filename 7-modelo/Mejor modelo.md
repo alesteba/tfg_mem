@@ -44,7 +44,6 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
       <th></th>
       <th>MODEL</th>
       <th>PARAMS</th>
-      <th>SCORE</th>
       <th>MAE</th>
       <th>MSE</th>
       <th>RMSE</th>
@@ -55,7 +54,6 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
       <th>2</th>
       <td>RandomForestRegressor</td>
       <td>{'rf__max_depth': 7, 'rf__max_features': 'sqrt', 'rf__n_estimators': 5, 'rf__random_state': 42}</td>
-      <td>-4.475243e+07</td>
       <td>2282.013333</td>
       <td>1.464411e+07</td>
       <td>3826.762121</td>
@@ -64,7 +62,6 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
       <th>0</th>
       <td>ElasticNet</td>
       <td>{'en__alpha': 10, 'en__l1_ratio': 0.7000000000000001, 'en__max_iter': 5}</td>
-      <td>-4.556500e+07</td>
       <td>4668.784757</td>
       <td>4.217480e+07</td>
       <td>6494.212821</td>
@@ -73,7 +70,6 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
       <th>4</th>
       <td>KNeighborsRegressor</td>
       <td>{'knn__metric': 'manhattan', 'knn__n_neighbors': 11, 'knn__weights': 'uniform'}</td>
-      <td>-4.566995e+07</td>
       <td>5109.534545</td>
       <td>4.310770e+07</td>
       <td>6565.645200</td>
@@ -82,16 +78,14 @@ Una vez hemos analizado los datos y hemos limpiado los valores erróneos de los 
       <th>3</th>
       <td>MLPRegressor</td>
       <td>{'mlpr__activation': 'tanh', 'mlpr__alpha': 0.05, 'mlpr__hidden_layer_sizes': (100, 50, 30), 'mlpr__learning_rate': 'adaptive', 'mlpr__max_iter': 50, 'mlpr__solver': 'sgd'}</td>
-      <td>-4.550295e+07</td>
-      <td>4585.188137</td>
-      <td>4.325927e+07</td>
-      <td>6577.177888</td>
+      <td>4599.475956</td>
+      <td>4.323998e+07</td>
+      <td>6575.711553</td>
     </tr>
     <tr>
       <th>1</th>
       <td>SVR</td>
       <td>{'svr__C': 5.0, 'svr__gamma': 0.01, 'svr__kernel': 'linear'}</td>
-      <td>-4.776304e+07</td>
       <td>4129.801479</td>
       <td>4.749271e+07</td>
       <td>6891.495313</td>

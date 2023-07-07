@@ -33,21 +33,26 @@ pipeline {
        	}    
         stage('sources') {
             steps {
-                sh('python3.10 manage.py 1-load-qgis --parcelas "data/parcelas/25/parcelas.shp" --pixels "data/parcelas/25/pixeles.shp" ')
-                sh('python3.10 manage.py 2-load-parcela-data -xls "data/excels/datos-test-2.xls" ')
-                sh('python3.10 manage.py 3-load-cultivos -xls "data/excels/datos-test-2.xls" ')
+                sh('python3.10 manage.py 1-load-qgis 
+	                --parcelas "data/parcelas/25/parcelas.shp" 
+	                --pixels "data/parcelas/25/pixeles.shp" ')
+                sh('python3.10 manage.py 2-load-parcela-data 
+	                -xls "data/excels/datos-test-2.xls" ')
+                sh('python3.10 manage.py 3-load-cultivos 
+	                -xls "data/excels/datos-test-2.xls" ')
             }
         }
         stage('sentinel') {
             steps {
                 sh("""python3.10 manage.py 4-download_img 
-                -a "20220601" 
-                -b "20220701" 
-                -p "data/parcelas/25/pixeles.shp" 
-                -i ndvi ndre""" )
+	                -a "20220601" 
+	                -b "20220701" 
+	                -p "data/parcelas/25/pixeles.shp" 
+	                -i ndvi ndre""" )
             }
         }
-        stage('indices') { steps { sh('python3.10 manage.py 5-load_range -i ndvi ndre ') } }
+        stage('indices') { steps { sh('python3.10 manage.py 5-load_range 
+									    -i ndvi ndre ') } }
         
         stage('view') { steps { sh('python3.10 manage.py 6-create-view') } }
         

@@ -1,5 +1,5 @@
 
-- plan (ordenar esto;) -> tfg listo; -> correción mañana;
+- plan
 
 https://www.pmi.org/pmbok-guide-standards/foundational/pmbok#
 
@@ -37,15 +37,16 @@ https://stackabuse.com/random-forest-algorithm-with-python-and-scikit-learn/
 
 https://towardsdatascience.com/random-forest-regression-5f605132d19d
 
-https://www.kaggle.com/code/sociopath00/random-forest-using-gridsearchcv
-
 https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_pipeline_display.html#sphx-glr-auto-examples-miscellaneous-plot-pipeline-display-py
 
 https://scikit-learn.org/stable/modules/cross_validation.html
 
-https://www.cienciadedatos.net/documentos/py19-pca-python.html
+https://scikit-learn.org/stable/auto_examples/ensemble/plot_stack_predictors.html#sphx-glr-auto-examples-ensemble-plot-stack-predictors-py
 
 * redacción memoria
 
+https://networkx.org/
 
-(solo enlaces 'oficiales')
+https://github.com/obsidianmd/obsidian-api
+
+https://docs.github.com/en/actions
