@@ -9,13 +9,13 @@ Utilizamos algunas herramientas de integración continua como *Github Actions* p
 ![](figures/graph.png)
 
 
-El principal interés de que la redacción se realice de esta forma es que al comienzo del proyecto no había una idea clara de cómo se tenían que desarrollar los contenidos. Escribir un capítulo o tema en una nota es algo más sencillo (por lo tanto, se puede terminar) que pensar desde el principio dónde colocar esta sección que quiero escribir en la memoria. Utilizando Obsidian como gestor de las notas, podemos definir relaciones entre ellas simplemente conectando palabras claves entre ellas. De esta forma conseguimos un esquema mental del proyecto simplemente visualizando el grafo generado. Finalmente, a medida que nos acercamos al cierre del proyecto, escribimos en un notebook una serie de algoritmos que nos permiten presentar el resultado de la memoria de la forma que deseamos. En ellos implementamos los pasos necesarios para transformar cada nota a HTML, integrar aquellos sniptes de código que pueda contener, representar tablas y diagramas, etc. Muy importante, el grafo permite generar los niveles de identación asociados a cada capítulo o sección del documento. A continuación, mostramos algunas de las funciones utilizadas en el cuaderno para obtener el resultado que está leyendo.
+El principal interés de que la redacción se realice de esta forma es que al comienzo del proyecto no había una idea clara de cómo se tenían que desarrollar los contenidos. Escribir un capítulo o tema en una nota es algo más sencillo (por lo tanto, se puede terminar) que pensar desde el principio dónde colocar esta sección que quiero escribir en la memoria. Utilizando Obsidian como gestor de las notas, podemos definir relaciones entre ellas simplemente conectando palabras claves entre ellas. De esta forma conseguimos un esquema mental del proyecto simplemente visualizando el grafo generado. Finalmente, a medida que nos acercamos al cierre del proyecto, escribimos en un notebook una serie de algoritmos que nos permiten presentar el resultado de la memoria de la forma que deseamos. En ellos implementamos los pasos necesarios para transformar cada nota a HTML, integrar aquellos *snipets* de código que pueda contener, representar tablas y diagramas, etc. Muy importante, el grafo permite generar los niveles de indentación asociados a cada capítulo o sección del documento. A continuación, mostramos algunas de las funciones utilizadas en el cuaderno para obtener el resultado que está leyendo.
 
 ```python
 def rec_note_prcs(G, start='TFG', ident='1'):
 
-	""" Recursive note building """
-
+	""" recursive note building """
+	
 	ident = ident + '.0'
 	
 	neigh = list(G.neighbors(start))
@@ -23,7 +23,7 @@ def rec_note_prcs(G, start='TFG', ident='1'):
 	if (len(neigh) == 0):
 	
 		return note_decorate(start,ident[:-2])
-
+		
 	end_doc =  note_decorate(start,ident)
     
 	  for con in neigh:
@@ -38,35 +38,29 @@ def rec_note_prcs(G, start='TFG', ident='1'):
 Estas celdas de código son parte del proceso de transformación de Markdown a HTML. Aunque existen librerías con funciones para realizar dicha transformación, necesitamos realizar un gran trabajo de procesado para que el documento enlace las notas en el orden correcto y se tengan en cuenta conceptos como la indentación en los distintos apartados. El grafo que conforman las notas pasa a una estructura de árbol en la que es fácil crear enlaces entre los puntos a los que pertenece cada nota.
 
 ```python
-def note_decorate(start, ident):
-
-	""" Embed into proper html, indexing, links, etc """
-
-	rec_path = find_rec(start + '.md', parent_directory)
+def mermaid_process(text):
 	
-	f_text = open(rec_path, "r", encoding='utf-8').read()
+	""" transforms any mermaid diagrams to images in png format """
 	
-	# start section to be able to link index:
+	global parent_directory
 	
-	html = "<div id=" + start.replace(" ", "_") +">"
+	result = re.findall('```mermaid_digram(?s:.*?)```', text, re.M)
 	
-	h_i = sum((c.isdigit()) for c in ident)
+	if len(result) <= 0:
 	
-	title = "<h{0}>{1}</h{2}>".format(h_i, ident + ' ' + start, h_i)
+		return text
 	
-	# check for link note:
+	sub_text = result[0][len('```mermaid_digram'):-3]
 	
-	if ('-- LINK_NOTE --' in f_text):
-		
-		page_break = '<p style="page-break-after: always;">&nbsp;</p>'
-		
-		return page_break + html + title
-		
-	html = html + title + export_note_to_html(f_text)
+	mermaid_dir = os.path.join(parent_directory, "mermaid")
 	
-	html = html + "</div>"
+    text = re.sub(
+		'```mermaid_digram(?s:.*?)```', 
+		mmd_to_img(sub_text, mermaid_dir) ,
+		text, 1
+	)
 	
-	return html
+	return mermaid_process(text)
 ```
 
 Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos *Github Actions* para definir las acciones necesarias cuando se realicen cambios en el repositorio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice cuando se hacen cambios en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de *Github Pages*. En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. 
