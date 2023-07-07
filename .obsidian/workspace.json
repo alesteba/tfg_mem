@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-conclusiones/Figuras.md",
+                "file": "RESUMEN.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9-conclusiones/Figuras.md",
+                "file": "RESUMEN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,12 +134,19 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
+    "8-seguimiento/Memoria.md",
+    "6-implementación/Integración continua.md",
+    "5-diseño/Modelo relacional.md",
+    "_k.pcs.zen/publish/mermaid/output_4.png",
+    "_k.pcs.zen/publish/mermaid/output_3.png",
+    "_k.pcs.zen/publish/mermaid/output_2.png",
+    "_k.pcs.zen/publish/mermaid/output_1.png",
+    "_k.pcs.zen/publish/mermaid/output_0.png",
+    "4-infraestructura/Vagrant.md",
+    "9-conclusiones/Figuras.md",
     "7-modelo/Mejor modelo.md",
     "7-modelo/Preprocesamiento.md",
-    "5-diseño/Modelo relacional.md",
     "7-modelo/Predicciones.md",
-    "6-implementación/Integración continua.md",
-    "9-conclusiones/Figuras.md",
     "9-conclusiones/Bibliografía.md",
     "2-plan/Metodología.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
@@ -148,11 +155,6 @@
     "_k.pcs.zen/publish/figures/visor_GIS.png",
     "_k.pcs.zen/publish/figures/view.p.md",
     "_k.pcs.zen/publish/figures/view-capture.png",
-    "_k.pcs.zen/publish/figures/spectralgeo_db.png",
-    "_k.pcs.zen/publish/figures/predict.png",
-    "_k.pcs.zen/publish/figures/pipeline_state.webp",
-    "_k.pcs.zen/publish/figures/pipeline_pattern.png",
-    "_k.pcs.zen/publish/figures/pipeline.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
     "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/publish/figures/modelo_end.png.md",
@@ -169,8 +171,6 @@
     "5-diseño/DISEÑO.md",
     "5-diseño/Carga de datos.md",
     "7-modelo/MODELO IA.md",
-    "4-infraestructura/Entorno.md",
-    "4-infraestructura/Arquitectura física.md",
     "_k.pcs.zen/publish/figures/pipeline",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",

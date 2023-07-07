@@ -1,5 +1,5 @@
 
-Hacemos uso de Vagrant para crear en una máquina virtual Unix (Ubuntu), el entorno de desarrollo necesario para el proyecto. De esta forma conseguimos que los entornos de pruebas y producción sean muy similares, permitiendo automatizar el despliegue de la aplicación mediante técnicas de infraestructura como código. Una de las ventajas de tener una máquina Ubuntu, es que, mediante scripts .sh, instalamos todas las dependencias necesarias para dejar dicha máquina lista para el despliegue de la aplicación.
+Hacemos uso de Vagrant para crear, en una máquina virtual Unix (Ubuntu), el entorno de desarrollo necesario para el proyecto. De esta forma conseguimos que los entornos de pruebas y producción sean muy similares, permitiendo automatizar el despliegue de la aplicación mediante técnicas de infraestructura como código. Una de las ventajas de tener una máquina Ubuntu, es que, mediante scripts .sh, instalamos todas las dependencias necesarias para dejar dicha máquina lista para el despliegue de la aplicación.
 
 Para el entorno de desarrollo virtualizamos con Vagrant una máquina Ubuntu 20.04. El archivo *Vagrantfile* nos permite provisionarla con el código del proyecto y el script que deja a dicha máquina con las librerías necesarias para el correcto funcionamiento de este.
 
