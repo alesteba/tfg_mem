@@ -2,6 +2,10 @@
 
 https://www.pmi.org/pmbok-guide-standards/foundational/pmbok#
 
+https://mermaid.js.org/syntax/gantt.html
+
+https://www.pmi.org/learning/library/applying-work-breakdown-structure-project-lifecycle-6979
+
 - Infraestructura
 
 https://en.wikipedia.org/wiki/Infrastructure_as_code
@@ -30,6 +34,8 @@ https://medium.com/@bonnotguillaume/software-architecture-the-pipeline-design-pa
 
 https://www.astera.com/es/type/blog/etl-pipeline-vs-data-pipeline/
 
+https://www.jenkins.io/doc/book/pipeline/syntax/
+
 - Modelo IA
 
 https://stackabuse.com/random-forest-algorithm-with-python-and-scikit-learn/
@@ -49,4 +55,3 @@ https://networkx.org/
 https://github.com/obsidianmd/obsidian-api
 
 https://docs.github.com/en/actions
-

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-plan/Gantt.md",
+                "file": "5-diseño/Servicios.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 393.5
   },
   "right": {
     "id": "a9b9efdbcf351e49",
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2-plan/Gantt.md",
+                "file": "5-diseño/Servicios.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,53 +124,53 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "86b13b76461c064d",
+  "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
-    "2-plan/EDT.md",
-    "ABSTRACT.md",
-    "BIBILIOGRAFÍA.md",
-    "CONCLUSIONES.md",
-    "RESUMEN.md",
-    "6-implementación/Transformación de datos.md",
-    "1-intro/INTRODUCCIÓN.md",
-    "7-modelo/Regresión.md",
-    "7-modelo/Preprocesamiento.md",
     "7-modelo/Predicciones.md",
-    "7-modelo/Mejor modelo.md",
-    "6-implementación/Vista minable.md",
-    "8-seguimiento/Memoria.md",
-    "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
-    "_k.pcs.zen/publish/figures/visor_GIS_det.png",
-    "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-37-03.png",
-    "_k.pcs.zen/publish/figures/pipeline.png",
+    "2-plan/Alcance.md",
+    "_k.pcs.zen/publish/figures/predict.png",
+    "_k.pcs.zen/publish/figures/pipeline_state.webp",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-51.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-35.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-25.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-12.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-51.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-37.png",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-12.png",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-46-10.png",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-47-38.png",
+    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-37-20.png",
     "_k.pcs.zen/publish/figures/pipeline",
+    "_k.pcs.zen/publish/mermaid/input.mmd",
+    "_k.pcs.zen/publish/mermaid",
     "_k.pcs.zen/publish/figures/view.p.md",
     "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/publish/figures/modelo_end.png.md",
     "_k.pcs.zen/publish/figures/llean_1.png.md",
     "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
     "_k.pcs.zen/publish/figures",
+    "BIBILIOGRAFÍA.md",
+    "ABSTRACT.md",
+    "2-plan/Gantt.md",
+    "2-plan/EDT.md",
+    "CONCLUSIONES.md",
+    "RESUMEN.md",
+    "6-implementación/Transformación de datos.md",
+    "1-intro/INTRODUCCIÓN.md",
+    "7-modelo/Regresión.md",
+    "7-modelo/Preprocesamiento.md",
+    "7-modelo/Mejor modelo.md",
+    "6-implementación/Vista minable.md",
+    "8-seguimiento/Memoria.md",
     "3-análisis/Tecnologías.md",
     "3-análisis/Requisitos.md",
     "3-análisis/Fuentes de datos.md",
     "3-análisis/Dominio agronómico.md",
     "5-diseño/Carga de datos.md",
     "TFG.md",
-    "4-infraestructura/Arquitectura física.md",
-    "5-diseño/Servicios.md",
     "0-prev",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",
-    "_k.pcs.zen/publish/body.css",
-    "_k.pcs.zen/out_3.pdf",
-    "_k.pcs.zen/out_2.pdf"
+    "_k.pcs.zen/publish/body.css"
   ]
 }

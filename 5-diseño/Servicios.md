@@ -70,7 +70,7 @@ class ParcelaCultivos_Service():
 
 El pipeline que vamos a diseñar es posible gracias a la factorización en módulos de la aplicación y a la sencillez y versatilidad del modelo relacional de datos. Los servicios que ahora implementamos abstraen al resto del equipo de la funcionalidad subyacente y me permiten crear diferentes interfaces con propósitos distintos. Son muy importantes, ya que nos acercan al flujo de trabajo de integración continua que estamos buscando.
 
-Por otro lado, tenemos métodos más clásicos en los que hacemos uso de las entidades registradas para La siguiente función es una de las más usadas debido a la integración directa con el proceso de descarga de imágenes satelitales del cultivo. Fijémonos en cómo utilizamos las entidades creadas anteriormente para acceder a la información de la BD, el ORM subyacente nos abstrae de otras consultas complejas que podríamos hacer en lenguajes como SQL.
+Por otro lado, tenemos métodos más clásicos en los que hacemos uso de las entidades registradas para obtener valores concretos. La siguiente función es una de las más usadas debido a la integración directa con el proceso de descarga de imágenes satelitales del cultivo. Fijémonos en cómo utilizamos las entidades creadas anteriormente para acceder a la información de la BD, el ORM subyacente nos abstrae de otras consultas complejas que podríamos hacer en lenguajes como SQL.
 
 ```python
 
@@ -90,13 +90,11 @@ def get_indice_func(parcela, indice_p, fecha_p, func, filtro):
 			indice = indice_p, 
 			fecha = fecha_p
 		)
-	
+		
 		if ParcelaIndices_Service.get_indice_filter(indices_pixels, filtro):
 		
 			array_valores = list(indices_pixels.values_list('valor', flat=True))
-		
+			
 			return func(array_valores)
 
 ```
-
-DOCUMENTAR

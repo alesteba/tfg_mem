@@ -1,4 +1,6 @@
-El proyecto planteado inicialmente por la empresa tiene una planificación de cuatro meses.  A continuación se expondrán los objetivos generales del proyecto para aportar una visión global del trabajo.
+A continuación se expondrán los objetivos generales del proyecto para aportar una visión global del trabajo.
+
+MODIFICAR _>
 
 -   Automatizar el despliegue de la aplicación mediante infraestructura como código.
 -   Preparar diferentes entornos con las tecnologías necesarias para cada parte de la aplicación.
