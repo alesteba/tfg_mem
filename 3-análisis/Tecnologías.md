@@ -6,7 +6,7 @@ El código de la aplicación que heredamos está escrito en Python. El lenguaje 
 - Static File Generator: podemos diseñar la interfaz de la aplicación en formato web y desplegar en un servidor.
 - Commands-System: gestión de comandos internos mediante los que se puede automatizar tareas; utilizaremos esta arquitectura para diseñar el pipeline de datos y almacenar la información proveniente de diferentes fuentes.
 
-![Ejemplo de uso de una migración en Django al estado inicial de la base de datos.](figures/django_migrate.png)
+![Ejemplo de uso de un comando en Django para ejecutar la descarga de los índices (salida del comando mostrada en Jenkins).](figures/django-commands.png)
 
 Aunque el framework es muy potente, harán falta otras herramientas y entornos para completar con éxito la automatización que buscamos para así conseguir un proceso de optimización continua. En el siguiente punto hablaremos de la infraestructura que la aplicación requiere y de cómo podemos solventar algunos de los problemas de integración más importantes. Mencionamos algunas de estas tecnologías:
 

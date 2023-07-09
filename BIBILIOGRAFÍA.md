@@ -1,4 +1,3 @@
-
 - Planificación
 
 https://www.pmi.org/pmbok-guide-standards/foundational/pmbok#
