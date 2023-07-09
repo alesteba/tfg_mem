@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "7-modelo/Regresión.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "7-modelo/Regresión.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,8 +137,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "86b13b76461c064d",
+  "active": "a93c64428339898c",
   "lastOpenFiles": [
+    "7-modelo/Preprocesamiento.md",
+    "7-modelo/Predicciones.md",
+    "7-modelo/Mejor modelo.md",
+    "6-implementación/Vista minable.md",
+    "8-seguimiento/Memoria.md",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
     "_k.pcs.zen/publish/figures/visor_GIS_det.png",
     "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
@@ -150,7 +155,6 @@
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-12.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-51.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-37.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-47-38.png",
     "_k.pcs.zen/publish/figures/pipeline",
     "_k.pcs.zen/publish/figures/view.p.md",
     "_k.pcs.zen/publish/figures/nubes",
@@ -174,10 +178,6 @@
     "6-implementación/Transformación de datos.md",
     "4-infraestructura/Vagrant.md",
     "4-infraestructura/Entorno.md",
-    "6-implementación/Integración continua.md",
-    "6-implementación/PIPELINE.md",
-    "6-implementación/Vista minable.md",
-    "ABSTRACT.md",
     "0-prev",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
