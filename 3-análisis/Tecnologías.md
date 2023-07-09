@@ -17,10 +17,10 @@ La utilización de *Python*, aparte de incluir el framework de Django, nos da la
 
 LIBRERÍA | DESCRIPCIÓN
 :----------------|:-------------:
-scikit-learn | creación de modelos de inteligencia artificial
-numpy | tratamiento de datos multidimensionales
-pandas | uso de datos tabulados con herramientas para su procesamiento
-jupyter | integración de cuadernos procesables con el resto del proyecto
+scikit-learn | Creación de modelos de inteligencia artificial
+numpy | Tratamiento de datos multidimensionales
+pandas | Uso de datos tabulados con herramientas para su procesamiento
+jupyter | Integración de cuadernos procesables con el resto del proyecto
 
 
 

@@ -8,9 +8,9 @@ La siguiente tabla muestra las principales fuentes de datos de las que se obtien
 
 FUENTE DATOS | DESCRIPCIÓN
 :----------------|:-------------:
-QGIS | información geomométrica de parcelas y sus pixéles
-Índices Vegetativos | información provenientes de imágenes satelitales descargadas en diferentes fechas
-Cultivos / Variedad | información tabulada en excels sobre tipo de cultivos y sus variedades
+QGIS | Información geomométrica de parcelas y sus pixéles
+Índices Vegetativos | Información provenientes de imágenes satelitales descargadas en diferentes fechas
+Cultivos / Variedad | Información tabulada en excels sobre tipo de cultivos y sus variedades
 
 Para poder realizar el trabajo utilizaremos, por tanto, una muestra representativa de los datos debido a que el proceso de descarga de índices y persistencia de datos es largo para realizar las pruebas. El sistema está pensado para trabajar con muchas parcelas; en las pruebas que yo voy a realizar escogemos una muestra de 25 parcelas y pensaremos una descarga de índices para no más de 4 fechas diferentes.
 

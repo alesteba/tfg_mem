@@ -5,7 +5,6 @@ El problema que estamos buscando resolver es un problema de regresión, en el qu
 Los cuadernos que conforman el entregable contienen código que busca el mejor modelo posible para los datos importados con los índices y sus estadísticos. Los índices vegetativos registrados en diferentes fechas, junto con la variable de producción de campañas anteriores, tienen que poder predecir con precisión la campaña actual.
 
 ```python
-
 # drop columns with negative mean.
 
 for col in df.columns:

@@ -2,13 +2,13 @@ La siguiente tabla muestra los requisitos funcionales críticos para completar c
 
 REQUISITO | DESCRIPCIÓN
 :----------------|:-------------:
-RF1 | automatizar el despliegue de la aplicación identificando las librerías y dependencias necesarias
-RF2 | rediseñar el modelo de datos para poder escalar la aplicación y su gestión de datos.
-RF3 | documentar el proceso de desarrollo generando los documentos de diseño pertinentes.
-RF4 | crear un entorno común que permita trabajar al equipo sobre las mismas fuentes de datos.
-RF5 | obtener una vista minable con la selección de *features* provenientes del modelo.
-RF6 | creación de un modelo de producción probando varios algoritmos de inteligencia artificial.
-RF7 | despliegue de los datos del modelo en la interfaz de la aplicación.
+RF1 | Automatizar el despliegue de la aplicación identificando las librerías y dependencias necesarias.
+RF2 | Rediseñar el modelo de datos para poder escalar la aplicación y su gestión de datos.
+RF3 | Documentar el proceso de desarrollo generando los documentos de diseño pertinentes.
+RF4 | Crear un entorno común que permita trabajar al equipo sobre las mismas fuentes de datos.
+RF5 | Obtener una vista minable con la selección de *features* provenientes del modelo.
+RF6 | Creación de un modelo de producción probando varios algoritmos de inteligencia artificial.
+RF7 | Despliegue de los datos del modelo en la interfaz de la aplicación.
 
 Como requisitos no funcionales para la aplicación identificamos los siguientes, entendiendo que se completarán a lo largo de todo el proyecto. 
 
