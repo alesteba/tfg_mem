@@ -1,7 +1,7 @@
 
 Como inicio de la posterior automatización, se reestructura la arquitectura de la aplicación junto con su BD para soportar el almacenamiento de nuevos datos. El siguiente esquema de BD es el resultado de la implementación del análisis descrita en el planteamiento.
 
-![](figures/modelo-end.png)
+![Esquema relacional en uso del componente principal de la aplicación](figures/modelo-end.png)
 
 Para la creación de este modelo he trabajado con el equipo en la identificación de los conceptos que necesitaban ser representados. El diseño en papel da la posibilidad de pensar abiertamente sobre las relaciones entre entidades, además de permitir la transmisión de ideas de forma sencilla durante las reuniones.
   
@@ -15,7 +15,7 @@ Varias etapas han sido necesarias hasta llegar a un punto más o menos estable. 
 
 De la situación inicial, nos quedamos solo con las entidades principales. Esta selección de entidades se realiza cuidadosamente para que la aplicación pueda contemplar la mayor información posible haciendo uso de un esquema sencillo pero robusto. Analizamos el diseño detalladamente en los siguientes puntos.
 
-![](figures/spectralgeo_db.png "original") 
+![Esquema relacional inicial de partida, con entidades definidas, pero sin implementar, se toma como idea para el comienzo del diseño.](figures/spectralgeo_db.png "original") 
 
 Este rediseño contempla la mayoría de casos posibles para el posterior tratamiento y procesamiento de datos, con posibilidad de crear buenos modelos predictivos. A continuación se describen las entidades principales contempladas en la base de datos.
 
@@ -40,7 +40,7 @@ También es importante destacar que CULTIVO es simplemente el tipo que se ha reg
 
 Otro punto importante de la aplicación es la contemplación de variedades. Para poder mantener una jerarquía con las posibles entidades registradas en el sistema, enlazamos de forma recursiva el cultivo con una clave foránea a su misma tabla. Esta estructura permite el desglose de una jerarquía de cultivos en la que sabemos qué entidad es una subvariedad de un cultivo, dando la posibilidad de almacenar múltiples niveles.
 
-![](figures/mirar_feno.png) 
+![Ejemplo de una consulta SQL sobre la tabla MIRAR_FENOLÓGICO](figures/mirar_feno.png) 
 
 ### Diseño de Índices Vegetativos
 
@@ -54,9 +54,7 @@ Este diseño de índices permite mantener un histórico de datos preciso. Gestio
 
 ### Diseño de Roles
 
-Aunque es un punto secundario, la aplicación contempla que diferentes usuarios puedan realizar diferentes acciones. Recordamos que habíamos separado en componentes la aplicación, y los roles se encuentran en un módulo secundario independiente de las entidades anteriores, que representaban los principales conceptos agronómicos y vegetativos. El diseño modular del modelo de datos permite al equipo añadir diferentes roles sin que estos estén *hardcoded* en el código de la aplicación. 
-
-Aunque la aplicación hace uso de estas entidades, no serán tan importantes para el desarrollo posterior del trabajo, debido a que la parte que necesita automatizarse es aquella relacionada con los índices vegetativos y la geometría de las parcelas anteriores. Como decíamos, estas entidades quedan separadas en un módulo de la aplicación con la única funcionalidad de controlar el acceso a la aplicación y dar permiso a las funcionalidades que cada cliente puede realizar dependiendo del rol que tenga asignado. La siguiente tabla describe los roles hasta ahora contemplados por el equipo y su relación con el parcelario.
+Aunque es un punto secundario, la aplicación contempla que diferentes usuarios puedan realizar diferentes acciones. Recordamos que habíamos separado en componentes la aplicación, y los roles se encuentran en un módulo secundario independiente de las entidades anteriores, que representaban los principales conceptos agronómicos y vegetativos. El diseño modular del modelo de datos permite al equipo añadir diferentes roles sin que estos estén *hardcoded* en el código de la aplicación. La siguiente tabla describe los roles hasta ahora contemplados por el equipo y su relación con el parcelario.
 
 ROL | DESCRIPCIÓN
 :----------------|:-------------:
@@ -64,6 +62,8 @@ Cultivador | persona encargada de realizar los mantenimientos en campo
 Propietario | propietario catastral de las parcelas
 Cooperativa | entidad que agrupa a técnos con diferentes cargos sobre un parcelario
 Técnico | personal asignado a un número de parcelas.
+
+Aunque la aplicación hace uso de estas entidades, no serán tan importantes para el desarrollo posterior del trabajo, debido a que la parte que necesita automatizarse es aquella relacionada con los índices vegetativos y la geometría de las parcelas anteriores. Como decíamos, estas entidades quedan separadas en un módulo de la aplicación con la única funcionalidad de controlar el acceso a la aplicación y dar permiso a las funcionalidades que cada cliente puede realizar dependiendo del rol que tenga asignado.
 
 ### Modelo Final
 

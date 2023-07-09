@@ -102,3 +102,4 @@ def get_indice_func(parcela, indice_p, fecha_p, func, filtro):
 
 ```
 
+DOCUMENTAR

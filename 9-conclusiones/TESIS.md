@@ -1,7 +1,7 @@
 -- LINK_NOTE --
 
-[[Conclusiones]]
+[[CONCLUSIONES]]
 
 [[Figuras]]
 
-[[Bibliografía]]
+[[BIBILIOGRAFÍA]]

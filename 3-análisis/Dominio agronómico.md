@@ -8,7 +8,7 @@ Como punto de partida buscaremos identificar las entidades del dominio necesaria
 
 En la interfaz web, el cliente observa un mapa con sus parcelas resaltadas en colores. Este color reflejado en los píxeles hace referencia a los índices vegetativos provenientes de las imágenes satelitales. Los clientes utilizan dicha interfaz para ver el estado de sus cultivos y observar la producción que predicen los modelos de Inteligencia Artificial generados.
 
-![](figures/visor_GIS.png)
+![Captura del visor web en la que se aprecia cómo se monitorizan varias parcelas](figures/visor_GIS.png)
 
 A nivel interno, el equipo trabaja con datos provenientes de imágenes descargadas de satélites como SENTINEL, o de grabaciones realizadas por dron cuando se requiere una mayor calidad. Estos datos se mezclan con información proporcionada por estaciones meteorológicas como el SIAR y con la información que los clientes pueden proporcionar sobre campañas anteriores.
 

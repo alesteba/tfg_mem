@@ -1,5 +1,5 @@
 
-- plan
+- Planificación
 
 https://www.pmi.org/pmbok-guide-standards/foundational/pmbok#
 
@@ -43,7 +43,7 @@ https://scikit-learn.org/stable/modules/cross_validation.html
 
 https://scikit-learn.org/stable/auto_examples/ensemble/plot_stack_predictors.html#sphx-glr-auto-examples-ensemble-plot-stack-predictors-py
 
-* redacción memoria
+* Redacción memoria
 
 https://networkx.org/
 

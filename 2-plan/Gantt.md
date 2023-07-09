@@ -1,5 +1,5 @@
 
-El siguiente diagrama propone un desglose de tareas para la planificación del proyecto. Este diagrama es una estipulación de cómo se desarrolla el proyecto, en el eje horizontal, medimos el tiempo en días. Considerando 4 h de trabajo diarias, obtenemos una duración de 75 días para repartir las 300 h a lo largo de los próximos 6 meses que podemos dedicarle al trabajo. En la sección final de seguimiento y control analizamos las desviaciones encontradas y cómo han sido solucionados estos contratiempos.
+El siguiente diagrama propone un desglose de tareas para la planificación del proyecto. Este diagrama es una estipulación de cómo se desarrolla el proyecto, en el eje horizontal, medimos el tiempo en días. Considerando 4 h de trabajo diarias, obtenemos una duración de 75 días para repartir las 300 h que dedicamos al trabajo. En la sección final de seguimiento y control analizamos las desviaciones encontradas y cómo han sido solucionados estos contratiempos.
 
 ```mermaid
 gantt

@@ -6,7 +6,7 @@ Finalmente, exportamos las notas en el orden necesario para la memoria y renderi
 
 Utilizamos algunas herramientas de integración continua como *Github Actions* para automatizar este proceso. En un primer lugar convertimos el grafo de notas Markdown a un documento HTML mediante un proceso recursivo que ordena las notas y genera así la memoria del proyecto. Además, el índice se crea a partir de los nombres de las notas y sus relaciones con las que están enlazadas.
 
-![](figures/graph.png)
+![Imagen del grafo asociado a las notas en las que se ha escrito esta memoria.](figures/graph.png)
 
 
 El principal interés de que la redacción se realice de esta forma es que al comienzo del proyecto no había una idea clara de cómo se tenían que desarrollar los contenidos. Escribir un capítulo o tema en una nota es algo más sencillo (por lo tanto, se puede terminar) que pensar desde el principio dónde colocar esta sección que quiero escribir en la memoria. Utilizando Obsidian como gestor de las notas, podemos definir relaciones entre ellas simplemente conectando palabras claves entre ellas. De esta forma conseguimos un esquema mental del proyecto simplemente visualizando el grafo generado. Finalmente, a medida que nos acercamos al cierre del proyecto, escribimos en un notebook una serie de algoritmos que nos permiten presentar el resultado de la memoria de la forma que deseamos. En ellos implementamos los pasos necesarios para transformar cada nota a HTML, integrar aquellos *snipets* de código que pueda contener, representar tablas y diagramas, etc. Muy importante, el grafo permite generar los niveles de indentación asociados a cada capítulo o sección del documento. A continuación, mostramos algunas de las funciones utilizadas en el cuaderno para obtener el resultado que está leyendo.
@@ -44,18 +44,18 @@ def mermaid_process(text):
 	
 	global parent_directory
 	
-	result = re.findall('```mermaid_digram(?s:.*?)```', text, re.M)
+	result = re.findall('```mermad(?s:.*?)```', text, re.M)
 	
 	if len(result) <= 0:
 	
 		return text
 	
-	sub_text = result[0][len('```mermaid_digram'):-3]
+	sub_text = result[0][len('```mermad'):-3]
 	
-	mermaid_dir = os.path.join(parent_directory, "mermaid")
+	mermaid_dir = os.path.join(parent_directory, "mermad")
 	
-    text = re.sub(
-		'```mermaid_digram(?s:.*?)```', 
+	text = re.sub(
+		'```mermad(?s:.*?)```', 
 		mmd_to_img(sub_text, mermaid_dir) ,
 		text, 1
 	)
@@ -113,4 +113,4 @@ Estas notas se encuentran en un repositorio separado al proyecto para poder así
 
 El código anterior se corresponde con la transformación de la memoria en notas de Markdown al documento en HTML. Como podemos observar en los pasos se utiliza una máquina Ubuntu en la que se instalan librerías necesarias para transformar los diagramas en imágenes y poder trabajar con cuadernos Jupyter. Posteriormente, se transforma el cuaderno con el código de conversión de las notas en un único script, se ejecuta y se publican los resultados en otro repositorio diferente, el cual mediante *Github Pages* crea la página HTML correspondiente con la memoria final. 
 
-![](figures/github-actions.png)
+![Ejemplo construcción de la memoria desde Github Actions.](figures/github-actions.png)

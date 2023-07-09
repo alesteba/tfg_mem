@@ -16,4 +16,4 @@ print(y_pred_e)
 
 En este punto, deberíamos poder utilizar este modelo obtenido dentro de la arquitectura de la aplicación para predecir, cómo evolucionan los cultivos que se están monitorizando. El punto en el que se encuentra la arquitectura soporta casi de forma directa la inclusión de las predicciones de la aplicación.
 
-![](figures/predict.png)
+![Predicción de la cantidad de Kg de cultivo que se va a cosechar. Resultado tras la ejecución del último 'stage' en el pipeline.](figures/predict.png)

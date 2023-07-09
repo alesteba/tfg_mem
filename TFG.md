@@ -2,6 +2,8 @@
 
 [[RESUMEN]]
 
+[[ABSTRACT]]
+
 [[INTRODUCCIÓN]]
 
 [[PLANIFICACIÓN]]
@@ -18,4 +20,6 @@
 
 [[SEGUIMIENTO]]
 
-[[TESIS]]
+[[CONCLUSIONES]]
+
+[[BIBILIOGRAFÍA]]

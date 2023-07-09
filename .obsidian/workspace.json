@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-intro/Contexto.md",
+                "file": "0-prev/ABSTRACT.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "993ea5312d2387b8",
+            "id": "83bd34e5c7b96410",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-plan/Entregables.md",
+                "file": "TFG.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9-conclusiones/Figuras.md",
+                "file": "9-conclusiones/CONCLUSIONES.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 289.5
   },
   "right": {
     "id": "a9b9efdbcf351e49",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1-intro/Contexto.md",
+                "file": "0-prev/ABSTRACT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,46 +136,46 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "aba95d39afcf2fd0",
+  "active": "86b13b76461c064d",
   "lastOpenFiles": [
-    "2-plan/Entregables.md",
-    "1-intro/Contexto.md",
+    "0-prev",
+    "TFG.md",
+    "9-conclusiones/CONCLUSIONES.md",
+    "0-prev/ABSTRACT.md",
+    "0-prev/RESUMEN.md",
     "9-conclusiones/Figuras.md",
-    "2-plan/Gantt.md",
-    "2-plan/PLANIFICACIÓN.md",
+    "9-conclusiones/BIBILIOGRAFÍA.md",
+    "9-conclusiones/TESIS.md",
     "8-seguimiento/Memoria.md",
-    "_k.pcs.zen/publish/mermaid/output_6.png",
-    "mermaid/output_6.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-35.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-12.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-49-25.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-51.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-48-37.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-47-38.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-46-10.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-37-20.png",
-    "_k.pcs.zen/publish/figures/pipeline",
-    "RESUMEN.md",
-    "6-implementación/Integración continua.md",
-    "5-diseño/Modelo relacional.md",
-    "4-infraestructura/Vagrant.md",
     "7-modelo/Mejor modelo.md",
+    "7-modelo/Regresión.md",
     "7-modelo/Preprocesamiento.md",
     "7-modelo/Predicciones.md",
-    "9-conclusiones/Bibliografía.md",
-    "2-plan/Metodología.md",
-    "_k.pcs.zen/publish/figures/view.p.md",
-    "_k.pcs.zen/publish/figures/nubes",
-    "_k.pcs.zen/publish/figures/modelo_end.png.md",
-    "_k.pcs.zen/publish/figures/llean_1.png.md",
-    "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
-    "3-análisis/Tecnologías.md",
-    "7-modelo/Regresión.md",
-    "6-implementación/Design pattern.md",
-    "6-implementación/Transformación de datos.md",
-    "9-conclusiones/Conclusiones.md",
+    "6-implementación/Vista minable.md",
     "6-implementación/PIPELINE.md",
+    "6-implementación/Integración continua.md",
+    "6-implementación/Design pattern.md",
+    "5-diseño/Servicios.md",
+    "5-diseño/Modelo relacional.md",
+    "1-intro/INTRODUCCIÓN.md",
+    "1-intro/Contexto.md",
+    "3-análisis/Tecnologías.md",
+    "3-análisis/Requisitos.md",
+    "3-análisis/Fuentes de datos.md",
+    "3-análisis/Automatizacion.md",
+    "6-implementación/Transformación de datos.md",
+    "figures/completed.png",
+    "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
+    "_k.pcs.zen/publish/figures/visor_GIS_det.png",
+    "_k.pcs.zen/publish/figures/visor_GIS_cuadro.png",
+    "_k.pcs.zen/publish/figures/visor_GIS.png",
+    "_k.pcs.zen/publish/figures/view-capture.png",
+    "_k.pcs.zen/publish/figures/spectralgeo_db.png",
+    "_k.pcs.zen/publish/figures/predict.png",
+    "_k.pcs.zen/publish/figures/pipeline_state.webp",
+    "_k.pcs.zen/publish/figures/pipeline_pattern.png",
+    "_k.pcs.zen/publish/figures/pipeline",
+    "_k.pcs.zen/publish/figures/nubes",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",
