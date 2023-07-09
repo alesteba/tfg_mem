@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "1-intro/Contexto.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-plan/Gantt.md",
+                "file": "2-plan/Entregables.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,8 +35,12 @@
             "id": "a93c64428339898c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "9-conclusiones/Figuras.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -105,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8-seguimiento/Memoria.md",
+                "file": "1-intro/Contexto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,6 +138,12 @@
   },
   "active": "aba95d39afcf2fd0",
   "lastOpenFiles": [
+    "2-plan/Entregables.md",
+    "1-intro/Contexto.md",
+    "9-conclusiones/Figuras.md",
+    "2-plan/Gantt.md",
+    "2-plan/PLANIFICACIÓN.md",
+    "8-seguimiento/Memoria.md",
     "_k.pcs.zen/publish/mermaid/output_6.png",
     "mermaid/output_6.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
@@ -145,14 +155,11 @@
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-47-38.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-46-10.png",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-37-20.png",
-    "_k.pcs.zen/publish/figures/pipeline/Screenshot from 2023-07-05 09-37-03.png",
     "_k.pcs.zen/publish/figures/pipeline",
     "RESUMEN.md",
-    "8-seguimiento/Memoria.md",
     "6-implementación/Integración continua.md",
     "5-diseño/Modelo relacional.md",
     "4-infraestructura/Vagrant.md",
-    "9-conclusiones/Figuras.md",
     "7-modelo/Mejor modelo.md",
     "7-modelo/Preprocesamiento.md",
     "7-modelo/Predicciones.md",
@@ -164,14 +171,11 @@
     "_k.pcs.zen/publish/figures/llean_1.png.md",
     "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
     "3-análisis/Tecnologías.md",
-    "2-plan/Gantt.md",
     "7-modelo/Regresión.md",
     "6-implementación/Design pattern.md",
     "6-implementación/Transformación de datos.md",
     "9-conclusiones/Conclusiones.md",
     "6-implementación/PIPELINE.md",
-    "5-diseño/Servicios.md",
-    "5-diseño/DISEÑO.md",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
     "_k.pcs.zen/publish/style_2.css",

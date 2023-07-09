@@ -2,7 +2,7 @@ El propósito de este proyecto es mejorar el flujo de trabajo del equipo de "Spe
 
 AGRAI es una aplicación para la gestión de cultivo que permite al agricultor monitorizar el estado de sus parcelas. El estado actual de la aplicación se centra el despliegue de datos agronómicos y vegetativos georreferenciados a través de en una interfaz web. Los usuarios de la aplicación, normalmente agricultores o cooperativas, pueden consultar el estado de su parcelario junto con algunas predicciones, como puede ser la cantidad de Kg que se van a cosechar en una fecha determinada. El acceso a dicha aplicación puede darse desde equipo de sobremesa o un dispositivo móvil, aunque es este último lo que parece que se utiliza más. 
 
-![](figures/visor_GIS_det.png)
+![Imagen del frontend de la aplicación en la que se muestran, mediante un mapeo con colores, la evolución de los índices vegetativos en varias parcelas agrícolas.](figures/visor_GIS_det.png)
 
 Actualmente, cómo se procesa la información que utiliza nuestra aplicación es un proceso tedioso para el equipo. En este proceso, diferentes miembros trabajan con tecnologías distintas sobre datos duplicados provenientes de fuentes comunes. Aunque se realiza una planificación y coordinación de los proyectos, se pierde bastante tiempo en la transformación de los datos que cada miembro del equipo necesita para llevar a cabo su labor.
 

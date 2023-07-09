@@ -1,7 +1,7 @@
 Para acotar el proceso de trabajo identificamos los siguientes entregables que generaremos a lo a medida que avance el proyecto. Estos entregables quedarán en la memoria en sus correspondientes apartados o como anexos si tienen una extensión más larga. La siguiente tabla contiene que lleva a cada uno de estos artefactos.
 
 IDENT | ENTREGABLE | DESCRIPCIÓN
-:----------------|-------------:|:-------------:
+:----------------|:-------------|:-------------:
 [E01](https://github.com/alesteba/tfg/tree/main/entregables/pipeline) | Módulo de Inicio | Análisis de viabilidad que permitirá determinar si es posible desarrollar el proyecto.
 [E02](https://alesteba.github.io/tfg/#PLANIFICACI%C3%93N) | Planificación del proyecto | Determinaremos los requisitos del proyecto, crearemos un enunciado para el alcance, realizaremos una descripción detallada de tareas junto a una EDT, estimaremos el tiempo y coste de los paquetes de trabajo, desarrollaremos un cronograma, estableceremos los estándares, procesos y métricas de calidad, determinaremos un plan de identificación de riesgos y crearemos el plan de gestión de cambios.
 [E03](https://github.com/alesteba/tfg/tree/main/entregables/infraestructure) | Infraestructura como código | Desarrollo de un 'script' con las instrucciones bash para dejar la máquina que despliega la aplicación en un estado estable. 
