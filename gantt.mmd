@@ -1,0 +1,31 @@
+gantt
+	title Planificación
+	dateFormat DDD
+	axisFormat %j
+	
+	section ANALISIS
+		ANALISIS: 001, 09d
+	
+	section INFRAEST
+		ARQUITECT : 010, 10d
+		VAGRANT: 010, 10d
+		ENTORNO: 010, 10d
+	
+	section DATOS
+		RELACIONES BD: 020, 15d
+		REDISEÑO: crit, 020, 15d
+	
+	section PIPELINE
+		BLOQUES: 35, 10d
+		SCRIPT: 37, 8d
+		JENKINS: 37, 8d
+	
+	section MODELO
+		LOAD: 45, 5d
+		VIEW: 45, 10d
+		REGRESSION: 45, 15d
+		BEST_MODEL: crit, 55, 15d
+		
+	section CONTROL
+		MEM_WRITE: 20, 56d
+		SEG_Y_CONT: 01, 75d

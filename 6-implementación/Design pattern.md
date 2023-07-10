@@ -19,7 +19,7 @@ class Command(BaseCommand):
 
 Las líneas de código anteriores hacen referencia a una implementación concreta del patrón mencionado.  Fijándonos en la siguiente figura, la clase **Command** sería el handler; el método **handle** corresponde con *handleRequest* del esquema. Los próximos scripts que creemos serán los clientes de estas clases. Destacaremos que la implementación de Django de este patrón es un poco más compleja porque los comandos que encapsulan la funcionalidad permiten tomar diferentes parámetros. 
 
-![Pipeline design pattern, diagrama de clases para exponer cómo vamos a utilizar los bloques de carga creamos.](figures/pipeline_pattern.PNG)
+![Pipeline design pattern, diagrama de clases para exponer cómo vamos a utilizar los bloques de carga creamos.](figures/pipeline_pattern.png)
 
 Con este patrón desarrollamos la infraestructura necesaria para cargar los datos en el modelo. Cada comando representa un proceso de carga de datos, el cual se puede componer posteriormente dentro de un proceso más complejo. Cada unidad de carga se comporta como un filtro que añade de forma ordenada la información al modelo de datos, enlazando las entidades con sus datos correspondientes. Utilizaremos estas unidades para generar diferentes tuberías que permitan dejar varias instancias de la aplicación en estados diferentes.
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3-análisis/Automatizacion.md",
+                "file": "2-plan/Metodología.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3-análisis/Automatizacion.md",
+                "file": "2-plan/Metodología.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,10 +114,10 @@
   },
   "active": "a93c64428339898c",
   "lastOpenFiles": [
-    "_k.pcs.zen/publish/mermaid/output_4.png",
     "_k.pcs.zen/publish/mermaid/output_3.png",
     "_k.pcs.zen/publish/mermaid/output_2.png",
     "_k.pcs.zen/publish/mermaid/output_1.png",
+    "_k.pcs.zen/publish/mermaid/output_0.png",
     "_k.pcs.zen/publish/mermaid/input.mmd",
     "_k.pcs.zen/publish/mermaid",
     "_k.pcs.zen/publish/figures/visor_GIS_LOD.png",
@@ -128,6 +128,8 @@
     "_k.pcs.zen/publish/figures/view-capture.png",
     "_k.pcs.zen/publish/figures/spectralgeo_db.png",
     "_k.pcs.zen/publish/figures/predict.png",
+    "1-intro/Previos.md",
+    "2-plan/Gantt.md",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
     "_k.pcs.zen/publish/figures/pipeline",
     "_k.pcs.zen/publish/figures/nubes",
@@ -135,30 +137,28 @@
     "_k.pcs.zen/publish/figures/llean_1.png.md",
     "_k.pcs.zen/publish/figures/lean_prcs.pw.md",
     "_k.pcs.zen/publish/figures",
-    "3-análisis/ANÁLISIS.md",
-    "1-intro/Previos.md",
     "1-intro/Contexto.md",
+    "gantt.mmd",
+    "gantt.md",
+    "2-plan/Alcance.md",
+    "2-plan/Entregables.md",
+    "6-implementación/Design pattern.md",
+    "ABSTRACT.md",
+    "8-seguimiento/Memoria.md",
+    "7-modelo/Preprocesamiento.md",
+    "3-análisis/Automatizacion.md",
+    "3-análisis/ANÁLISIS.md",
     "1-intro/INTRODUCCIÓN.md",
     "2-plan/Metodología.md",
     "2-plan/Riesgos.md",
-    "2-plan/Gantt.md",
-    "2-plan/Entregables.md",
-    "2-plan/Alcance.md",
     "2-plan/Comunicaciones.md",
     "2-plan/PLANIFICACIÓN.md",
     "2-plan/EDT.md",
     "8-seguimiento/Desviaciones.md",
-    "8-seguimiento/Memoria.md",
     "7-modelo/Regresión.md",
-    "7-modelo/Preprocesamiento.md",
-    "7-modelo/Predicciones.md",
-    "7-modelo/MODELO IA.md",
-    "7-modelo/Mejor modelo.md",
-    "6-implementación/Vista minable.md",
     "0-prev",
     "_k.pcs.zen/publish/print.css",
     "_k.pcs.zen/automate_pdf2.ipynb",
-    "_k.pcs.zen/publish/style_2.css",
-    "_k.pcs.zen/publish/body.css"
+    "_k.pcs.zen/publish/style_2.css"
   ]
 }

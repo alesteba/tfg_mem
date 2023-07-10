@@ -63,7 +63,7 @@ def mermaid_process(text):
 	return mermaid_process(text)
 ```
 
-Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos *Github Actions* para definir las acciones necesarias cuando se realicen cambios en el repositorio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice al hacer un *commit* en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de *Github Pages* (https://alesteba.github.io/tfg/). En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. 
+Estas notas se encuentran en un repositorio separado al proyecto para poder así construir la memoria. Utilizamos *Github Actions* para definir las acciones necesarias cuando se realicen cambios en el repositorio, es decir, a medida que escribimos en las notas. En primer lugar, queremos conseguir que el documento se renderice al hacer un *commit* en el repositorio y se publique posteriormente dicha memoria en una pequeña web bajo el dominio asociado a nuestro usuario de *Github Pages* [https://alesteba.github.io/tfg/](https://alesteba.github.io/tfg/). En segundo lugar, una vez tenemos publicada la memoria, una segunda acción convertirá el código HTML asociado al documento en el archivo PDF que está leyendo actualmente. 
 
 ```yaml
   build_notes:
