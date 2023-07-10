@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-plan/Metodología.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2-plan/Metodología.md",
+                "file": "7-modelo/Mejor modelo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +114,8 @@
   },
   "active": "a93c64428339898c",
   "lastOpenFiles": [
+    "7-modelo/MODELO IA.md",
+    "2-plan/Metodología.md",
     "_k.pcs.zen/publish/mermaid/output_3.png",
     "_k.pcs.zen/publish/mermaid/output_2.png",
     "_k.pcs.zen/publish/mermaid/output_1.png",
@@ -127,7 +129,6 @@
     "_k.pcs.zen/publish/figures/view.p.md",
     "_k.pcs.zen/publish/figures/view-capture.png",
     "_k.pcs.zen/publish/figures/spectralgeo_db.png",
-    "_k.pcs.zen/publish/figures/predict.png",
     "1-intro/Previos.md",
     "2-plan/Gantt.md",
     "_k.pcs.zen/publish/figures/pipeline/Screenshot.md",
@@ -149,7 +150,6 @@
     "3-análisis/Automatizacion.md",
     "3-análisis/ANÁLISIS.md",
     "1-intro/INTRODUCCIÓN.md",
-    "2-plan/Metodología.md",
     "2-plan/Riesgos.md",
     "2-plan/Comunicaciones.md",
     "2-plan/PLANIFICACIÓN.md",
